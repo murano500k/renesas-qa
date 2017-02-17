@@ -11,3 +11,4 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=/usr/bin:$PATH
 export ADB_CMD="adb"
+export FASTBOOT="$SCRIPTS_DIR/fastboot"

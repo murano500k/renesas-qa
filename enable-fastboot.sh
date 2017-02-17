@@ -26,7 +26,6 @@ hard_reset ()
   expect-fastboot.sh $MINICOM_SERIAL
 }
 #Check fastboot location
-export FASTBOOT="$SCRIPTS_DIR/fastboot"
 echo FASTBOOT=$FASTBOOT
 
 if [ -z $FASTBOOT_SERIAL ]; then

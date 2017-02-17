@@ -30,8 +30,5 @@ pkill screen
 echo "Start google-test"
 #Start test
 export ERROR_COUNT=0
-. $SCRIPTS_DIR/tests/google_adb_reboot.sh
-. $SCRIPTS_DIR/tests/google_fastboot_reboot.sh
-. $SCRIPTS_DIR/tests/google_fastboot_flash.sh
 . $SCRIPTS_DIR/tests/google_fastboot_format.sh
 echo " google-test finished"

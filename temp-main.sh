@@ -9,16 +9,14 @@ echo HW_PLATFORM=$HW_PLATFORM
 echo BUILD_VARIANT=$BUILD_VARIANT
 echo TRIGGER_LAB_AUTOMATION=$TRIGGER_LAB_AUTOMATION
 
-if [ $TRIGGER_LAB_AUTOMATION == false ]; then
-  echo "TRIGGER_LAB_AUTOMATION not triggered"
-  exit
-fi
+. $SCRIPTS_DIR/prepare.sh
+
 
 echo ""
-echo "************ Start check-vars.sh ***************"
-. $SCRIPTS_DIR/check-vars.sh
-echo "" >> $OUTPUT_FILE
-echo "************ Start main.sh ***************" >> $OUTPUT_FILE
-. $SCRIPTS_DIR/main.sh >> $OUTPUT_FILE
-
-cat $OUTPUT_FILE
+echo "************ Start run-pkill.sh ***************"
+. $SCRIPTS_DIR/run-pkill.sh
+echo ""
+echo "************ Start run-autotest.sh ***************"
+. $SCRIPTS_DIR/temp-run-autotest.sh
+echo ""
+echo "************ FINISH ***************"
