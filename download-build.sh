@@ -25,7 +25,7 @@ rm -rf $BUILD_DIR
 #create dir to download
 mkdir -p $BUILD_DIR
 echo downloading build
-wget --http-user $JENKINS_USER  --http-password $JENKINS_TOKEN --auth-no-challenge $BUILD_URL -O $BUILD_DIR/$NCAR_BUILD_NAME
+wget -q --http-user $JENKINS_USER  --http-password $JENKINS_TOKEN --auth-no-challenge $BUILD_URL -O $BUILD_DIR/$NCAR_BUILD_NAME
 #untar it
 echo download finished
 echo unpacking archive

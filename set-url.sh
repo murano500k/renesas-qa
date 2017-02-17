@@ -9,9 +9,8 @@
 URL_JSON=${BUILD_URL}api/json
 echo URL_JSON=$URL_JSON
 mkdir -p $BUILD_DIR
-cd $BUILD_DIR
-rm -f ./json
-wget --http-user $JENKINS_USER  --http-password $JENKINS_TOKEN --auth-no-challenge $URL_JSON
-BUILD_TAR_NAME=$(echo `cat ./json` | jq '.artifacts[] | .displayPath'  | cut -d'"' -f 2 | grep "$BUILD_VARIANT.tar.gz")
+rm -f $BUILD_DIR/json
+wget --http-user $JENKINS_USER  --http-password $JENKINS_TOKEN --auth-no-challenge $URL_JSON  -O $BUILD_DIR/json
+BUILD_TAR_NAME=$(echo `cat $BUILD_DIR/json` | jq '.artifacts[] | .displayPath'  | cut -d'"' -f 2 | grep "$BUILD_VARIANT.tar.gz")
 export NCAR_BUILD_NAME=$BUILD_TAR_NAME
 export BUILD_TAR_URL=${BUILD_URL}artifact/build/${BUILD_TAR_NAME}
