@@ -14,13 +14,16 @@ do
 	if [ -z "${UP}" ] || [ "${UP}" -gt 30 ];
 	then
 		echo "Uptime not detected or longer than 30s: ${UP}";
+		echo "ADB_REBOOT_TEST. Iteration $i FAILED!";
     export ERROR_COUNT=$((ERROR_COUNT+1))
-    echo "ITERATION_COUNT=$i"
-    echo "ERROR_COUNT=$ERROR_COUNT"
-    exit 1
+		export ITERATION_COUNT=$i
+    . $SCRIPTS_DIR/hard-reset.sh
+		break;
 	fi;
 	sleep 20;
 done;
 sleep 20
 echo ""
 echo "************ Finish google_adb_reboot.sh ***************"
+echo "ITERATION_COUNT=$ITERATION_COUNT"
+echo "ERROR_COUNT=$ERROR_COUNT"

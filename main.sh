@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo ""
 echo "************ Start run-pkill.sh ***************"
 . $SCRIPTS_DIR/run-pkill.sh

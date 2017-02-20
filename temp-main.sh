@@ -1,5 +1,17 @@
 #!/bin/bash
+verify_cmd ()
+{
+  . $@
+	result=$?
+  cmd=$@
 
+	if [ $result != 0 ]; then
+		echo "ERROR. Last command [$cmd] finished with result [$result]"
+	else
+		echo "SUCCESS. Last command [$cmd] finished with result [$result]"
+	fi
+  . $SCRIPTS_DIR/jmail.sh $result
+}
 . $SCRIPTS_DIR/mock_environments
 
 
@@ -14,9 +26,4 @@ echo TRIGGER_LAB_AUTOMATION=$TRIGGER_LAB_AUTOMATION
 
 echo ""
 echo "************ Start run-pkill.sh ***************"
-. $SCRIPTS_DIR/run-pkill.sh
-echo ""
-echo "************ Start run-autotest.sh ***************"
-. $SCRIPTS_DIR/temp-run-autotest.sh
-echo ""
-echo "************ FINISH ***************"
+verify_cmd $SCRIPTS_DIR/qwenable-fastboot.sh

@@ -18,7 +18,7 @@ hard_reset ()
   echo "Trying to enable fastboot on [$FASTBOOT_SERIAL]"
   sleep 5
   . $SCRIPTS_DIR/run-pkill.sh
-  sleep 1
+  sleep 10
   sudo phidget-lite-x86_64 -r$PHIDGET_SERIAL -s0
   sleep 1
   sudo phidget-lite-x86_64 -r$PHIDGET_SERIAL -s1

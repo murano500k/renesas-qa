@@ -27,11 +27,11 @@ pkill screen
 /bin/sleep 1
 /usr/bin/screen -dmS sminicom $SCRIPTS_DIR/savelogs-minicom.sh $PATH_TO_CAPTURE_LOGS $ANDROID_SERIAL $MINICOM_SERIAL
 /bin/sleep 1
-echo "Start google-test"
+echo " ### Start google-test ### "
 #Start test
 export ERROR_COUNT=0
 . $SCRIPTS_DIR/tests/google_adb_reboot.sh
 . $SCRIPTS_DIR/tests/google_fastboot_reboot.sh
 . $SCRIPTS_DIR/tests/google_fastboot_flash.sh
 . $SCRIPTS_DIR/tests/google_fastboot_format.sh
-echo " google-test finished"
+echo " ### google-test finished ### "

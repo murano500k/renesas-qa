@@ -11,8 +11,6 @@ PHIDGET_SERIAL_M3=2
 . $SCRIPTS_DIR/check-build-params.sh
 . $SCRIPTS_DIR/export-env.sh
 . $SCRIPTS_DIR/set-url.sh
-. $SCRIPTS_DIR/create-output-dir.sh
-
 
 if [ "$HW_PLATFORM" == "full_salvator_h3" ]; then
   export FASTBOOT_SERIAL=$ADBFASTBOOT_H3
@@ -34,6 +32,9 @@ fi
 
 export ANDROID_SERIAL=$FASTBOOT_SERIAL
 export ADB_CMD="adb"
+
+. $SCRIPTS_DIR/create-output-dir.sh
+
 #Print values
 
 echo SCRIPTS_DIR=$SCRIPTS_DIR

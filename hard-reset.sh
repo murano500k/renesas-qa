@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "HARD RESET"
 ADB_DEVICES="$(adb devices)"
 if [[ $ADB_DEVICES != *$ANDROID_SERIAL* ]]; then
   timeout 60 adb -s $ANDROID_SERIAL wait-for-device
@@ -9,7 +10,8 @@ if [[ $ADB_DEVICES != *$ANDROID_SERIAL* ]]; then
     sudo phidget-lite-x86_64 -r$PHIDGET_SERIAL -s0
     sleep 1
     sudo phidget-lite-x86_64 -r$PHIDGET_SERIAL -s1
-    sleep 60
+    echo "sleep 20"
+    sleep 20
     echo "Wait for device 2"
     timeout 60 adb -s $ANDROID_SERIAL wait-for-device
     result=$?
