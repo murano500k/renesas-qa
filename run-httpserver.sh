@@ -1,5 +1,8 @@
 #!/bin/bash
 
+DATE=`date +"%Y_%m_%d-%H_%M_%S"`
+echo ""
+echo "************ Start run-httpserver.sh ********$DATE*******"
 cd /home/jenkins/workspace/workspace/renesas-qa
 python3 -m http.server
 

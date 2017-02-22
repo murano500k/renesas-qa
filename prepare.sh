@@ -1,39 +1,38 @@
 #!/bin/bash
-ADBFASTBOOT_H3=h3
+
+DATE=`date +"%Y_%m_%d-%H_%M_%S"`
+echo ""
+echo "************ Start prepare.sh ********$DATE*******"
+ADBFASTBOOT_H3=h3-A39E
 ADBFASTBOOT_M3=m3
-MINICOM_H3=/dev/ttyUSB0
-MINICOM_M3=/dev/ttyUSB1
+MINICOM_H3=0
+MINICOM_M3=1
 PHIDGET_SERIAL_H3=1
 PHIDGET_SERIAL_M3=2
 #Export vars required for scripts
 #% before, # after
 
-. $SCRIPTS_DIR/check-build-params.sh
-. $SCRIPTS_DIR/export-env.sh
-. $SCRIPTS_DIR/set-url.sh
+. $SCRIPTS_DIR/prepare/check-build-params.sh
+. $SCRIPTS_DIR/prepare/export-env
+. $SCRIPTS_DIR/prepare/set-url.sh
 
-if [ "$HW_PLATFORM" == "full_salvator_h3" ]; then
+if [ "$HW_PLATFORM" == "salvator_car_h3" ]; then
   export FASTBOOT_SERIAL=$ADBFASTBOOT_H3
-  export MINICOM_SERIAL=$MINICOM_H3
-  export PHIDGET_SERIAL=$PHIDGET_SERIAL_H3
-elif [ "$HW_PLATFORM" == "full_salvator_m3" ]; then
-  export FASTBOOT_SERIAL=$ADBFASTBOOT_M3
-  export MINICOM_SERIAL=$MINICOM_M3
-  export PHIDGET_SERIAL=$PHIDGET_SERIAL_M3
-elif [ "$HW_PLATFORM" == "salvator_car_h3" ]; then
-  export FASTBOOT_SERIAL=$ADBFASTBOOT_H3
-  export MINICOM_SERIAL=$MINICOM_H3
+  export MINICOM_PORT_NUMBER=$MINICOM_H3
   export PHIDGET_SERIAL=$PHIDGET_SERIAL_H3
 elif [ "$HW_PLATFORM" == "salvator_car_m3" ]; then
   export FASTBOOT_SERIAL=$ADBFASTBOOT_M3
-  export MINICOM_SERIAL=$MINICOM_M3
+  export MINICOM_PORT_NUMBER=$MINICOM_M3
   export PHIDGET_SERIAL=$PHIDGET_SERIAL_M3
 fi
-
-export ANDROID_SERIAL=$FASTBOOT_SERIAL
+export MINICOM_SERIAL=/dev/ttyUSB$MINICOM_PORT_NUMBER
+export ADB_SERIAL=$FASTBOOT_SERIAL
 export ADB_CMD="adb"
+export FASTBOOT_CMD="$FASTBOOT -s $FASTBOOT_SERIAL"
+export ERROR_COUNT=0
 
-. $SCRIPTS_DIR/create-output-dir.sh
+
+. $SCRIPTS_DIR/prepare/create-output-dir.sh
 
 #Print values
 

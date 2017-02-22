@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/bin/bash -x
+DATE=`date +"%Y_%m_%d-%H_%M_%S"`
+echo ""
+echo "************ Start install-build.sh ********$DATE*******"
 if [ -z "$FASTBOOT" ]; then
 	echo "FASTBOOT path not provided"
   exit 1
@@ -14,16 +17,24 @@ if [ -z $BUILD_DIR -o -z $SCRIPTS_DIR ]; then
   exit 1
 fi
 
-export FASTBOOT_CMD="$FASTBOOT -s $FASTBOOT_SERIAL"
 
-echo Installing build from $BUILD_DIR
-echo FASTBOOT_CMD=$FASTBOOT_CMD
+
+
+. $SCRIPTS_DIR/download-build.sh
+. $SCRIPTS_DIR/enable-fastboot.sh
 
 cp $SCRIPTS_DIR/myfastboot.sh $BUILD_DIR/fastboot.sh
 #cp $SCRIPTS_DIR/fastboot $BUILD_DIR/fastboot
-
-
-cd $BUILD_DIR
 echo 			 Run fastboot.sh
-./fastboot.sh
-echo "fastboot.sh finished successfully"
+cd $BUILD_DIR
+echo Installing build from $BUILD_DIR
+. ./fastboot.sh
+result=$?
+if [ $result != 0 ]; then
+	echo "ERROR. fastboot.sh finished with result [$result]"
+	exit $result
+else
+	echo "fastboot.sh finished successfully"
+fi
+
+. $SCRIPTS_DIR/verify-isbootable.sh

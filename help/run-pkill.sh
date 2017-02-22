@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/bash -ex
+screen -S sminicom -X quit
+screen -S slogcat -X quit
 sudo rm -rf /var/lock/LCK..ttyUSB*
 sudo pkill minicom
 sudo pkill expect

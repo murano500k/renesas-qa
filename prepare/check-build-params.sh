@@ -1,4 +1,8 @@
 #!/bin/bash
+
+DATE=`date +"%Y_%m_%d-%H_%M_%S"`
+echo ""
+echo "************ Start enable-fastboot.sh ********$DATE*******"
 #Check if required vars are set
 echo BUILD_URL=$BUILD_URL
 echo BUILD_NUMBER=$BUILD_NUMBER

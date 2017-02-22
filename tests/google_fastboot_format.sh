@@ -1,36 +1,20 @@
 #!/bin/bash
+DATE=`date +"%Y_%m_%d-%H_%M_%S"`
 echo ""
-echo "************ Start google_fastboot_format.sh ***************"
-FASTBOOT_DEVICES="$($FASTBOOT devices)"
-if [[ $FASTBOOT_DEVICES != *$FASTBOOT_SERIAL* ]]; then
-  echo fastboot device [$FASTBOOT_SERIAL] NOT found
-  . $SCRIPTS_DIR/enable-fastboot.sh
-  sleep 5
-fi
-
+echo "************ Start google_fastboot_format.sh ******$DATE*********"
+. $SCRIPTS_DIR/tests/prepare-fastboot-test.sh
 for i in {1..100};
-do echo "FASTBOOT_REBOOT_TEST Iteration $i";
-  FASTBOOT_DEVICES="$($FASTBOOT devices)"
-  if [[ $FASTBOOT_DEVICES != *$FASTBOOT_SERIAL* ]]; then
-    echo ERROR. fastboot device [$FASTBOOT_SERIAL] NOT found
-      export ERROR_COUNT=$((ERROR_COUNT+1))
-      echo "ITERATION_COUNT=$i"
-      echo "ERROR_COUNT=$ERROR_COUNT"
-      exit 1
-  fi
+do
+  DATE=`date +"%Y_%m_%d-%H_%M_%S"`
+  echo "FASTBOOT_REBOOT_TEST Iteration $i. $DATE"
+  . $SCRIPTS_DIR/tests/verify-fastboot.sh
   $FASTBOOT -s $FASTBOOT_SERIAL format userdata;
-  result=$?
-  if [ $result != 0 ]; then
-    export ERROR_COUNT=$((ERROR_COUNT+1))
-    echo "ITERATION_COUNT=$i"
-    echo "ERROR_COUNT=$ERROR_COUNT"
-    exit 1
-  fi
   sleep 5;
 done
 
-sleep 20
+sleep 10
+DATE=`date +"%Y_%m_%d-%H_%M_%S"`
 echo ""
-echo "************ Finish google_fastboot_format.sh ***************"
+echo "************ Finish google_fastboot_format.sh ******$DATE********"
 echo "ITERATION_COUNT=$ITERATION_COUNT"
 echo "ERROR_COUNT=$ERROR_COUNT"

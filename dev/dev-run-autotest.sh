@@ -3,8 +3,26 @@
 DATE=`date +"%Y_%m_%d-%H_%M_%S"`
 echo ""
 echo "************ Start run-autotest.sh ********$DATE*******"
+verify_cmd ()
+{
+  $@
+	result=$?
+  cmd=$@
+
+	if [ $result != 0 ]; then
+		echo "ERROR. Last command [$cmd] finished with result [$result]"
+		exit $result
+	else
+		echo "SUCCESS. Last command [$cmd] finished with result [$result]"
+	fi
+}
+
 
 #prepare test
+#. $SCRIPTS_DIR/hard-reset.sh
+export ADB_CMD="adb"
+#Create clean dir to capture logs
+#Start capture
 echo "Starting logs capture."
 mkdir -p $PATH_TO_CAPTURE_LOGS
 echo PATH_TO_CAPTURE_LOGS=$PATH_TO_CAPTURE_LOGS
@@ -19,7 +37,4 @@ echo " ### Start google-test ### "
 #Start test
 export ERROR_COUNT=0
 . $SCRIPTS_DIR/tests/google_adb_reboot.sh
-. $SCRIPTS_DIR/tests/google_fastboot_reboot.sh
-. $SCRIPTS_DIR/tests/google_fastboot_flash.sh
-. $SCRIPTS_DIR/tests/google_fastboot_format.sh
 echo " ### google-test finished ### "

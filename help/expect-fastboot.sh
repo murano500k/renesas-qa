@@ -1,7 +1,8 @@
 #!/usr/bin/expect -f
 set MINICOM_SERIAL [lindex $argv 0]
 puts "MINICOM_SERIAL=$MINICOM_SERIAL"
-spawn /usr/bin/minicom -D $MINICOM_SERIAL
+#exec $SCRIPTS_DIR/kill-minicom.sh
+spawn minicom -D $MINICOM_SERIAL
 expect "special keys"
 send "\r"
 expect "=>"

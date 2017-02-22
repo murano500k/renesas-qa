@@ -5,6 +5,9 @@
 #export BUILD_VARIANT="userdebug"
 #export TRIGGER_LAB_AUTOMATION=true
 
+DATE=`date +"%Y_%m_%d-%H_%M_%S"`
+echo ""
+echo "************ Start set-url.sh ********$DATE*******"
 
 URL_JSON=${BUILD_URL}api/json
 echo URL_JSON=$URL_JSON

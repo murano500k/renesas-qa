@@ -1,20 +1,24 @@
 #!/bin/bash
+
+DATE=`date +"%Y_%m_%d-%H_%M_%S"`
+echo ""
+echo "************ Start savelogs-logcat.sh ********$DATE*******"
 if [ -z $1 ]; then
   echo log dir not set. Exiting...
   exit 1
 fi
 
 if [ -z $2 ]; then
-  echo ANDROID_SERIAL not set. Exiting...
+  echo ADB_SERIAL not set. Exiting...
   exit 1
 fi
 
 LOG_DIR=$1
-ANDROID_SERIAL=$2
-LOG_FILE=$LOG_DIR/logcat-$ANDROID_SERIAL.txt
+ADB_SERIAL=$2
+LOG_FILE=$LOG_DIR/logcat-$ADB_SERIAL.txt
 
 echo "Started logcat capture"
-echo "DEVICE=$ANDROID_SERIAL"
+echo "DEVICE=$ADB_SERIAL"
 echo "LOG_FILE=$LOG_FILE"
 
 i=0;
@@ -25,7 +29,7 @@ do
 	echo "												  Iteration $i. $DATE" >> $LOG_FILE
 	echo "################################################" >> $LOG_FILE
 	sleep 1
-	adb -s $ANDROID_SERIAL wait-for-device
-	adb -s $ANDROID_SERIAL logcat >> $LOG_FILE
+	adb -s $ADB_SERIAL wait-for-device
+	adb -s $ADB_SERIAL logcat >> $LOG_FILE
 	let "i+=1"
 done;

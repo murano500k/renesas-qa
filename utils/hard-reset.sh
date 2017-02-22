@@ -1,21 +1,8 @@
 #!/bin/bash
-verify_cmd ()
-{
-  $@
-	result=$?
-  cmd=$@
-
-	if [ $result != 0 ]; then
-		echo "ERROR. Last command [$cmd] finished with result [$result]"
-		exit $result
-	else
-		echo "SUCCESS. Last command [$cmd] finished with result [$result]"
-	fi
-}
-
+echo "HARD RESET"
 ADB_DEVICES="$(adb devices)"
-if [[ $ADB_DEVICES != *$ANDROID_SERIAL* ]]; then
-  timeout 60 adb -s $ANDROID_SERIAL wait-for-device
+if [[ $ADB_DEVICES != *$ADB_SERIAL* ]]; then
+  timeout 60 adb -s $ADB_SERIAL wait-for-device
   result=$?
   if [ $result != 0 ]; then
 		echo "adb wait-for-device exit on timeout"
@@ -23,9 +10,10 @@ if [[ $ADB_DEVICES != *$ANDROID_SERIAL* ]]; then
     sudo phidget-lite-x86_64 -r$PHIDGET_SERIAL -s0
     sleep 1
     sudo phidget-lite-x86_64 -r$PHIDGET_SERIAL -s1
-    sleep 60
+    echo "sleep 20"
+    sleep 20
     echo "Wait for device 2"
-    timeout 60 adb -s $ANDROID_SERIAL wait-for-device
+    timeout 60 adb -s $ADB_SERIAL wait-for-device
     result=$?
     if [ $result != 0 ]; then
       echo "ERROR. Adb still don't see device"
@@ -34,4 +22,4 @@ if [[ $ADB_DEVICES != *$ANDROID_SERIAL* ]]; then
     fi
 	fi
 fi
-echo "device $ANDROID_SERIAL found"
+echo "device $ADB_SERIAL found"
