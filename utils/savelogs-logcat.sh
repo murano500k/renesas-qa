@@ -5,12 +5,12 @@ echo ""
 echo "************ Start savelogs-logcat.sh ********$DATE*******"
 if [ -z $1 ]; then
   echo log dir not set. Exiting...
-  exit 1
+  return 1
 fi
 
 if [ -z $2 ]; then
   echo ADB_SERIAL not set. Exiting...
-  exit 1
+  return 1
 fi
 
 LOG_DIR=$1

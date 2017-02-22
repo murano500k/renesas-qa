@@ -5,15 +5,15 @@ echo "************ Start download-build.sh ********$DATE*******"
 #check args
 if [ -z $BUILD_URL ]; then
 	echo "BUILD_URL not set"
-  exit -1
+  return -1
 fi
 if [ -z $BUILD_DIR ]; then
 	echo "BUILD_DIR not set"
-  exit -1
+  return -1
 fi
 if [ -z $JENKINS_USER -o -z $JENKINS_TOKEN ]; then
 	echo "Variable JENKINS_USER or JENKINS_TOKEN not set"
-  exit 1
+  return 1
 fi
 
 #Print values

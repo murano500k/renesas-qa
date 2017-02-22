@@ -1,5 +1,7 @@
 #!/bin/bash
 #minicom $minicom_profile -S $minicom_file
+kill_minicom ()
+{
 echo ""
 echo "kill all running sessions"
 echo "screen -S sminicom"
@@ -25,3 +27,4 @@ echo "sudo rm -f /tmp/LCK"
 sudo rm -f /tmp/LCK..ttyUSB$MINICOM_PORT_NUMBER
 sleep 1
 echo end
+}

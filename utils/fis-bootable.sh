@@ -1,5 +1,6 @@
 #!/bin/bash
-
+is_bootable ()
+{
 DATE=`date +"%Y_%m_%d-%H_%M_%S"`
 echo ""
 echo "************ Start verify-isbootable.sh ********$DATE*******"
@@ -21,8 +22,9 @@ if [[ $ADB_DEVICES != *$ADB_SERIAL* ]]; then
     if [ $result != 0 ]; then
       echo "ERROR. Adb still don't see device"
       echo "Perhaps device is not bootable after flash new build"
-      exit 25
+      return 25
     fi
 	fi
 fi
 echo "device $ADB_SERIAL found"
+}

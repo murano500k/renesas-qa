@@ -13,7 +13,8 @@ PHIDGET_SERIAL_M3=2
 #% before, # after
 
 . $SCRIPTS_DIR/prepare/check-build-params.sh
-. $SCRIPTS_DIR/prepare/export-env
+. $SCRIPTS_DIR/prepare/export-env.sh
+. $SCRIPTS_DIR/prepare/export-funcs.sh
 . $SCRIPTS_DIR/prepare/set-url.sh
 
 if [ "$HW_PLATFORM" == "salvator_car_h3" ]; then
@@ -28,12 +29,14 @@ fi
 export MINICOM_SERIAL=/dev/ttyUSB$MINICOM_PORT_NUMBER
 export ADB_SERIAL=$FASTBOOT_SERIAL
 export ADB_CMD="adb"
-export FASTBOOT_CMD="$FASTBOOT -s $FASTBOOT_SERIAL"
+
 export ERROR_COUNT=0
 
 
 . $SCRIPTS_DIR/prepare/create-output-dir.sh
-
+if [ -z "$DEV" ]; then
+	export DEV=false
+fi
 #Print values
 
 echo SCRIPTS_DIR=$SCRIPTS_DIR
@@ -45,5 +48,7 @@ echo PHIDGET_SERIAL=$PHIDGET_SERIAL
 echo PATH_TO_CAPTURE_LOGS=$PATH_TO_CAPTURE_LOGS
 echo OUTPUT_FILE=$OUTPUT_FILE
 echo ADB_CMD=$ADB_CMD
+echo DEV=$DEV
 
-#Exit
+#return
+echo "************ Finish prepare.sh ********$DATE*******"

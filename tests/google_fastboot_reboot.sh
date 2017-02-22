@@ -1,16 +1,14 @@
 #!/bin/bash
-
 DATE=`date +"%Y_%m_%d-%H_%M_%S"`
-
 echo ""
 echo "************ Start google_fastboot_reboot.sh ********$DATE*******"
-. $SCRIPTS_DIR/tests/prepare-fastboot-test.sh
+prepare_fastboot_test
 for i in {1..100};
 do
   DATE=`date +"%Y_%m_%d-%H_%M_%S"`
   echo "FASTBOOT_REBOOT_TEST Iteration $i. $DATE"
-  . $SCRIPTS_DIR/tests/verify-fastboot.sh
-  $FASTBOOT -s $FASTBOOT_SERIAL reboot-bootloader;
+  is_fastboot
+  $FASTBOOT_PATH -s $FASTBOOT_SERIAL reboot-bootloader;
   sleep 5;
 done
 

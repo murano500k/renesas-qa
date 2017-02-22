@@ -1,7 +1,13 @@
 #!/bin/bash
-echo "HARD RESET"
+reset_adb ()
+{
+echo "RESET AND WAIT ADB"
 ADB_DEVICES="$(adb devices)"
 if [[ $ADB_DEVICES != *$ADB_SERIAL* ]]; then
+  sudo phidget-lite-x86_64 -r$PHIDGET_SERIAL -s0
+  sleep 1
+  sudo phidget-lite-x86_64 -r$PHIDGET_SERIAL -s1
+  sleep 1
   timeout 60 adb -s $ADB_SERIAL wait-for-device
   result=$?
   if [ $result != 0 ]; then
@@ -18,8 +24,9 @@ if [[ $ADB_DEVICES != *$ADB_SERIAL* ]]; then
     if [ $result != 0 ]; then
       echo "ERROR. Adb still don't see device"
       echo "Perhaps device is not bootable after flash new build"
-      exit 25
+      return 25
     fi
 	fi
 fi
 echo "device $ADB_SERIAL found"
+}
