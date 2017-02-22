@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -ex
 verify_cmd ()
 {
   $@
@@ -50,10 +50,7 @@ if [ -z "$FASTBOOT_CMD" ]; then
   exit -1
 fi
 export PRODUCT_OUT="."
-export FASTBOOT=$FASTBOOT_CMD
-echo FASTBOOT_CMD=$FASTBOOT_CMD
-
-
+echo "FASTBOOT_CMD=$FASTBOOT_CMD"
 # poll the board to find out its configuration
 #product=`${FASTBOOT} getvar product 2>&1 | grep product | awk '{print$2}'`
 # Create the filename
@@ -110,7 +107,7 @@ fi
 echo "start actions using fastboot_command = [$FASTBOOT]"
 
 echo "Flash recovery"
-verify_cmd ${FASTBOOT} flash recovery	${recoveryimg}
+verify_cmd ${FASTBOOT_CMD} flash recovery	${recoveryimg}
 
 echo "Check if flash bootloader is needed"
 
@@ -118,26 +115,26 @@ if [ -e "${bootloaderimg}" ] ; then
 
   echo "Flash bootloader"
 
-	${FASTBOOT} flash bootloader ${bootloaderimg}
-	${FASTBOOT} oem flash all
+	${FASTBOOT_CMD} flash bootloader ${bootloaderimg}
+	${FASTBOOT_CMD} oem flash all
 	echo "Will sleep 60 sec for bootloaders update...."
 	sleep 60
-	${FASTBOOT} oem format
-	${FASTBOOT} reboot-bootloader
+	${FASTBOOT_CMD} oem format
+	${FASTBOOT_CMD} reboot-bootloader
 else
   echo "No bootloader image found. It's ok"
 fi
 
 echo "Flash Android partitions"
 
-verify_cmd ${FASTBOOT} flash boot ${bootimg}
-verify_cmd ${FASTBOOT} flash system	${systemimg}
-verify_cmd ${FASTBOOT} flash vendor	${vendorimg}
-verify_cmd ${FASTBOOT} flash userdata	${userdataimg}
-verify_cmd ${FASTBOOT} flash cache ${cacheimg}
+verify_cmd ${FASTBOOT_CMD} flash boot ${bootimg}
+verify_cmd ${FASTBOOT_CMD} flash system	${systemimg}
+verify_cmd ${FASTBOOT_CMD} flash vendor	${vendorimg}
+verify_cmd ${FASTBOOT_CMD} flash userdata	${userdataimg}
+verify_cmd ${FASTBOOT_CMD} flash cache ${cacheimg}
 
-verify_cmd ${FASTBOOT} erase metadata
+verify_cmd ${FASTBOOT_CMD} erase metadata
 
-verify_cmd ${FASTBOOT} reboot
+verify_cmd ${FASTBOOT_CMD} reboot
 echo "SUCCESS. Script finished successfully"
 ##########################################################################################################

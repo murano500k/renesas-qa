@@ -1,5 +1,7 @@
 #!/bin/bash
-
+DATE=`date +"%Y_%m_%d-%H_%M_%S"`
+echo ""
+echo "************ Start download-build.sh ********$DATE*******"
 #check args
 if [ -z $BUILD_URL ]; then
 	echo "BUILD_URL not set"
@@ -24,7 +26,7 @@ echo NCAR_BUILD_NAME=$NCAR_BUILD_NAME
 rm -rf $BUILD_DIR
 #create dir to download
 mkdir -p $BUILD_DIR
-echo downloading build
+echo "downloading build"
 wget -q --http-user $JENKINS_USER  --http-password $JENKINS_TOKEN --auth-no-challenge $BUILD_URL -O $BUILD_DIR/$NCAR_BUILD_NAME
 #untar it
 echo download finished
