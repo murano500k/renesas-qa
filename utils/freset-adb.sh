@@ -24,7 +24,7 @@ if [[ $ADB_DEVICES != *$ADB_SERIAL* ]]; then
     if [ $result != 0 ]; then
       echo "ERROR. Adb still don't see device"
       echo "Perhaps device is not bootable after flash new build"
-      return 25
+      return $ERROR_ADB
     fi
 	fi
 fi

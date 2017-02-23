@@ -16,7 +16,7 @@ reset_fastboot ()
       echo "fastboot device [$FASTBOOT_SERIAL] NOT found"
       if [[ $RESET_ITER > 3 ]]; then
         echo "Now return with error."
-        return 25
+        return $ERROR_FASTBOOT
       else
         sudo phidget-lite-x86_64 -r$PHIDGET_SERIAL -s0
         sleep 1

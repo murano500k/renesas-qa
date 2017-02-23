@@ -1,7 +1,7 @@
 #!/bin/bash -x
 if [ -z $PATH_TO_CAPTURE_LOGS -o -z $OUTPUT_FILE ]; then
   echo "Something wrong with out path..."
-  exit 1
+  return $ERROR_PREPARE
 fi
 mkdir -p $PATH_TO_CAPTURE_LOGS
 rm -fv $OUTPUT_FILE

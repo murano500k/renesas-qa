@@ -3,10 +3,11 @@ DATE=`date +"%Y_%m_%d-%H_%M_%S"`
 echo ""
 echo "************ Start google_fastboot_flash.sh *********$DATE******"
 prepare_fastboot_test
-for i in {1..100};
+echo "FLASH_FORMAT_COUNT=$FLASH_FORMAT_COUNT"
+for i in $(seq 1 $FLASH_FORMAT_COUNT);
 do
   DATE=`date +"%Y_%m_%d-%H_%M_%S"`
-  echo "FASTBOOT_REBOOT_TEST Iteration $i. $DATE"
+  echo "FASTBOOT_FLASH_TEST Iteration $i. $DATE"
   is_fastboot
   $FASTBOOT_PATH -s $FASTBOOT_SERIAL flash system $BUILD_DIR/system.img;
   sleep 5;

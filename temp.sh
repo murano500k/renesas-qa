@@ -1,3 +1,3 @@
 #/bin/bash
-echo now return 1
-return 1
+END=10
+for i in $(seq 1 $END); do echo $i; done

@@ -5,7 +5,7 @@ usage ()
 	echo "Usage: %fastboot.sh ";
 	echo "options:";
 	echo "--pwd     Force usage of fastboot and images from pwd"
-	return 1;
+	return
 }
 ##############################################################################################################################################################
 
@@ -42,7 +42,7 @@ fi
 
 if [ -z "$FASTBOOT_PATH" ]; then
   echo "FASTBOOT_PATH not set"
-  return -1
+  return $ERROR_PREPARE
 fi
 
 export PRODUCT_OUT="."

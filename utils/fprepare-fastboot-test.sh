@@ -1,5 +1,5 @@
 #!/bin/bash
-prepare-fastboot-test ()
+prepare_fastboot_test ()
 {
   DATE=`date +"%Y_%m_%d-%H_%M_%S"`
   echo ""

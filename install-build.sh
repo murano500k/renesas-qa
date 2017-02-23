@@ -4,17 +4,17 @@ echo ""
 echo "************ Start install-build.sh ********$DATE*******"
 if [ -z "$FASTBOOT_PATH" ]; then
 	echo "FASTBOOT_PATH path not provided"
-  return 1
+  return $ERROR_PREPARE
 fi
 
 if [ -z "$FASTBOOT_SERIAL" ]; then
 	echo "FASTBOOT_SERIAL not provided"
-  return 1
+  return $ERROR_PREPARE
 fi
 
 if [ -z $BUILD_DIR -o -z $SCRIPTS_DIR ]; then
 	echo "BUILD_DIR or SCRIPTS_DIR not provided"
-  return 1
+  return $ERROR_PREPARE
 fi
 
 

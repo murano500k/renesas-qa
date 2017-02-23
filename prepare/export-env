@@ -25,9 +25,13 @@ if [ $DEV == true ]; then
   export jj_to="artem.radchenko@globallogic.com"
   export jj_proj="TEST"
   export jj_name="test-renesas-qa"
+  export FLASH_FORMAT_COUNT=1
+  export REBOOT_COUNT=2
 else
   export jj_to="andriy.chepurnyy@globallogic.com"
   export jj_proj="Renesas"
   export jj_name="renesas-qa"
+  export FLASH_FORMAT_COUNT=10
+  export REBOOT_COUNT=100
 fi
 export jj_cc="artem.radchenko@globallogic.com"

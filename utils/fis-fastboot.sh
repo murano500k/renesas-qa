@@ -9,6 +9,6 @@ if [[ $FASTBOOT_DEVICES != *$FASTBOOT_SERIAL* ]]; then
   export ERROR_COUNT=$((ERROR_COUNT+1))
   echo "ITERATION_COUNT=$i"
   echo "ERROR_COUNT=$ERROR_COUNT"
-  return 1
+  return $ERROR_FASTBOOT
 fi
 }

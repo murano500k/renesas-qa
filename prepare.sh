@@ -13,8 +13,11 @@ PHIDGET_SERIAL_M3=2
 #% before, # after
 
 . $SCRIPTS_DIR/prepare/check-build-params.sh
-. $SCRIPTS_DIR/prepare/export-env.sh
-. $SCRIPTS_DIR/prepare/export-funcs.sh
+
+. $SCRIPTS_DIR/prepare/export-env
+. $SCRIPTS_DIR/prepare/export-funcs
+. $SCRIPTS_DIR/prepare/export-error-codes
+
 . $SCRIPTS_DIR/prepare/set-url.sh
 
 if [ "$HW_PLATFORM" == "salvator_car_h3" ]; then
