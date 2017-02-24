@@ -1,4 +1,5 @@
 #!/bin/bash -x
+
 if [ -z $PATH_TO_CAPTURE_LOGS -o -z $OUTPUT_FILE ]; then
   echo "Something wrong with out path..."
   return $ERROR_PREPARE
@@ -6,12 +7,49 @@ fi
 mkdir -p $PATH_TO_CAPTURE_LOGS
 rm -fv $OUTPUT_FILE
 touch $OUTPUT_FILE
+
 DATE=`date +"%Y_%m_%d-%H_%M_%S"`
 echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
 echo "************ START *********$DATE******" >>$OUTPUT_FILE
-echo "Script output can be found here:"
-echo "$HTTP_SERVER/logs/$ADB_SERIAL/$LDIRNAME"
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+
+echo "************ Script output can be found here:"
+echo "************ $HTTP_SERVER/logs/$ADB_SERIAL/$LDIRNAME"
+
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+
 capture_log
+
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+
 if [ $DEV == true ]; then
   echo ""
   echo "************WARNING! This is dev version of autotest *******"
@@ -25,6 +63,15 @@ fi
 
 
 
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
+echo "" >>$OUTPUT_FILE
 DATE=`date +"%Y_%m_%d-%H_%M_%S"`
 echo "" >>$OUTPUT_FILE
 echo "************ FINISH *********$DATE******" >>$OUTPUT_FILE

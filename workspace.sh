@@ -15,7 +15,6 @@ export ADB_CMD="adb"
 export FASTBOOT_PATH="$SCRIPTS_DIR/fastboot"
 export HTTP_SERVER="http://172.22.89.21:8000"
 export jj_send_notification=true
-#export jj_smtp=smtp-ua.synapse.com
 export jj_proj="Renesas"
 export jj_name="renesas-qa"
 #export jj_from="${BUILD_USER_EMAIL:-andriy.chepurnyy@globallogic.com}"
@@ -44,3 +43,28 @@ export MINICOM_H3=0
 export MINICOM_M3=1
 export PHIDGET_SERIAL_H3=1
 export PHIDGET_SERIAL_M3=3
+
+
+#Error codes
+# if code < 0 - error during flash build
+# if code > 0 - error during test run
+export ERROR_PREPARE=-1
+export ERROR_DEVICE_NOT_FOUND=-2
+export ERROR_DOWNLOAD_BUILD=-3
+export ERROR_FLASH=-4
+export ERROR_NOT_BOOTABLE=-5
+
+export ERROR_ADB=1
+export ERROR_FASTBOOT=2
+export ERROR_TIMEOUT=3
+
+. $SCRIPTS_DIR/utils/fis-bootable.sh
+. $SCRIPTS_DIR/utils/fis-fastboot.sh
+. $SCRIPTS_DIR/utils/fkill-minicom.sh
+. $SCRIPTS_DIR/utils/fmail.sh
+. $SCRIPTS_DIR/utils/fprepare-fastboot-test.sh
+. $SCRIPTS_DIR/utils/freset-adb.sh
+. $SCRIPTS_DIR/utils/freset-fastboot.sh
+. $SCRIPTS_DIR/utils/fcapture-log.sh
+. $SCRIPTS_DIR/utils/fverify-cmd.sh
+

@@ -26,10 +26,6 @@ if [ -z $BUILD_VARIANT ]; then
   echo BUILD_VARIANT not set. Exiting...
   return 1
 fi
-if [ -z $TRIGGER_LAB_AUTOMATION ]; then
-  echo TRIGGER_LAB_AUTOMATION not set. Exiting...
-  return 1
-fi
 #Check if trigger is true
 if [ $TRIGGER_LAB_AUTOMATION != true ]; then
   echo "Autotest not triggered."
