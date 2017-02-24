@@ -37,3 +37,11 @@ echo ""
 echo "************ Finish google_adb_reboot.sh ********$DATE*******"
 echo "ITERATION_COUNT=$ITERATION_COUNT"
 echo "ERROR_COUNT=$ERROR_COUNT"
+#################################################
+#
+#
+#Test execution estimate time 2h5m
+#
+#
+#
+#########################

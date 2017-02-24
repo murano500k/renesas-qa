@@ -78,4 +78,5 @@ $HTTP_SERVER/logs/$ADB_SERIAL/$LDIRNAME
 
     cat ${WORKSPACE}/notification_message | msmtp -C ${WORKSPACE}/msmtp.cfg -t
   fi
+  . $SCRIPTS_DIR/lock/delete-lock-file.sh
 }

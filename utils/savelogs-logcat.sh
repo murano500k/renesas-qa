@@ -26,7 +26,7 @@ while true;
 do
 	DATE=`date +"%Y_%m_%d-%H_%M_%S"`
 	echo "################################################" >> $LOG_FILE
-	echo "												  Iteration $i. $DATE" >> $LOG_FILE
+	echo "$DATE device restarted or adb killed" >> $LOG_FILE
 	echo "################################################" >> $LOG_FILE
 	sleep 1
 	adb -s $ADB_SERIAL wait-for-device

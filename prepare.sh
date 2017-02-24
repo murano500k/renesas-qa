@@ -3,18 +3,12 @@
 DATE=`date +"%Y_%m_%d-%H_%M_%S"`
 echo ""
 echo "************ Start prepare.sh ********$DATE*******"
-ADBFASTBOOT_H3=h3-A39E
-ADBFASTBOOT_M3=m3
-MINICOM_H3=0
-MINICOM_M3=1
-PHIDGET_SERIAL_H3=1
-PHIDGET_SERIAL_M3=2
+
 #Export vars required for scripts
 #% before, # after
 
 . $SCRIPTS_DIR/prepare/check-build-params.sh
-
-. $SCRIPTS_DIR/prepare/export-env
+. $SCRIPTS_DIR/prepare/export-env-jenkins
 . $SCRIPTS_DIR/prepare/export-funcs
 . $SCRIPTS_DIR/prepare/export-error-codes
 
@@ -52,6 +46,7 @@ echo PATH_TO_CAPTURE_LOGS=$PATH_TO_CAPTURE_LOGS
 echo OUTPUT_FILE=$OUTPUT_FILE
 echo ADB_CMD=$ADB_CMD
 echo DEV=$DEV
+
 
 #return
 echo "************ Finish prepare.sh ********$DATE*******"

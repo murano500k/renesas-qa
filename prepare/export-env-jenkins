@@ -5,9 +5,9 @@ export JENKINS_TOKEN="50b54d8fcb18c3c365445d4b46c0cebc"
 export BUILD_DIR=/tmp/build
 export LOG_DIR=/home/jenkins/workspace/workspace/renesas-qa/logs
 export WORKSPACE=/home/jenkins/workspace/workspace/renesas-qa
+export PATH=$SCRIPTS_DIR:$PATH
 export HOME=/home/jenkins
 export ANDROID_HOME=$HOME/bin
-export PATH=$SCRIPTS_DIR:$PATH
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=/usr/bin:$PATH
@@ -35,3 +35,12 @@ else
   export REBOOT_COUNT=100
 fi
 export jj_cc="artem.radchenko@globallogic.com"
+
+
+
+export ADBFASTBOOT_H3=h3-A39E
+export ADBFASTBOOT_M3=m3-A307
+export MINICOM_H3=0
+export MINICOM_M3=1
+export PHIDGET_SERIAL_H3=1
+export PHIDGET_SERIAL_M3=3
