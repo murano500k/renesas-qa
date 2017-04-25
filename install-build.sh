@@ -1,6 +1,10 @@
 #!/bin/bash -x
 DATE=`date +"%Y_%m_%d-%H_%M_%S"`
 echo ""
+echo ""
+echo ""
+echo ""
+echo "**************************************************************"
 echo "************ Start install-build.sh ********$DATE*******"
 if [ -z "$FASTBOOT_PATH" ]; then
 	echo "FASTBOOT_PATH path not provided"
@@ -28,11 +32,10 @@ cd $BUILD_DIR
 
 echo "Installing build from $BUILD_DIR"
 . ./fastboot.sh
-result=$?
-if [ $result != 0 ]; then
-	echo "ERROR. fastboot.sh finished with result [$result]"
-	return $result
-else
-	is_bootable
-	echo "fastboot.sh finished successfully"
-fi
+is_bootable
+echo "fastboot.sh finished successfully"
+echo "**************************************************************"
+echo ""
+echo ""
+echo ""
+echo ""

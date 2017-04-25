@@ -26,7 +26,14 @@ echo "" >>$OUTPUT_FILE
 echo "" >>$OUTPUT_FILE
 
 echo "************ Script output can be found here:"
-echo "************ $HTTP_SERVER/logs/$ADB_SERIAL/$LDIRNAME"
+if [ $DEV == true ]; then
+    log_dir_name="devlogs"
+else
+    log_dir_name="logs"
+fi
+
+
+echo "************ $HTTP_SERVER/$log_dir_name/$ADB_SERIAL/$LDIRNAME"
 
 echo "" >>$OUTPUT_FILE
 echo "" >>$OUTPUT_FILE
@@ -54,7 +61,7 @@ if [ $DEV == true ]; then
   echo ""
   echo "************WARNING! This is dev version of autotest *******"
   echo ""
-  if_error_mail_exit $SCRIPTS_DIR/install-build.sh >>$OUTPUT_FILE
+#  if_error_mail_exit $SCRIPTS_DIR/install-build.sh >>$OUTPUT_FILE
   mail_exit $SCRIPTS_DIR/run-autotest.sh >>$OUTPUT_FILE
 else
   if_error_mail_exit $SCRIPTS_DIR/install-build.sh >>$OUTPUT_FILE

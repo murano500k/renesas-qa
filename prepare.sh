@@ -4,7 +4,6 @@ DATE=`date +"%Y_%m_%d-%H_%M_%S"`
 echo ""
 echo "************ Start prepare.sh ********$DATE*******"
 
-#% before, # after
 #prepare run
 echo ""
 echo ""

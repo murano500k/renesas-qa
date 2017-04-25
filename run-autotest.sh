@@ -19,7 +19,7 @@ if [ $DEV == true ]; then
   echo ""
   . $SCRIPTS_DIR/tests/google_fastboot_reboot.sh
 else
-  . $SCRIPTS_DIR/tests/google_adb_reboot.sh
+  . $SCRIPTS_DIR/tests/google_adb_reboot_v2.sh
   . $SCRIPTS_DIR/tests/google_fastboot_reboot.sh
   . $SCRIPTS_DIR/tests/google_fastboot_flash.sh
   . $SCRIPTS_DIR/tests/google_fastboot_format.sh

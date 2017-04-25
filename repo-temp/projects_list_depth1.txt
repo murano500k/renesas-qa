@@ -1,0 +1,1794 @@
+repo forall -c 'echo project: $pwd && git log --oneline --decorate'
+
+project:
+36b3812 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Don't hide C++ STL choice from the build system."
+52c919b (grafted) Don't hide C++ STL choice from the build system.
+1c7cf04 (grafted) Merge "Fix include ordering."
+project:
+c20d389 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) JIT: Don't update the dex cache of another class loader.
+359f2ef (grafted) Fix merging HLoadClass with HNewInstance.
+project:
+b8028d5 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove structure keyctl_dh_params from keyctl.h file
+4075c50 (grafted) Update kernel headers to kernel 4.9.8
+project:
+c1be3f6 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Revert "recovery: Added IPL flash from SD-CARD"
+9b79ea2 (grafted) Revert "Added support of IPL flash from fastboot"
+project:
+371fb32 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Revert "Added core makefile for Kernel build (arm64)"
+83cd716 (grafted) Revert "Change KERNEL_MODULES_OUT variable to system/lib64/modules"
+project:
+41a4f88 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+3a89d1c (grafted) Merge remote-tracking branch 'aosp/upstream'
+53bcb16 (grafted) merge in nyc-release history after reset to master
+project:
+0d8f6ef (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Manually merge AOSP into nyc-dev
+3ba41fd (grafted) Merge remote-tracking branch 'aosp/upstream'
+795f789 (grafted) Merge remote-tracking branch 'aosp/upstream'
+project:
+41c706e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+896a1c6 (grafted) merge in nyc-release history after reset to nyc-dev
+5935776 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+13abfdd (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+5f33b96 (grafted) merge in nyc-release history after reset to nyc-dev
+f6df828 (grafted) Merge "Add test to detect some rendering inaccuracy." into nyc-dev
+project:
+f55e5e4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+a70e099 (grafted) Fix potential buffer overrun. am: 38025bc7fa am: 805b415be6 am: 0e17e18496 am: 8e37aa191f am: e5c4e849e2 am: 46464a20e0 am: 3bbe8817e6 am: 63e01f731f am: a0af385aae am: f984fa7d59 am: c423f55f64
+4608742 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+8ef75db (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) samples: Sync prebuilts for nyc-dev
+b6e4450 (grafted) samples: Use API 23 by default, except for N-specific samples.
+project:
+95d49d2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove gearhead samples from the old location.
+d025a02 (grafted) Merge "Minor cleanup to fix a few things in the media sample" into lmp-dev
+project:
+4ebae4e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge changes Id4b68017,Ibee9b52a,I02e0292c,Ib765c9d5,I55577dae, ... into nyc-dev
+404495a (grafted) samples:  Remove duplicate comment from ActionBarCompat-ShareActionProvider
+a23225e (grafted) Merge "samples: Remove compileSdkVersion/targetSdkVersion from template-parms" into nyc-dev
+project:
+c32f7fa (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+5a6b719 (grafted) samples: Sync prebuilts for nyc-dev
+9ad662b (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+b8bea96 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) fugu: add ro.product.first_api_level for CTS
+a775b15 (grafted) Add RsRecompileThreads=1 to powervr.ini
+project:
+762617a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add a path variation for dragon device
+a477cb1 (grafted) Merge "Create a directory for arm nb blobs"
+project:
+59076b7 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Inherit from core_64_bit.mk
+3924905 (grafted) Update arm 64bit board config file.
+project:
+3c5405c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Switch to armv7 neon.
+0e7af77 (grafted) resolved conflicts for merge of e2c7d491 to master
+project:
+11c092a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add support for per device bluetooth configuration.
+430704d (grafted) Initial empty repository
+project:
+fe2e5ce (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+fbbbd30 (grafted) Fix glTexSubImage2D
+5a23015 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+98b20c1 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Delete /mnt/sdcard symlink
+4f30226 (grafted) Updated external storage configuration.
+project:
+5e4db51 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Delete /mnt/sdcard symlink
+f41c1e4 (grafted) Updated external storage configuration.
+project:
+544e697 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Reduce fingerprint length.
+bf31235 (grafted) Merge changes I574df52a,I9d230a55
+project:
+b1c36d0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Added pdk mini-emulator-mips64 support
+9d0de80 (grafted) Initial empty repository
+project:
+65d59e2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Clean up board config for mini target.
+27c3e72 (grafted) Add emulator_x86 target into lunch menu
+project:
+673aae8 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add mini_emulator_x86_64 into lunch menu
+04fb6a7 (grafted) Set up emulator makefiles for x86_64.
+project:
+bf07c75 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) resolved conflicts for merge of 602eaa3d to master
+602eaa3 (grafted) Merge "Drop BOARD_SEPOLICY_UNION."
+2874fd3 (grafted) am 9ade1466: Merge "Remove generic/mips no-op."
+project:
+af38ee0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Added pdk mips64 support
+9a8bdda (grafted) Initial empty repository
+project:
+17f0fbd (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Delete /mnt/sdcard symlink
+3d69581 (grafted) resolved conflicts for merge of 4563938e to mnc-dr-dev-plus-aosp
+project:
+81ce753 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) resolved conflicts for merge of 6a9e1f6c to master
+6a9e1f6 (grafted) Merge "Drop BOARD_SEPOLICY_UNION."
+f4ea3fb (grafted) am 26d680b5: Merge "Remove generic/x86 no-op."
+project:
+001d214 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Inherit from core_64_bit.mk
+138339b (grafted) Delete vendorsetup.sh which is used internally.
+project:
+abc5159 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fixing ADK version 1.0 libraries to work with Arduino SDK 1.0 - http://code.google.com/p/android/issues/detail?id=31568
+5379e01 (grafted) ADK 2011 library fix, protocol check for Jellybean release (Issue b/6547558)
+project:
+7dfe7f8 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Updating ADK 1.0 demokit code to work with Arduino 1.0
+c35b0f5 (grafted) Reconcile with gingerbread-release
+project:
+c7fb079 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+7950674 (grafted) Add String for package name of Cast for blacklisting in recents.
+122f549 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+fe67338 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) [spi] Return error when timer runs out instead of quietly fail
+2f784ae (grafted) BMI160 SPI op queue race condition fix
+project:
+e21db4c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+a660c8e (grafted) merge in nyc-release history after reset to nyc-dev
+0ab894b (grafted) system_server: allow getprop ro.boot.wificountrycode
+project:
+d0b8050 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) flounder: restore read_ahead/prefetch to default
+e132241 (grafted) flounder: turn off nvmap page pool
+project:
+1029f45 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) QCamera2: HAL3: correct timestamp calculation in HFR mode
+4ff4fb8 (grafted) aosp_angler: don't verify the vendor partition
+project:
+0f664d8 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) angler: update prebuilt kernel
+cd465be (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+c9ac66b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) edison: move audio/usb to audio/generic/usb
+75fd4cc (grafted) Revert "Revert "Build vendor-partition package and update provision-device script"" am: 620369c1c9
+project:
+bc7e2ca (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) QCamera2: HAL3: correct timestamp calculation in HFR mode
+7fecf8a (grafted) aosp_bullhead: don't verify the vendor partition
+project:
+a36f536 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+1861189 (grafted) bullhead: update prebuilt kernel
+f91789a (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+53810fb (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+57eabe0 (grafted) hikey: Enable fiq_debugger support
+c0dd9ce (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+7796452 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+b0ec7b3 (grafted) hikey-kernel: Update prebuilt kernel to 4.4.10 and fiq_debugger (121305b)
+5661a28 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+1a8f127 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+ab05aa2 (grafted) media: refine media_codecs_performance.xml
+70dcf20 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+a5b9d31 (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) Use gcc version 5.2
+08775c2 (grafted) Create generic LSI targets
+project:
+71049be (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) Use gcc version 5.2
+a22ed2c (grafted) Android.mk: Add rules to build binaries as android packages
+project:
+a805812 (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) asn1: Changing image attributes finding
+73441fc (grafted) x509: Added x509 certificate parser
+project:
+58e0bc1 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) sepolicy: Relabel block devices based on their names
+54bf21b (grafted) sepolicy: Allow init to set attr for rootfs lnk_file
+project:
+6299a9d (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) dts: r8a7795-es1: Added new DTS for Android UltraHD resolution support
+7ad9666 (grafted) defconfig: Removed unused Bluetooth options
+project:
+7791377 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+64e978f (grafted) Make TMO IMS/MMS use ipv6 when roaming on IWLAN
+a435a53 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+7e5998f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+07a102c (grafted) Merge "CDD_BUILD: Fix link in CDD footer." into nyc-dev
+cb6b0f3 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+508c82f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+37fe192 (grafted) merge in nyc-release history after reset to nyc-dev
+203e3f2 (grafted) AAC/SBR decoder improvements and bugfixes
+project:
+d961f6f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am 784e1ce2: am 44f09559: Switch android-clat\'s microbenchmark to clang.
+784e1ce (grafted) am 44f09559: Switch android-clat\'s microbenchmark to clang.
+afbb591 (grafted) am 5e8ad6e6: (-s ours) am 96d6901d: Fix default_pdp_interface pointer reference
+project:
+c66727e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove usage of FloatMath
+b8181a2 (grafted) Add Android.mk for building androidplot
+project:
+a73228a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+0f18940 (grafted) Merge "Original upload of the glob library"
+project:
+dd5fa6d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+4799726 (grafted) Add gradle project for the antlr runtime for Doclava.
+project:
+25a2b6c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Pin libraries needed by vogar tool to java 1.7
+37d52cb (grafted) Added apache-commons-math-host target
+project:
+ad12634 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+25d0ba6 (grafted) Avoid conflicts between default JDWP sync port and transport address.
+0456344 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+cc9d128 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Don't build the stub org.apache.http.legacy.jar in PDK build.
+0399abc (grafted) apache-http: Fix stubs generation.
+project:
+112b087 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add core-oj to the list of core library jars
+d02f250 (grafted) merge in nyc-release history after reset to master
+project:
+81918d5 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Initial empty repository
+project:
+e2d0d86 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+e3b189c (grafted) brillo: Fix control files.
+e167704 (grafted) merge in nyc-release history after reset to master
+project:
+20e0898 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Move the hacked-up glob.h off bionic internals.
+ec3da0e (grafted) Fix init filename.
+project:
+7467d52 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+c2418b8 (grafted) am 73e72295: Merge "Fix bison build with MacOSX SDK 10.6"
+project:
+d345431 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove obsolete ThirdPartyProject.prop file.
+55236cd (grafted) Remove the simulator target from all makefiles. Bug: 5010576
+project:
+c79be54 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix encoding bug in i2c_ASN1_INTEGER
+67e4b08 (grafted) Remove support for mis-encoded PKCS#8 DSA keys. am: c042e7e am: eea801c
+project:
+134b96e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+c2f0885 (grafted) merge in nyc-release history after reset to nyc-dev
+11e0351 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+0ef2f7e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Fix reading extents file if not start from the beginning of a extent." am: 2c1607d134
+2c1607d (grafted) Merge "Fix reading extents file if not start from the beginning of a extent."
+0fc620f (grafted) Merge "Various fixes in bspatch and File class." am: a1e8251cad
+project:
+769544a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Silence warnings." am: 2cde259195
+2cde259 (grafted) Merge "Silence warnings."
+904f84d (grafted) package version metadata for external/
+project:
+de2cd88 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) c-ares: include <sys/select.h> when building in Android
+9a584bc (grafted) c-ares: export headers to modules that depend on libcares
+project:
+6a66412 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Pin libraries needed by vogar tool to java 1.7
+f18823a (grafted) Upgrade to latest (at the time of writing) version of Caliper am: e236301e5f
+project:
+6117640 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Stop targeting froyo for RenderScript support lib
+df0a176 (grafted) Make Cblas use c++_static instead of stlport_static
+project:
+233e184 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+f7df5f6 (grafted) Merge "Add MODULE_LICENSE and NOTICE files"
+project:
+9e8c0df (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+06935dc (grafted) merge in nyc-release history after reset to nyc-dev
+53912a5 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+0e9de8b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+23826c9 (grafted) merge in nyc-release history after reset to nyc-dev
+cef7893 (grafted) Update to latest catapult (e5abb7bd)
+project:
+044bb9e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) WebView AOSP Integration Request - 51.0.2704.91
+61c1944 (grafted) WebView AOSP Drop Request - 51.0.2693.3
+project:
+af1daca (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix ARM ABI issues for RenderScript.
+a4de175 (grafted) Update aosp/master clang for rebase to r256229
+project:
+9199c7b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+77b7379 (grafted) Add MODULE_LICENSE and NOTICE files
+project:
+fa6e8d2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update Android.bp to match Android.mk
+8d3b903 (grafted) Android.bp: workaround static lib ordering
+project:
+de4ef93 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+ce5bdd0 (grafted) Move CertBlacklist to conscrypt
+5631878 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+9666c57 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Replace errors by unchecked exceptions
+b849a8e (grafted) Add explicit asin() computation.
+project:
+5b7db98 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+5b8d4b5 (grafted) Switch to standard integer types in cryptohome.h. am: d9ecb3bd87
+5823e23 (grafted) merge in nyc-release history after reset to master
+project:
+9f719b0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "curl: Fix sign comparaison warning." am: 930d009473
+930d009 (grafted) Merge "curl: Fix sign comparaison warning."
+25e4ce6 (grafted) Merge "Compile libcurl for the host." am: 81d1e3a794
+project:
+07bcdbf (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Pin libraries needed by vogar tool to java 1.7
+0678a34 (grafted) Removed unnecessary disabling of Jack
+project:
+0dc3922 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Android doesn\'t really have <sys/syslimits.h>." am: 282db28ba0 am: 99861335b2 am: 111eb3eb19 am: fd633e6cc9 am: f912f5c8f9
+7c1139f (grafted) Merge "dbus: Raise SIGTERM when the connection drops." am: 81bb11fbf7
+project:
+71fde8e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) dbus-binding-generator: Update libchrome APIs to r369476 am: f07ce4ed69
+f07ce4e (grafted) dbus-binding-generator: Update libchrome APIs to r369476
+fc305a1 (grafted) Fix compiler warnings in dbus-binding-generator am: 4d7450f263
+project:
+3a788c4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+af51a2a (grafted) Fix build with new Interface
+8b8c486 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+8e77f18 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am fec72762: Issue: ProxyBuilder.getMethodsToProxyRecursive() was not returning list of methods in deterministic order.
+fec7276 (grafted) Issue: ProxyBuilder.getMethodsToProxyRecursive() was not returning list of methods in deterministic order.
+f9d7d8a (grafted) Merge "Issue: ProxyBuilder.getMethodsToProxyRecursive() was not returning list of methods in deterministic order."
+project:
+ca69393 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) add a compiler flag to use script.c instead of script-stub.c
+9c993df (grafted) dhcpcd-6.8.2: Change vendor_encapsulated_options to binhex
+project:
+6661f3c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Copy sources from bionic, add NOTICE/README.version.
+4c66393 (grafted) Initial empty repository
+project:
+1653642 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+0420a20 (grafted) Integrate integer overflow fixes from security branch
+52fe3d9 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+1a744d4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Admit that dnsmasq relies on BSD extensions.
+4da20f9 (grafted) Build dnsmasq with IPv6 support.
+project:
+9f8bb47 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+501c270 (grafted) Fix ds docs build. Reverts change-id I49caefc495e91ed896b90626b9ca0139dd39a271. DO NOT MERGE.
+fb88844 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+005389f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Initial empty repository
+project:
+cda66b8 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix narrowing conversion between int <-> unscoped enum.
+a56e0e1 (grafted) drm_gralloc: Enable allocation of flexible YUV420 buffers
+project:
+d90b6f2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+c74c8b9 (grafted) DO NOT MERGE: drm_hwcomposer: Count all layers with content in SquashFrame
+3548d52 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+675040f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Updated android maven plugin
+a20a835 (grafted) resolved conflicts for merge of 72a40802 to master
+project:
+4be2b9d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Replace _host suffix with more standard -host suffix." am: f020dde748 am: dc0f76dbd1
+771a86a (grafted) Replace _host suffix with more standard -host suffix.
+dc0f76d (grafted) Merge "Replace _host suffix with more standard -host suffix." am: f020dde748
+project:
+8bc2748 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) add bin to git ignore file
+bb9f1a6 (grafted) Merge "Add NOTICE and MODULE_LICENSE files"
+project:
+076f468 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Add NOTICE file"
+77dcea7 (grafted) Add NOTICE file
+6134da6 (grafted) Merge "Remove p2 download cache from repo"
+project:
+c533332 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add MODULE_LICENSE
+a5f3ee1 (grafted) Merge "Add workaround for the Eclipse+Mountain Lion bug"
+project:
+8d09b45 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Stop targeting froyo for RenderScript support lib.
+5fe29dc (grafted) Make eigen use c++_static instead of stlport_static
+project:
+3e38084 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+1e94954 (grafted) Merge "Merge upstream 0.165 SHA '203f0a3'"
+59b453a (grafted) merge in nyc-release history after reset to master
+project:
+deb5711 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+0daf3e0 (grafted) Merge "Add MODULE_LICENSE file"
+project:
+943c42b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Add NOTICE and MODULE_LICENSE files"
+668656f (grafted) Add NOTICE and MODULE_LICENSE files
+224a67f (grafted) Add an empty CleanSpec.mk
+project:
+753cfe8 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix CVE-2016-0718: Expat XML Parser Crashes on Malformed Input am: 4bf8f12b1d am: f6df708e86 am: 7290eb3bc1 am: f95e7ccb58 am: 7c63cbf090 am: 1e378e34a8 am: 20d8f2465f am: 4a724526f9 am: 337d1dbad9 am: 46eb5ae412 am: 6d46119d1a
+6d46119 (grafted) Fix CVE-2016-0718: Expat XML Parser Crashes on Malformed Input am: 4bf8f12b1d am: f6df708e86 am: 7290eb3bc1 am: f95e7ccb58 am: 7c63cbf090 am: 1e378e34a8 am: 20d8f2465f am: 4a724526f9 am: 337d1dbad9 am: 46eb5ae412
+29c78e9 (grafted) Upgrade to expat 2.1.1 am: c05e032be5 am: 095459e694 am: f660c7f877 am: 3b539e5853 am: 851ab139ae am: 2fdae36fc6 am: cdf19cb4b7 am: 161a47bda3 am: a926c8a162 am: 045eca42f0 am: 1461343f8a
+project:
+16bd4c7 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Include a local manifest to define an entry point.
+baba482 (grafted) fix build
+project:
+5bd943d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Rename libext2 host libraries to standard suffix."
+fe44650 (grafted) Rename libext2 host libraries to standard suffix.
+183da74 (grafted) Rename libext2 host libraries to standard suffix.
+project:
+eb6c9fc (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Build fdlibm with clang."
+627819e (grafted) Build fdlibm with clang.
+a805906 (grafted) am ce012d6c: Merge "Fdlibm: Don\'t use quotes in Makefile"
+project:
+791afbe (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) external/fec: fix host library on Mac
+e81897b (grafted) Use LOCAL_SANITIZE := integer
+project:
+1aec78b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove header from LOCAL_SRC_FILES am: 68c4930db8
+68c4930 (grafted) Remove header from LOCAL_SRC_FILES
+8e19887 (grafted) Fio: Silence unused-X warnings am: 224eaff0a9
+project:
+3c74c11 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Avoid free-before-initialize vulnerability in heap am: 6995c84 am: ca1a1ff am: b8c0a86 am: 02a513a am: 680f668 am: 4b075cb
+4b075cb (grafted) Avoid free-before-initialize vulnerability in heap am: 6995c84 am: ca1a1ff am: b8c0a86 am: 02a513a am: 680f668
+093af41 (grafted) am e685ca5e: am f9d095a5: am 2470e51d: Add macro definitions for clang/llvm.
+project:
+fede586 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+fe6c510 (grafted) Add NOTICE and MODULE_LICENSE files
+project:
+aba9adc (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Update the version number in Android.mk" am: 638ea6c202
+638ea6c (grafted) Merge "Update the version number in Android.mk"
+d57fa79 (grafted) Merge "Update FreeType to a512b0fe7a from 2.6.0" am: a0bd57a383  -s ours
+project:
+17a1471 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am b94f2b61: Merge "Detect exFAT filesystems and abort if found"
+b94f2b6 (grafted) Merge "Detect exFAT filesystems and abort if found"
+c0a43e4 (grafted) Detect exFAT filesystems and abort if found
+project:
+e679bf6 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Stop targeting froyo for RenderScript support lib
+7b05d57 (grafted) Rebase gemmlowp to e96c3a9
+project:
+a57aff1 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Don\'t build for froyo. That\'s just silly." am: ce50ba50df
+ce50ba5 (grafted) Merge "Don't build for froyo. That's just silly."
+eb9790a (grafted) am 814d1938: am b1df2577: (-s ours) resolved conflicts for merge of ab10e256 to mnc-dev-plus-aosp
+project:
+31e64ac (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am acf91e46: am ce1d390f: keep history after reset to ub-camera-haleakala
+acf91e4 (grafted) am ce1d390f: keep history after reset to ub-camera-haleakala
+8dfd538 (grafted) am 95e5bc58: keep history after reset to ub-camera-haleakala
+project:
+88c2bb4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am 0797b0e5: (-s ours) am 92f488a5: am b4a61987: Merge "Add RTTI support to libgmock and libgmock_host."
+4dcd3d1 (grafted) am 830d4aaa: (-s ours) am 9f4f202c: am 7c900060: Merge "Export gmock headers"
+0797b0e (grafted) am 92f488a5: am b4a61987: Merge "Add RTTI support to libgmock and libgmock_host."
+project:
+39352b5 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add Android.mk for google-benchmark.
+b253bf4 (grafted) Add license information.
+project:
+e37b6d9 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) dump_syms: Add -v verbose flag am: ff9800f444
+ff9800f (grafted) dump_syms: Add -v verbose flag
+0f91b84 (grafted) Work around llvm bug with -mno-stackrealign. am: 7c722c2f26
+project:
+0062a10 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) import Carrois Gothic SC
+8a91435 (grafted) Initial empty repository
+project:
+2c5cb41 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) import Coming Soon
+38cf891 (grafted) Initial empty repository
+project:
+bce2136 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add CutiveMono as serif monospace font for captioning
+2362477 (grafted) Initial empty repository
+project:
+7b6623b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) import Dancing Script
+970ef90 (grafted) Initial empty repository
+project:
+9726a93 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update the google-tv-pairing-protocol polo.proto to use the deprecated nano package.
+2c2109e (grafted) am cf838069: (-s ours) reset to lmp-mr1-dev-plus-aosp with history. DO NOT MERGE ANYWHERE.
+project:
+437bfb5 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Replace _host suffix with more standard -host suffix. am: 6bbf89bfc6
+929749b (grafted) Replace _host suffix with more standard -host suffix.
+6bbf89b (grafted) Replace _host suffix with more standard -host suffix.
+project:
+81cb746 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Implement GetThreadCount for Linux.
+8e1d6fa (grafted) Merge "Implement GetThreadCount for Linux." am: 0374ec7859 am: ed8c307213  -s ours
+project:
+00d2a35 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) build: Add host-side dalvik library rules
+d2d6de3 (grafted) Pin libraries needed by vogar tool to java 1.7
+project:
+83b7ddb (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) build: Add device-side support for the AOSP.
+cc2490b (grafted) Merge remote-tracking branch 'goog/master' into nyc-dev
+project:
+f31b2fc (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am df3b4534: (-s ours) am c2c94b1a: Merge "Revert "Delete obsolete hamcrest-hostdex rule.""
+f7638c9 (grafted) am c2c94b1a: Merge "Revert "Delete obsolete hamcrest-hostdex rule.""
+df3b453 (grafted) am c2c94b1a: Merge "Revert "Delete obsolete hamcrest-hostdex rule.""
+project:
+e9f6b1c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update harfbuzz to 1.2.6 from 1.2.1
+00ea66f (grafted) 1.2.6
+8d1e57a (grafted) Update harfbuzz to 1.2.1 from the upstream
+project:
+d775900 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+dedeff6 (grafted) Add "hyphenation patterns" for 22 languages
+2d85e9a (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+2ad8d4e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update timezone data to 2016f
+fafa431 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+febb3d8 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "ss: remove wtf." am: 4bf8496 am: d9cdcb0 am: 1404f4c am: 465a65c
+e1c609b (grafted) Merge "Fix GCC builds of \'ss\' by insisting on clang." am: db60576af5
+project:
+a291bfe (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Back port 0.8.0 fixes of function prototypes." am: 39ce2e3068
+39ce2e3 (grafted) Merge "Back port 0.8.0 fixes of function prototypes."
+7e85d01 (grafted) am 66c40e72: Merge "Use <netinet/udp.h> instead of <linux/udp.h> on Android."
+project:
+6cda8a6 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+52aec3c (grafted) merge in nyc-release history after reset to nyc-dev
+ce477f9 (grafted) Tell the build system to copy notice files.
+project:
+fcefb48 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Silence warnings for iputils." am: 9259dfa16d
+9259dfa (grafted) Merge "Silence warnings for iputils."
+3f3899e (grafted) package version metadata for external/
+project:
+2af129e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Iw: Silence some warnings
+3c9cd07 (grafted) Merge remote-tracking branch 'goog/master' into 'goog/mnc-dr-dev'
+project:
+831c256 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Build jacoco from sources
+f30df9c (grafted) This is a static Java library, i.e. without classes.dex.
+project:
+8795f34 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Make JarJar abort when it can't read a .class file.
+1ab6e78 (grafted) Use existing ASM 5.0 instead of bundled ASM 4.x.
+project:
+2f71e84 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Depend on the static version of libsqlite_static_minimal.
+650e47f (grafted) merge in nyc-release history after reset to master
+project:
+f7c4b95 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+9566207 (grafted) Merge "host modules don't need LOCAL_MODULE_TAGS"
+project:
+498658d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) build: Add device-side support for the AOSP.
+7f95581 (grafted) Merge remote-tracking branch 'goog/master' into nyc-dev
+project:
+8f27032 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix merging add/remove on same method.
+7a13324 (grafted) am 97a22150: am e99056f3: (-s ours) am 16f46fdf: Adjust jdiff to be able to read both Doclava and "regular" Jdiff API xml files.
+project:
+5a21ffb (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+1ae9287 (grafted) Fix potential chunk leaks.
+98ea007 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+a9f2cdb (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Mark it as unistallable
+3dddeb0 (grafted) Ignore debug info of jetty-util prebuilt
+project:
+a0628a0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix possible out of bounds access am: 751b4eba25 am: b201f04d8c am: 2d49e2de6e am: a3c15ad42d am: 6c2d0e45b5 am: dbefc1dc4a am: 854fedfa6b am: 2ea3783c81 am: e3574d919b am: 3daffc0fba am: 2a4c12f5e5
+2a4c12f (grafted) Fix possible out of bounds access am: 751b4eba25 am: b201f04d8c am: 2d49e2de6e am: a3c15ad42d am: 6c2d0e45b5 am: dbefc1dc4a am: 854fedfa6b am: 2ea3783c81 am: e3574d919b am: 3daffc0fba
+2cbe01b (grafted) Fix GpsTimeStamp format string
+project:
+0c71647 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+f4eb746 (grafted) Merge remote-tracking branch 'goog/ics-aah-exp'
+project:
+b9b8492 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+b37fdc8 (grafted) Merge "Add NOTICE and MODULE_LICENSE files"
+project:
+cbfa1a0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+27b5a35 (grafted) Initial upload of a minimalistic JSON parser in C.
+project:
+90c81b9 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add missing headers for istream::getline
+2eb3b4d (grafted) Upgrade jsoncpp to version 1.0.0 to match the copy used by Skia's testing tools.
+project:
+91467ca (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) build: Add host-side dalvik library rules
+a76e1a4 (grafted) package version metadata for external/
+project:
+57916be (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) build: Add device-side support for the AOSP.
+74d7e4e (grafted) Merge remote-tracking branch 'goog/master' into nyc-dev
+project:
+9e63db2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add core-oj to the list of dependencies
+24d21d4 (grafted) merge in nyc-release history after reset to master
+project:
+ed5c52a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7-K4.9) Update to kernel 4.9.8
+f96ad67 (grafted) Update to kernel 4.9.6
+project:
+f13853f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add NOTICE and MODULE_LICENSE files
+deba639 (grafted) Revert "ksoap2: update Android.mk to fix a runtime crash"
+project:
+ac9332c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge \\\\"Decoder: Initialize first_pb_nal_in_pic for error slices\\\\" into mnc-dev am: b9d7cba8bf am: c73e000665 am: 59248aa67c am: c4ef0f6129
+c4ef0f6 (grafted) Merge \\\"Decoder: Initialize first_pb_nal_in_pic for error slices\\\" into mnc-dev am: b9d7cba8bf am: c73e000665 am: 59248aa67c
+49f3680 (grafted) Decoder: Do not conceal slices with invalid SPS/PPS am: 3a419eac8d am: 48b182db5d am: ea40cf81eb am: 44a2462a71
+project:
+f86bf6b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+955cddc (grafted) Make BinderWatcher use brillo::MessageLoop. am: ba882304e0
+77c2a32 (grafted) merge in nyc-release history after reset to master
+project:
+5fc5a50 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) libcap: Fix compile warnings.
+07ec99e (grafted) libcap: Add static library target.
+project:
+fd9ec1c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Enable clang, except arm64." am: a6d897b929
+a6d897b (grafted) Merge "Enable clang, except arm64."
+db9bcff (grafted) Merge "Disable clang until emulated TLS is there." am: f43ff43a18
+project:
+f088f93 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+9aaf774 (grafted) libchrome_test: Compile only on \'eng\' builds. am: 5d0701ee9d am: 8508936936
+ec8a1c9 (grafted) merge in nyc-release history after reset to master
+project:
+8fd7195 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+d817017 (grafted) Remove unused entries from LOCAL_SRC_FILES am: ff162f079e
+d82d2e6 (grafted) merge in nyc-release history after reset to master
+project:
+ee6e479 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+fb11cb3 (grafted) Remove .ipp from LOCAL_SRC_FILES
+a234598 (grafted) merge in nyc-release history after reset to master
+project:
+e2f6040 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add config.h
+4340b18 (grafted) Import libdaemon into the Android tree.
+project:
+ae4cb13 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Add License files."
+efb03ae (grafted) Add Android.mk with host targets.
+8b67c99 (grafted) Add License files.
+project:
+9fd22a7 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Bugfix: Changing crash in latest kernel
+d6513d7 (grafted) drm: add ZBC query methods for nouveau
+project:
+67e14df (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+315dded (grafted) Add NOTICE file
+project:
+95e5653 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix build warnings in libevent
+70c40a8 (grafted) Include kqueue.c in the Darwin build
+project:
+bcbfc5e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Export local header files for libexif.
+5b81209 (grafted) package version metadata for external/
+project:
+2f66c77 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "libgsm: -Wno-unused-parameter." am: 24f4cec156
+24f4cec (grafted) Merge "libgsm: -Wno-unused-parameter."
+1aea739 (grafted) package version metadata for external/
+project:
+665daeb (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "DO NOT MERGE Added few memsets to avoid uninitialized reads for error clips" into mnc-dev am: 403dec0afc  -s ours am: d8ef5fd60e am: 90a39f0ae8  -s ours
+90a39f0 (grafted) Merge "DO NOT MERGE Added few memsets to avoid uninitialized reads for error clips" into mnc-dev am: 403dec0afc  -s ours am: d8ef5fd60e
+f383d85 (grafted) Merge "Added few memsets to avoid uninitialized reads for error clips" into mnc-dr-dev am: 547ec2a67f am: 26fcf935ae
+project:
+0141f11 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Ensure that default Huffman tables are initialized" into nyc-dev
+4c0cab9 (grafted) Prevent overread when decoding malformed JPEG
+fba21ad (grafted) Ensure that default Huffman tables are initialized
+project:
+a88b962 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+6946aa5 (grafted) Add NOTICE file for BSD license
+project:
+1e68f5d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove GCM cipher mode requirements for fallback ciphersuites
+98eba18 (grafted) Add HTTPS support using BoringSSL.
+project:
+18c905d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fixed out of bound read in flush_bits am: 763ffef681 am: 16620937c2 am: cb0ef8df6e am: 8a34f810ab
+8a34f81 (grafted) Fixed out of bound read in flush_bits am: 763ffef681 am: 16620937c2 am: cb0ef8df6e
+f725093 (grafted) Add MODULE_LICENSE_* and NOTICE file for libmpeg2.
+project:
+7ed2065 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+e204c41 (grafted) Merge "Add MODULE_LICENSE and NOTICE files"
+project:
+923afa2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Retry system calls on EINTR.
+5340dae (grafted) Free memory in case of error response
+project:
+76f8fa7 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Updated path for seperate vendor partition
+15d81f7 (grafted) Merge "libnfc-nxp: fix build for 64-bit"
+project:
+74c5971 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+19c48c8 (grafted) Remove GPL-3.0 license file.
+project:
+6dba790 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+e4375ff (grafted) Merge "Add NOTICE and MODULE_LICENSE files"
+project:
+170ba56 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+1391dbf (grafted) Remove unused LOCAL_LDLIBS.
+project:
+ae8393d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Restore the MODULE_LICENSE_BSD and NOTICE files." am: a512e16c8c
+a512e16 (grafted) Merge "Restore the MODULE_LICENSE_BSD and NOTICE files."
+b4578a1 (grafted) Merge "Upgrade to libpcap 1.7.4." am: e76baba759
+project:
+dbafaa0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+93399cc (grafted) DO NOT MERGE Revert to libphonenumber v7.0.11
+c26befd (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+a1c3438 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+4e88d04 (grafted) Turn off intel optimizations for host lib
+a8ad1c3 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+f8a6502 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) BACKPORT: libselinux: procattr: return einval for <= 0 pid args.
+5ff2a33 (grafted) Correct errno value.
+project:
+8011dfd (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+c3290df (grafted) Use zero offset when getting bias from memory.
+0d67b5b (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+f171e72 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Change soong parameter name disabled -> enabled
+ae09fa3 (grafted) Add NOTICE and MODULE_LICENSE_* files
+project:
+dc5d196 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+3a36cef (grafted) Merge "Add MODULE_LICENSE and NOTICE files"
+project:
+759481a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+6d4ab89 (grafted) Merge "Add MODULE_LICENSE and NOTICE files"
+project:
+853ef37 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+7469493 (grafted) Add MODULE_LICENSE file
+project:
+bec50fd (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Upgrade vnc to 0.9.10
+54fc821 (grafted) external/libvncserver: use library references where possible.
+project:
+dee2e0a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+61a5b54 (grafted) Merge "Add NOTICE and MODULE_LICENSE files"
+project:
+38d9709 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) libwebm: Pull from upstream
+94ab74f (grafted) Merge "package version metadata for external/" am: 30dc5b6cbc am: 3e7f4e1c83  -s ours
+project:
+6d78f36 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update libvterm to upstream revision 619.
+73fbfc3 (grafted) Snap to current upstream libvterm.
+project:
+e3c7df6 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+18bf915 (grafted) Merge remote-tracking branch \'weave/master\' into \'weave/aosp-master\' am: d69c671dd4 am: ee286963b2
+0c649d1 (grafted) merge in nyc-release history after reset to master
+project:
+edb5870 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) libxml2: remove HTML support
+589af0c (grafted) Merge "libxml2: silence -Wunused-parameter." am: 77e1b191a3
+project:
+bb74e3e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add MJPEG support
+bdab24b (grafted) Merge "Android.mk: make 32bit binary use arm assembly code on 64bit platform" am: a144ab1ba5
+project:
+a3ea6bf (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove patch for b/8297640 from LittleMock
+328b01e (grafted) Patch LittleMock for change in internal methods
+project:
+26c9bb3 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge remote-tracking branch 'goog/stage-aosp-master' into HEAD
+a75b820 (grafted) Initial empty repository
+10827e6 (grafted) Initial empty repository
+project:
+800e012 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+72bbf14 (grafted) [CodeGen] Promote FMINNAN/FMAXNAN like other binops.
+6dd0bde (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+c3cdf80 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "package version metadata for external/"
+c95da29 (grafted) Disable ltrace build.
+7ae5ac7 (grafted) package version metadata for external/
+project:
+74ba70e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Export include dir
+a5f1981 (grafted) Add LZ4 makefile targets for device, shared library
+project:
+26b927f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Enable BCJ fiter support in xz-embedded.
+4c4bda9 (grafted) Include missing files from xz-embedded-20130513.
+project:
+06a8f8b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+6f2e355 (grafted) Merge "Remove backup file."
+project:
+8539179 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Don\'t enable MDNS on non-multicast, non-broadcast interfaces." am: 306cc40dd3 am: 7d86a89a16
+7d86a89 (grafted) Merge "Don\'t enable MDNS on non-multicast, non-broadcast interfaces." am: 306cc40dd3
+c68fd1d (grafted) Stop building __DATE__/__TIME__ into Android binaries am: 0aa6558922 am: ea9f954803
+project:
+586cfa7 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "package version metadata for external/"
+4088fa9 (grafted) Merge "mesa3d: expat now exports its headers."
+6267734 (grafted) package version metadata for external/
+project:
+ff217fd (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Switch to use the latest version of caliper am: 511b3e3901
+511b3e3 (grafted) Switch to use the latest version of caliper
+8972de4 (grafted) Merge "package version metadata for external/"
+project:
+720e7dd (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+8c3febd (grafted) Fix #ifdef statement.
+7ccd699 (grafted) merge in nyc-release history after reset to master
+project:
+b394f11 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Upgrade to mksh R52b."
+fc0307d (grafted) Upgrade to mksh R52b.
+f688e8a (grafted) Merge "adbd sets $TERM now."
+project:
+c98bb9f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add NOTICE and MODULE_LICENSE_GPL
+b7c16c9 (grafted) Make mmc-utils android-tree compatible
+project:
+56527f4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add MODULE_LICENSE and NOTICE
+00dc7bd (grafted) v2.5
+project:
+21722bd (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+d339ff4 (grafted) Pin libraries needed by vogar tool to java 1.7
+2b27855 (grafted) Add mockito-target-minus-junit4.
+project:
+e248720 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+ecaaf42 (grafted) merge in nyc-release history after reset to master
+4a37382 (grafted) Add core-oj to the list of core library jars.
+project:
+ea22d97 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am 4f8ee97e: Merge remote-tracking branch \'goog/stage-aosp-master\' into HEAD
+3a32798 (grafted) am b1e6e202: Move header to modp_b64 subdir.
+4f8ee97 (grafted) Merge remote-tracking branch 'goog/stage-aosp-master' into HEAD
+project:
+37d85ea (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+ea43bba (grafted) Add MODULE_LICENSE
+project:
+4699802 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "bundle init.rc contents with its service"
+c3c4fe5 (grafted) bundle init.rc contents with its service
+acfaed8 (grafted) Merge "Add missing <unistd.h> include for read and close."
+project:
+c6783c3 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Integrate upstream changes to 2.2.0. am: f47b11cc8e
+f47b11c (grafted) Integrate upstream changes to 2.2.0.
+48e7e36 (grafted) Add newFixedLengthResponse() to the NanoHTTPD class. am: 12973d7c22
+project:
+b225eb2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am 7cad9030: am 90479589: (-s ours) am b134d578: Rename libnanopb-c to follow other protobuf libraries.
+7cad903 (grafted) am 90479589: (-s ours) am b134d578: Rename libnanopb-c to follow other protobuf libraries.
+574aad7 (grafted) am 67d1b706: am b134d578: Rename libnanopb-c to follow other protobuf libraries.
+project:
+91e6e9f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Revert "Create a special CONSTRAINED font bucket in naver-fonts."
+343edd9 (grafted) Create a special CONSTRAINED font bucket in naver-fonts.
+project:
+b023a43 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "When we switched to BSD netcat, no one updated the license."
+f22486b (grafted) When we switched to BSD netcat, no one updated the license.
+444644c (grafted) Temporarily disable ld --fatal-warnings.
+project:
+236149a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Upgrade to netperf 2.7.0." am: 59c87bab69
+59c87ba (grafted) Merge "Upgrade to netperf 2.7.0."
+3f2c693 (grafted) package version metadata for external/
+project:
+42fbf50 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+c7ccb67 (grafted) merge in nyc-release history after reset to master
+658d5fe (grafted) disable build in PDK
+project:
+8339856 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+6f7aae0 (grafted) nfacct: Enabling compatibility with libnl2.0
+project:
+d2e4062 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+dad09f9 (grafted) merge in nyc-release history after reset to master
+89fb1b9 (grafted) Merge "Set date on path verification parameters" am: d81b74592a
+project:
+e091a34 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix compatibility issues with Java 1.8 Map
+1df8c42 (grafted) Defines the serialVersionUID for deserialization
+project:
+d795867 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+778dd4d (grafted) Adjust background color of U+1F47F
+7c83adf (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+49f3624 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add MODULE_LICENSE and NOTICE
+bc170f5 (grafted) Switch platform to 8, to allow unbundling/backporting of GoogleAuthenticator
+project:
+027386d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "package version metadata for external/"
+1171d02 (grafted) Merge "Add hostdex target for dalvik host tests"
+1144d9b (grafted) package version metadata for external/
+project:
+c6817fb (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix regression in the HTTP request line
+2abd308 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+3b08021 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove makefile cruft.
+70a06ce (grafted) Merge "Suppress clang -Wc++11-narrowing warnings."
+project:
+ae320ad (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Compile dls.cpp at -O1 to avoid slow compilation times. am: 7471b1f9dd
+7471b1f (grafted) Compile dls.cpp at -O1 to avoid slow compilation times.
+dd9f1d4 (grafted) Clean up Android.mk am: 8b83fa933f
+project:
+bbfb254 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Sanitize HTML for Android Email and the EML viewer
+6a30423 (grafted) am 21740b34: Add NOTICE and MODULE_LICENSE_APACHE2
+project:
+c599aa5 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) parameter-framework: Fix incremental build issue
+481587b (grafted) parameter-framework: integrate v3.2.4 within Android environment
+project:
+222bbf4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "pcre: silence uninteresting warnings." am: 0e44fd55f8
+0e44fd5 (grafted) Merge "pcre: silence uninteresting warnings."
+942ae22 (grafted) Merge "Upgrade to pcre 8.38." am: 9ddcdfa8b4
+project:
+ac3d58c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update pdfium to 32b639de35f905a5e5559f305d9032cde5ae5c77
+ce97c59 (grafted) [DO NOT MERGE] Fix the way FreeType headers are incldued. am: 209139b7a0  -s ours
+project:
+af0a8f5 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+0edcd9a (grafted) Update PIEX
+443999e (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+d9aeba4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+2f5a56c (grafted) Merge "Remove superfluous OpenSSL include paths."
+project:
+af893cd (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Increase GC limit for proguard to 2G."
+59dd956 (grafted) Increase GC limit for proguard to 2G.
+116fd23 (grafted) Merge "Rebuild proguard.jar with ant/gradle support." am: a90d411690
+project:
+16a7d56 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+7708689 (grafted) merge in nyc-release history after reset to nyc-dev
+5b009a8 (grafted) Build host libraries for Windows
+project:
+13ad88f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add stlport version of regex-re2 lib, and fix armv5 build.
+140941f (grafted) package version metadata for external/
+project:
+374426a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Switch to CTSv2
+8ab8fc0 (grafted) Tag replica island as a CTSv2 artifact.
+project:
+40eb2d7 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) UPSTREAM: rmi4update: Make sure the device file exists when rebinding the driver
+ddfbb28 (grafted) UPSTREAM: Add some additional architectures
+project:
+f522a20 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Upgrade Robolectric v3
+111f436 (grafted) Backport robolectric 3.1 from master to mnc-ub-dev
+project:
+bd702d2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+19ef14d (grafted) merge in nyc-release history after reset to nyc-dev
+3a96e6d (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+9d44d9d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) rootdev: Don't try to access /dev/block.
+134aa09 (grafted) Revert "rootdev: Don't try to access /dev/block."
+project:
+cd76f99 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+aa0725f (grafted) Remove obsolete ThirdPartyProject.prop file.
+project:
+7269139 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Remove OpenSSL include paths."
+4927576 (grafted) Remove OpenSSL include paths.
+0306c78 (grafted) Merge "Don't explicitly link gtest."
+project:
+d922fef (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix neverallowxperm checking on attributes
+de8f3ce (grafted) Fix extended permissions neverallow checking
+project:
+61657b2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Fix build with clang."
+c232fca (grafted) Fix build with clang.
+e7b6cf4 (grafted) Add NOTICE
+project:
+c4876e0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) New Android.mk file to install shflags on the host.
+5680f3b (grafted) Update MODULE_LICENSE_* to reflect the actual license.
+project:
+3906c7f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+ab20bed (grafted) merge "SkFontHost_FreeType constructor to correctly release resources." into nyc-dev
+225de91 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+4dd2f33 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+e191e81 (grafted) Make it possible to test notifications
+7373102 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+037a293 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add MODULE_LICENSE and NOTICE
+7122d7e (grafted) set work version to 1.7.13-SNAPSHOT
+project:
+edc88af (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge commit 'refs/changes/32/214432/1' of persistent-https://android.git.corp.google.com/platform/external/smali into incr-dex
+267cf99 (grafted) Merge remote-tracking branch 'aosp/upstream-master' into incr-dex
+504acc0 (grafted) Merge "Replace custom rules with BUILD_PREBUILT" am: 3425268
+project:
+05152a0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) build: Add device-side build support in the AOSP
+31c0c18 (grafted) Merge commit 'cce31f6de8fea06821a8b57a9c0d2c687c8161f5' into nyc-dev
+project:
+0227d83 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am 176cbaa4: Add MODULE_LICENSE and NOTICE
+176cbaa (grafted) Add MODULE_LICENSE and NOTICE
+10c16fc (grafted) Adding Android.mk for android integration
+project:
+8098ca6 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "sonivox: -Wno-unused-parameter." am: 825ad522d5 am: d3bd739763
+d3bd739 (grafted) Merge "sonivox: -Wno-unused-parameter." am: 825ad522d5
+29433d8 (grafted) Sonivox: add SafetyNet log. am: 24d7c408c5 am: f3f1da3028 am: 95a4f1d4af am: 629255407a am: 13c48e13f9
+project:
+468d5f0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove unused warnings from speex
+e314a61 (grafted) package version metadata for external/
+project:
+0a5b69f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add a build rule for a minimal static library version of sqlite3.
+1cfc804 (grafted) Merge "sqlite: upgrade to SQLite 3.9.2" am: 6dc83a58ba
+project:
+14bf95d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+305fca6 (grafted) 4K align data blocks and introduce file block maps to optimize OTA size
+1d43c6c (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+ab8d27c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+8756a77 (grafted) Merge "Srtp: Fix Android.mk mistake"
+project:
+372fd47 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Add new generated files."
+729cadb (grafted) Add new generated files.
+06ebf8d (grafted) Merge remote-tracking branch 'strace/master' into HEAD
+project:
+0c1111a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+4913877 (grafted) merge in nyc-release history after reset to master
+5185e6e (grafted) fix errata
+project:
+9c02d9f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+28305a2 (grafted) Add NOTICE
+project:
+dbb0163 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Restore the MODULE_LICENSE_BSD and NOTICE files." am: a8af23f868
+a8af23f (grafted) Merge "Restore the MODULE_LICENSE_BSD and NOTICE files."
+d2174c2 (grafted) Merge "Upgrade to tcpdump 4.7.4." am: 96fe0b5137
+project:
+d3bb4c3 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) build: Add device-side support for the AOSP.
+7a1ef8e (grafted) Merge remote-tracking branch 'goog/master' into nyc-dev
+project:
+99e91a7 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Move tz files from framework/opt/timezonepicker
+8c9e2f6 (grafted) Initial empty repository
+project:
+6cb14f2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) mixer: check for overflow and NULL return
+56754eb (grafted) tinymix: Remove the unused parameter from tinymix_set_byte_ctl()
+project:
+3795714 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am b8f9b742: Merge "Cleanup Obsolete LOCAL_PRELINK_MODULE."
+b8f9b74 (grafted) Merge "Cleanup Obsolete LOCAL_PRELINK_MODULE."
+d885bbf (grafted) cplay: use new offload sample rate representation.
+project:
+b162e86 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+143125f (grafted) Merge "Revert "Update to version 2.6.2.""
+project:
+fa07032 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) package version metadata for external/
+1f991a3 (grafted) Add NOTICE
+project:
+5277834 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix mips64 build. am: 8e4be28465
+8e4be28 (grafted) Fix mips64 build.
+9766720 (grafted) Add MIPS little endian architectures and fix preprocessor indentation am: ce31a91f92
+project:
+3ba55bf (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+f9a7ae7 (grafted) Merge remote-tracking branch 'goog/master' into merge
+716a60a (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+d704926 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+c76d4eb (grafted) Revert "Temporarily add padding to nested struct to ensure word alignment." am: d93651340e
+c507732 (grafted) merge in nyc-release history after reset to master
+project:
+bdb5e03 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Check partword is in range for # of partitions am: 4da931ed17 am: 2214429dcd am: 6ff98fe50d am: 615f5e52a0 am: a184912344 am: d2cc408b9b am: c299f659a4 am: eea37099a5 am: ef47215e8f am: 4baca3a3ca am: 746bcf14e4
+746bcf1 (grafted) Check partword is in range for # of partitions am: 4da931ed17 am: 2214429dcd am: 6ff98fe50d am: 615f5e52a0 am: a184912344 am: d2cc408b9b am: c299f659a4 am: eea37099a5 am: ef47215e8f am: 4baca3a3ca
+946e1bc (grafted) Fix build warnings
+project:
+af54675 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+7fdb00d (grafted) merge in nyc-release history after reset to nyc-dev
+c69435f (grafted) Add more emoji-related data files
+project:
+204c9be (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+5adfd72 (grafted) merge in nyc-release history after reset to nyc-dev
+1a696ce (grafted) Merge changes from topic \'upgrade-v8\' am: 2a659f7 am: 29ec348 am: d1f6d09
+project:
+add683d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge changes I3d6f4dd4,I8b538cc8,Id7ba841d
+667e84b (grafted) Fix for unhandled sub.w rD, sp, rM, lsl N
+85558f7 (grafted) am 721e6a45: Merge "Use new sanitizer option."
+project:
+2f4974d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am 10ebdb2e: Fix Mac build.
+10ebdb2 (grafted) Fix Mac build.
+43b6f87 (grafted) Fix Mac build.
+project:
+206cdf4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "VIXL Release 1.12" am: 1e7250265e
+1e72502 (grafted) Merge "VIXL Release 1.12"
+8019a0c (grafted) Merge "VIXL Release 1.11" am: b81a871b32
+project:
+91809e2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+ca0247d (grafted) Fix Parameterized test support
+45daadd (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+2bab539 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge commit vkjson-instance into nyc-dev
+b4d24ea (grafted) vkjson: Include instance layers and extensions
+07d87dd (grafted) Add libvkjson.a to Android platform build
+project:
+6d2d4a2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+45ca9a6 (grafted) webp: build with -O2
+3cd0a7e (grafted) merge in nyc-release history after reset to master
+project:
+b3cb8ab (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Merge upstream SHA 04cb763" am: 9a337512d9
+9a33751 (grafted) Merge "Merge upstream SHA 04cb763"
+a4acd9d (grafted) Merge changes I7bbf776e,I1b827825 am: fe8b4a6579
+project:
+4ffcabf (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) wext: Added ability to get wlan interface MAC address.
+ffdc3f9 (grafted) Extended ctrl iface commands format.
+project:
+1d7192f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) xmlrpcpp: Add debug log for incoming XML request.
+b0b71ed (grafted) xmlrpcpp: Add support for Nil value type.
+project:
+e95d922 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add an empty CleanSpec.mk
+8d51f15 (grafted) am cc4d7d89: am 5bbcf18e: reconcile main tree with open-source eclair
+project:
+42ea4dc (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) We need the license files to be next to the module's Android.mk.
+ded257d (grafted) Gradle project file.
+project:
+cec8538 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Avoid shifts of negative values inflateMark()."
+4f147cf (grafted) Avoid shifts of negative values inflateMark().
+59f86b5 (grafted) Merge "Remove LOCAL_NDK_STL_VARIANT"
+project:
+d467682 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Whitelist windows module
+28a6116 (grafted) Add MODULE_LICENSE and NOTICE
+project:
+fedf8f2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "package version metadata for external/"
+d2256df (grafted) Update core.jar to r2864 in google3.
+06d43f7 (grafted) package version metadata for external/
+project:
+9da6947 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Revert "ACodec WA: Do not fail in to error on Renesas H265"" into r-car-7
+369b22e (grafted) Revert "ACodec WA: Do not fail in to error on Renesas H265"
+40ad89d (grafted) Revert "ACodec WA: Do not fail in to error on Renesas VP8"
+project:
+454509b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Zygote: Add CAP_WAKE_ALARM to system_server to properly support timerfd alarms
+dc500ae (grafted) Enable LocalTransport for backup
+project:
+f4f8b80 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+a48ea36 (grafted) Delete simple reduction implementation.
+939ae60 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+119bb9b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix up mclinker so that it builds/runs for LLVM rebase to r256229.
+cfcb224 (grafted) Rebase mclinker for LLVM update to r256229.
+project:
+799a521 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+8ee018b (grafted) Delete simple reduction implementation.
+8d3e82e (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+40c854d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+41b4a28 (grafted) Add package-level documentation referencing the guide. am: 52c473f am: 84dc2cd
+4aae4c4 (grafted) merge in nyc-release history after reset to master
+project:
+29134bf (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix StaleDataException in changeCursor
+ef8ab80 (grafted) Output shorter lines for TLD pattern
+project:
+373b3ff (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+74b5617 (grafted) Do not break after Myanmar viramas
+348ccaa (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+13223cc (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix compiler warnings in ml/bordeaux/learning/
+e072152 (grafted) Merge "Cleanup Obsolete LOCAL_PRELINK_MODULE."
+project:
+1247e62 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix handling of suppressed exception
+cff666c (grafted) am b6a08d3e: am d7953536: (-s ours) am f9f54ac6: am 606af947: Use Context.getFilesDir as a backup dex location
+project:
+ae72038 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Removed definition of OMX_ANDROID_COMPILE_AS_32BIT_ON_64BIT_PLATFORMS
+eb7980c (grafted) BQ: Add and expose a unique id
+project:
+a0d4e31 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove duplicate res dir.
+856e2a9 (grafted) Update bitmap drawables with RTL support.
+project:
+7b55ede (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Tidy up uses of Integer.valueOf.
+ced8b4e (grafted) PBAP migration to BT Profile
+project:
+03b1857 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am 8d85c6c7: Split EXDATE with a Newline Delimiter
+8d85c6c (grafted) Split EXDATE with a Newline Delimiter
+e017a53 (grafted) Split EXDATE with a Newline Delimiter
+project:
+d86ef2e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+90d7bf1 (grafted) Use getLocationOnScreen to position auto-complete dropdown. am: 087b818dae
+0920d7a (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+c33b834 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+242eb54 (grafted) Added gradle support
+project:
+cffe3f0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+18326d3 (grafted) Import translations. DO NOT MERGE
+project:
+92eede1 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove EmojiFactory.
+709f713 (grafted) Merge "Remove unused LOCAL_LDLIBS."
+project:
+3baece9 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge remote-tracking branch 'goog/stage-aosp-master' into HEAD
+6a11cdd (grafted) Initial empty repository
+0625549 (grafted) Initial empty repository
+project:
+990fcb1 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Use Intent in preference to invoke subtype enabler
+df9dd39 (grafted) Compile inputmethodcommon against ICS SDK
+project:
+e8294b3 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) ethernet: Added ability to save static IP address permanently.
+c17e6fb (grafted) ethernet: Added ability to set static IP address.
+project:
+52bd8d3 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+25a0b43 (grafted) Move rcs from frameworks/opt/net/ims to external/ims
+3c3f115 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+226ac3a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Hide SIP pii data from logs in SipService.
+f08fe96 (grafted) Do not use ISipService binder if it is null
+project:
+eaebcd4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+a3e8570 (grafted) Allow connecting to WiFi networks via Quick Settings
+d4fbef4 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+1ceb4be (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+e946a53 (grafted) Import translations. DO NOT MERGE
+fe420f3 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+83abfe4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+d9fdb1b (grafted) merge in nyc-release history after reset to nyc-dev
+0a593e2 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+6a55245 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) uicc: Add FLAG_RECEIVER_REGISTERED_ONLY_BEFORE_BOOT intent flag on CatCmdmessage
+ebbb6b7 (grafted) Get current calls on phone type switch.
+project:
+08e3af1 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+958f398 (grafted) Import translations. DO NOT MERGE
+project:
+03bfa41 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix vcard tests
+98ae1e4 (grafted) Add gradle build file for vcard
+project:
+ffee168 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+ae2ec3f (grafted) Delete simple reduction implementation.
+3849d72 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+0fb4660 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Roll back to gradle 2.1.2 to fix builds.
+33ab048 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+20b2157 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Workaround for HttpURLConnection.getFollowRedirects() on M" am: 3b37453b1c am: f0bc25d83d
+f0bc25d (grafted) Merge "Workaround for HttpURLConnection.getFollowRedirects() on M" am: 3b37453b1c
+53e20b6 (grafted) Merge "Add API to get Auth Token Type used by authenticator." am: 708ade5a69 am: 96c4d0b9f5 am: d6de789bd6
+project:
+ad75a55 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Load the library using classloader's namespace.
+c76c758 (grafted) Merge "Import translations. DO NOT MERGE" into mnc-dr2-dev am: 52454ab476  -s ours am: 25673cb22e  -s ours
+project:
+c486dda (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+2ab5ad9 (grafted) Don't specify sub-buffer count for non-fast tracks
+3619360 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+85837c2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Fix compiler warning"
+b5e8b23 (grafted) Fix compiler warning
+60b25a8 (grafted) Merge "Add missing includes."
+project:
+e60346d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+ca279e4 (grafted) bt: create dedicated configs for Shasta and Anthracite am: e6d834ea8f am: b8aacc4549
+3c52c1e (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+1de426c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+3abbef0 (grafted) net: wireless: bcmdhd: Update bcm4354 FW (7.35.101.3)
+bd575df (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+558d3e3 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove references to deleted dhcpcd
+d0bf08c (grafted) sensors: use Autolock instead of mutex methods am: 30688bbe0f
+project:
+aa66b3c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+1017073 (grafted) Make the APF disassembler print pass and drop labels in jumps.
+8ff7e17 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+218f0d6 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Cleanup Obsolete LOCAL_PRELINK_MODULE.
+31ba05b (grafted) Hdmi: Remove unused variables and functions
+project:
+c759e51 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Don\'t rebuild the boot image every time am: 1d294cefde
+1d294ce (grafted) Don't rebuild the boot image every time
+843478f (grafted) Fix trivial syntax error to compile with clang. am: 89cb8c3d0e
+project:
+8af329f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Initial empty repository
+project:
+114363d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+8008c14 (grafted) Change AVC width got from header to match with framework.
+868d7e0 (grafted) Update mLowDelay value when startVA
+project:
+690809f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) WrsOMXPlugin - return OMX_ErrorInsufficientResources when making component instance fail due to resource limitation.
+8cb439a (grafted) Merge "Enable ISV OMX core." into lmp-mr1-dev
+project:
+fe577f6 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Really fix the readonly source case
+63f822d (grafted) Fix builds with readonly source directories
+project:
+ac74711 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) ION support in libwsbm.
+3406d98 (grafted) am 2fb29ee7: Kill HAVE_PTHREADS.
+project:
+86fb6eb (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+7c95319 (grafted) Change mLastTimeStamp in flush to fix testVP9Adaptive test in gts
+eb8e087 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+7b6e3db (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+4a5e38d (grafted) Fixed the video playback glitch issues by hardware decoding of libva.
+8463ec3 (grafted) Flush decoder output intead of ISV output to framework
+project:
+da96e20 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+44c7c2d (grafted) Revert "Fixed the incorrect stride and slice height settings of OMX video port."a
+6d724b9 (grafted) Fixed the incorrect stride and slice height settings of OMX video port.
+project:
+1a3d791 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Check whether the size be supported by HWC. Fall back to GLES if the size isn't be supported.
+9412c79 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+81e89cc (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) OEMCrypto v11 for Fugu N
+eecb5f2 (grafted) libmediaparser: parser header changes to keep consistency
+project:
+a805f1c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix invalid shift of a negative number.
+cf82d4e (grafted) Update firmware to 3.12
+project:
+68dc9e7 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) remove robby sensor code
+2f7df31 (grafted) add an option to use prebuilts
+project:
+1cd2b91 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+11e5ff7 (grafted) Sensors: Invensense: 6515: increase event throughput am: d47d7879a0
+0fc55ea (grafted) merge in nyc-release history after reset to master
+project:
+72cfa08 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add using PAN display
+ce74b21 (grafted) Fixes for software rendering
+project:
+683fb5e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) wifi: Improvement for commit f4110f4
+ab4816a (grafted) wifi: Added append of primary interface in to event responses.
+project:
+3f33d19 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Change path to Bluetooth stack
+f2045d3 (grafted) libbt-vendor: add minimum vendor-specific shutdown support
+project:
+d67ba7f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+0125e78 (grafted) hal: add mixer path for unprocessed devices
+9d39fc6 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+591bdc8 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) bootctrl: Add filter for msm8996 builds
+d7b0399 (grafted) bootctrl: Update to AU145 proprietary drop
+project:
+17d1958 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Enable LPM idle timeout for all chipsets
+64f6d43 (grafted) Reset vendor power state while BT power on.
+project:
+ac5dba4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+d59d4ae (grafted) camera: Update camera HAL to AU_LINUX_ANDROID_LA.HB.1.3.9.06.00.01.213.134
+f9a41d2 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+eca06e9 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+b7d1a38 (grafted) gralloc: Return an error if the buffer was not mapped
+448ed14 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+e98a418 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Default apn ip type to ipv4" into nyc-dev
+d7b1204 (grafted) Default apn ip type to ipv4
+53bf15a (grafted) msm8974: remove from top level makefile
+project:
+583ecf5 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) msm8974: remove from top level makefile
+888834f (grafted) Remove legacy keymaster support for msm8226
+project:
+ebbf2c9 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+f89f2c6 (grafted) Merge "mm-video-v4l2: venc: add checks before accessing heap pointers" into nyc-dev
+ef8e889 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+c25a431 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) msm8960: update msm_kgsl.h
+4e0f671 (grafted) am ca38ed09: Merge "Add missing kernel files."
+project:
+91f9235 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) kernel-headers: Update msmb_isp.h
+ff1e6e4 (grafted) msm8994: update compress_offload.h
+project:
+05abf07 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) msm8996: Update kernel headers for AU 134
+3902ad9 (grafted) msm8996: add kernel headers
+project:
+8b098e3 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) msm8x26: Update audio headers
+bc5e7a0 (grafted) msm8x26: Update rmnet header
+project:
+8ff5c00 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) msm8x27: add new device-specific ion headers
+5bccd2d (grafted) Add kernel headers
+project:
+582b414 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) msm8x84: update kernel header
+24707bb (grafted) msm8x84: update v4l2-controls.h kernel header
+project:
+3a098ee (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Workaround for adp8064
+ff9f453 (grafted) power: Toggle encoder boost for camera preview
+project:
+745ad69 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+301f662 (grafted) Wifi-HAL: Fix possible memory leak in llstats
+a1b463d (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+cbc59ae (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) CameraHAL: Added 320x240 resolution for both cameras
+1ce5823 (grafted) CameraHAL: Deffered IC
+project:
+6c7f795 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update vspm headers
+839e829 (grafted) Remove using vspm includes from kernel source folder
+project:
+cfeffeb (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Resolved compiler warnings
+0ad41fc (grafted) config.h: Change encoder and connector IDs for Salvator's displays
+project:
+c217f52 (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) Android.mk: Add include dir from mmngr_km
+153ad23 (grafted) Android.mk: libmmngr moved to VENDOR partition.
+project:
+497cda9 (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) Remove copying headers to kernel folder
+05abc95 (grafted) IAC-PoC: Increase CMA memory size by reducing MM_OMXBUF_SIZE
+project:
+fe25b0b (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) Update codec's to OMX Android Betta 2 release
+0038b00 (grafted) OMX: All modules moved to VENDOR partition.
+project:
+9bd84ef (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) tee-supplicant: Replace init_module with finit_module
+8663c1d (grafted) Moved tee-supp to /sbin
+project:
+7d7615a (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) optee: Added info messages for open/release
+7df3b2b (grafted) tee-supplicant: Change application name for Android
+project:
+d5b927c (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) Android.mk: Fix build adding path to km header
+0fcc95a (grafted) Android.mk: QOS library and test tool moved to VENDOR partition.
+project:
+4b98801 (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) Remove copying qos.h to kernel folder
+63dc86f (grafted) qos_drv: Fix header configuration
+project:
+7776b47 (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) Update uvcs_km to OMX Android Betta 2 release
+be42a32 (grafted) uvcs_km: Updated sources from OMX alpha2 release package
+project:
+55971e4 (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) Remove copying headers to kernel folder
+a55d782 (grafted) rcar_gen3: Support automatic histogram transfer.
+project:
+6e3dffd (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) Add include folder from vspm and mmngr_km
+1052767 (grafted) Android.mk: libvspmif and test tool moved to VENDOR partition.
+project:
+387e66f (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) Remove copying headers to kernel folder
+53c02b5 (grafted) rcar_gen3: Delete DRC function.
+project:
+749e9b4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+626099e (grafted) Fix build failure which occurs after setting macro RILC_LOG.
+a9552f0 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+40292fb (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am 0546008a: Always #include <sys/...>, not <linux/...>.
+0546008 (grafted) Always #include <sys/...>, not <linux/...>.
+949aad3 (grafted) Merge "Always #include <sys/...>, not <linux/...>."
+project:
+a62514d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Stop being silly."
+611be8f (grafted) Stop being silly.
+80bb3b8 (grafted) Merge "Remove HAVE_UNWIND_CONTEXT_STRUCT."
+project:
+b94c6fe (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Remove HAVE_UNWIND_CONTEXT_STRUCT from hardware/ti/omap4xxx."
+486b14c (grafted) Remove HAVE_UNWIND_CONTEXT_STRUCT from hardware/ti/omap4xxx.
+c2d95b9 (grafted) Merge "Cleanup Obsolete LOCAL_PRELINK_MODULE."
+project:
+11dda1f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix NPEs in PKCS7 parsing introduced by last commit.
+e8eab1e (grafted) Retain original encoded form in certs returned by PKCS7.
+project:
+ff43232 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+6cf8e8d (grafted) Load libart.so with RTLD_NODELETE
+bf245ca (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+f255acd (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+76ca48a (grafted) Merge "Mark mips-fp4 test as broken for clang." am: 4f3d3be70d
+9dd9c48 (grafted) merge in nyc-release history after reset to master
+project:
+2be2de8 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+cad7535 (grafted) Import translations. DO NOT MERGE
+project:
+ffe3986 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Revert "Merge "Correctly specify AuthenticationService name" into r-car-7"
+cae8062 (grafted) Merge "Correctly specify AuthenticationService name" into r-car-7
+project:
+6a99cd0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+12065ec (grafted) Bump targetSdkVersion to 24
+e2c0960 (grafted) merge in nyc-release history after reset to master
+project:
+b7d1ae9 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am c75dd6f6: (-s ours) am 70de475c: (-s ours) Import translations. DO NOT MERGE
+c75dd6f (grafted) am 70de475c: (-s ours) Import translations. DO NOT MERGE
+e714c4b (grafted) Merge "Import translations. DO NOT MERGE"
+project:
+31bb02c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update code coverage filter
+aeed555 (grafted) am 91625968: Calendar does not use cleartext network traffic.
+project:
+6654d49 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Camera2: Fix ambiguity of the resource ic_capture_video
+35ad43a (grafted) Fix crash in AOSP Camera app when recording video
+project:
+37a36c9 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove visual voicemail config for Orange France
+60b5883 (grafted) Fix missing WFC indicator in status bar for EE mobile.
+project:
+29b07a9 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+fdba74d (grafted) Import translations. DO NOT MERGE
+2b11230 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+89703dd (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Skip non KeyEntry from PKCS12 file during extraction.
+e1ab94c (grafted) Import translations. DO NOT MERGE
+project:
+06896b9 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+cfbb3c8 (grafted) Merge "Import translations. DO NOT MERGE" into nyc-dev
+2bae849 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+434ccc0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+d342973 (grafted) Import translations. DO NOT MERGE
+39589a8 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+a33d9f3 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+d742a82 (grafted) Import translations. DO NOT MERGE
+f8985d1 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+876860c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+e4cc31a (grafted) merge in nyc-release history after reset to nyc-dev
+3855bb4 (grafted) Fix portrait-orientation assumptions
+project:
+a622a6c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+d0ce613 (grafted) Fix N checking
+dc83cc5 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+05ddb0c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Don\'t allow cachedFile Attachments if the content Uri is pointing to EmailProvider. am: 4cd6044 am: 59cac70 am: cfa3cee am: b2f6959 am: 76d3280 am: 1a7a329 am: 2e3f2aa am: ebd7fc4
+ebd7fc4 (grafted) Don\'t allow cachedFile Attachments if the content Uri is pointing to EmailProvider. am: 4cd6044 am: 59cac70 am: cfa3cee am: b2f6959 am: 76d3280 am: 1a7a329 am: 2e3f2aa
+029ccf0 (grafted) am 3b152dec: (-s ours) am c6f21ce0: (-s ours) am dcb985ea: (-s ours) Import translations. DO NOT MERGE
+project:
+8f75072 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+2a4cf20 (grafted) Import translations. DO NOT MERGE
+f9f4134 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+2d20bbc (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+f2f3fbc (grafted) Import translations. DO NOT MERGE
+c5633fa (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+4cc5f81 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+5e9c602 (grafted) Import translations. DO NOT MERGE
+project:
+ec0da15 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+61d7e4b (grafted) Bump targetSdkVersion to 24
+project:
+aeb4fff (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+9267faa (grafted) Fix crash in onRequestPermissionsResult due to empty grantResults
+project:
+01b70dc (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Refresh checked state when choosing certificates.
+74e2df0 (grafted) Import translations. DO NOT MERGE
+project:
+9f26f7b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+58d444f (grafted) Import translations. DO NOT MERGE
+project:
+4707e2b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fix the build
+3c0c2c4 (grafted) Merge branch 'ub-launcher3-burnaby-nyc' into nyc-dev b/29535844
+project:
+996546f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Prevent camera app crashes on changing hw.camera.* settings
+8e2f0e4 (grafted) am 33e28809: Merge "Add missing <string.h> include."
+project:
+1ff15b4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+a1db3cc (grafted) findDeviceAdmin searchs for disable receiver as well
+97badee (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+b326ec3 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+9de3ed2 (grafted) Merge "Messenger refuses all file:///data/ uris" into nyc-dev
+859423f (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+7b2f129 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Removed album art background from TrackBrowserActivity
+da36f09 (grafted) Fixed crash of app due security exception.
+project:
+42670e0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+a009eb9 (grafted) Merge "Import translations. DO NOT MERGE" into mnc-dr2-dev am: 6f929a3924  -s ours am: ec24d29172  -s ours
+project:
+2bccb8f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+35e9103 (grafted) Allow system_server access to NFC reader mode API. am: 8561f64804 am: 6c6a969835 am: 87f7a52ec5 am: 0e2618f536
+2439694 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+01e429c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) OneTimeInitializer needs privileged permissions
+c23fe93 (grafted) New OneTimeInitializer to do upgrade steps.
+project:
+064d188 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+87ec609 (grafted) Only log (not crash) when activity is not found.
+25c670b (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+79731f0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am bf4ec5b1: am e653803e: am e32fd589: am 297d905a: am d53752da: am 3e8d0a1d: am fd8ebadd: am d2fec3d6: am 61555c8b: am 448c256d: (-s ours) am 6c91d20e: Fix exported property on NotificationBroadcastReceiver.
+bf4ec5b (grafted) am e653803e: am e32fd589: am 297d905a: am d53752da: am 3e8d0a1d: am fd8ebadd: am d2fec3d6: am 61555c8b: am 448c256d: (-s ours) am 6c91d20e: Fix exported property on NotificationBroadcastReceiver.
+ae37f67 (grafted) am 7d22910d: am 7a6f9f4c: am e411fca1: am 7e4da507: am 483b7e2d: am cd70ad54: am f23e3bf2: am 41a75d83: am 64398d93: Fix exported property on NotificationBroadcastReceiver.
+project:
+421fcce (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+66cf62d (grafted) Import translations. DO NOT MERGE
+project:
+c38d495 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+8423699 (grafted) Import translations. DO NOT MERGE
+project:
+356bff8 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Provision is the AOSP 'setup wizard' app...
+78ca0db (grafted) Merge "Complete provisioning, and complete provisioning again."
+project:
+8fb3bdc (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Bump targetSdkVersion to 24
+0cb6f8f (grafted) Import translations. DO NOT MERGE
+project:
+961f0ae (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+733649c (grafted) Merge "Fix DND conditional null state" into nyc-dev
+a7cc211 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+31427dd (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+1c0e551 (grafted) Import translations. DO NOT MERGE
+project:
+4db9978 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Migrate more System and Secure settings to Global.
+10f05a5 (grafted) Turn spare parts on and off when the advanced settings checkbox is checked.
+project:
+51cc846 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove SpeechRecorder from clockwork eng builds. am: d97c587225 am: 5ffb51412f
+5ffb514 (grafted) Remove SpeechRecorder from clockwork eng builds. am: d97c587225
+75284e5 (grafted) am fa2bf950: (-s ours) am 725f4c8c: Remove obsolete SpeechRecorder from eng builds
+project:
+b4e1d00 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+f51082a (grafted) Import translations. DO NOT MERGE
+project:
+f3ddd19 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) DO NOT MERGE Refer frameworks/support instead of prebuilts/sdk/current/support
+48dadb4 (grafted) DO NOT MERGE Sync to joey ub-tv-dev at e7fbaa585b1eb7afec05f05032d2e8d99fb595d4
+project:
+7f427c0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+59e2636 (grafted) Import translations. DO NOT MERGE
+project:
+5b68e8a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Show cursor
+d3090cb (grafted) Remove rows/cols from nativeInit
+project:
+e11ee71 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+24d8063 (grafted) Add guest mode functionality (4/5)
+7917aea (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+10cae70 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+5d8ac64 (grafted) Skip connectivity change when not resumed
+e57519e (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+bce9c3c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update code coverage filter
+fb6b257 (grafted) Don\'t allow cachedFile Attachments if the content Uri is pointing to EmailProvider. am: a2e8a80 am: ba7594c am: a5890c8 am: 63691fd am: deecfd8 am: b1d0783 am: 6d7320d am: 17b28ed
+project:
+6a615b6 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+64d06bb (grafted) merge in nyc-release history after reset to nyc-dev
+0e6177c (grafted) support OnlyAlertOnce  in the Showcase
+project:
+5e0deda (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+dbfd3a8 (grafted) Merge "Import translations. DO NOT MERGE" into nyc-dev
+38ca5b3 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+59aefa2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update OpenWnn based on ICS.
+5a74932 (grafted) Remove the simulator target from all makefiles. Bug: 5010576
+project:
+33d26f5 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am 8268a4c7: (-s ours) Remove deprecated locales - DO NOT MERGE
+8268a4c (grafted) Remove deprecated locales - DO NOT MERGE
+a460796 (grafted) Remove deprecated locales
+project:
+2c90d6a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+08838a1 (grafted) Import translations. DO NOT MERGE
+project:
+6ec4bb3 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am 12857dfc: (-s ours) am 4516f3ed: am 52f5c3b6: Manual cherry-pick of "Remove com.android.chrome.browser authority"
+6d4c179 (grafted) am de935fe9: (-s ours) am cb9cab23: Remove com.android.chrome.browser authority
+12857df (grafted) am 4516f3ed: am 52f5c3b6: Manual cherry-pick of "Remove com.android.chrome.browser authority"
+project:
+88659e0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+bcc65b8 (grafted) Merge "CalendarProvider2: log failures to get the cached calling package." into nyc-dev
+6812627 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+7c1b6e9 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update code coverage filter
+7914bcc (grafted) Add VIA number column to CallLog Backup
+project:
+db529f4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+b865bb1 (grafted) Import translations. DO NOT MERGE
+3ffca29 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+684e701 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+01dee86 (grafted) Clear identity when deleting scanned entry.
+d459acd (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+c2bd308 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+a4fc2d9 (grafted) Import translations. DO NOT MERGE
+9f3f109 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+96d0a80 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Fixes for the PartnerBookmarksProvider test.
+60c1317 (grafted) Default implementation of PartnerBookmarksProvider
+project:
+9db4685 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+159671a (grafted) Import translations. DO NOT MERGE
+1962e5a (grafted) android.intent.action.CONTENT_CHANGED should be system protected
+project:
+9033797 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+8a3efc3 (grafted) Add Programs.COLUMN_RECORDING_PROHIBITED
+9126069 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+a86144f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+cb405a3 (grafted) Fix user dictionary permission check
+project:
+0ad1e25 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+10b53da (grafted) Import translations. DO NOT MERGE am: 6e51f45410  -s ours am: 98ecc35eac  -s ours am: 07d37ed37e  -s ours
+project:
+55c8ab1 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Import translations. DO NOT MERGE
+779567f (grafted) Import translations. DO NOT MERGE
+project:
+6e0a80f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Really keep up with new Dreams API.
+f7ef7c1 (grafted) Keep up with new Dreams API.
+project:
+e5504f2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+724d95b (grafted) Mark CarAppContextManager as @hide.
+fd47c9a (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+eeb364a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Wait for IPv4 provisioned when connecting to IPv4 MMS URL
+fc9fe67 (grafted) Change to use Phone instead of PhoneBase/PhoneProxy
+project:
+ec9248b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+23eb57a (grafted) Synchronize onCallAdded with onCallRemoved.
+8f09d8a (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+505b935 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+41c8c2a (grafted) Import translations. DO NOT MERGE
+62f1697 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+cf093f3 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+a397d40 (grafted) Import translations. DO NOT MERGE
+c6fa7b4 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+7085891 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) TestingCamera1/2: Disable dex preopt
+58712cc (grafted) TestingCamera: add null check for supportedSceneModes
+project:
+057deca (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add hermetic bvt directory
+bf54579 (grafted) move MediaCaptureTests to appsbvt build target
+project:
+606e79e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am 71b735b3: (-s ours) am 2f82e647: Update Darwin prebuilts for LLVM rebase to r239765.
+0ddb64e (grafted) am e10d46fd: (-s ours) am 34cb3f74: Add shebang lines to analyzers.
+71b735b (grafted) am 2f82e647: Update Darwin prebuilts for LLVM rebase to r239765.
+project:
+4940bb5 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update prebuilt Clang to build 2690385.
+89b56ec (grafted) Update prebuilt Clang to build 2658975.
+project:
+173b98f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+45562a5 (grafted) Update prebuilt Clang to build 2690385.
+1a48452 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+b660e8f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) am 33c753e2: (-s ours) am ac7be37a: Update libraries in prebuilt for thread sanitizer.
+10427b9 (grafted) am 63702f5f: (-s ours) am f7805e2f: Update Linux prebuilts for LLVM rebase to r239765.
+33c753e (grafted) am ac7be37a: Update libraries in prebuilt for thread sanitizer.
+project:
+14f4878 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update SPIR-V prebuilts
+d40c8f6 (grafted) Update SPIR-V prebuilts
+project:
+d054448 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update ddms libs from aosp-emu-master-dev @ 2491576
+d7638b6 (grafted) Refresh devtools prebuilts from studio-1.3-dev, Build 1911095
+project:
+cf9f78f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Add .gitignore in eclipse prebuilts maven repository"
+c37d04f (grafted) Add .gitignore in eclipse prebuilts maven repository
+f5064da (grafted) Merge "Move tycho plugin into mavenplugins folder."
+project:
+e52fa50 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update prebuilt GCC to build 2617618.
+8e95d0e (grafted) Add missing -androidkernel-{nm,size} symlinks.
+project:
+36b851f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add missing -androidkernel-{nm,size} symlinks.
+116aac0 (grafted) Create -androidkernel toolchain symlinks.
+project:
+ec5aa66 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Add NOTICE and MODULE_LICENSE files."
+bb7a978 (grafted) Add NOTICE and MODULE_LICENSE files.
+8834958 (grafted) Merge "Fix for clang -fsyntax-only happens to see the same header as host gcc"
+project:
+b26f316 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add missing -androidkernel-{nm,size} symlinks.
+81d2c33 (grafted) Create -androidkernel toolchain symlinks.
+project:
+4c7e42b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add missing -androidkernel-{nm,size} symlinks.
+d5590ab (grafted) Create -androidkernel toolchain symlinks.
+project:
+6ca6746 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update prebuilt GCC to build 2617618.
+236a853 (grafted) Add missing -androidkernel-{nm,size} symlinks.
+project:
+cbed25a (HEAD, m/r-car-7-K4.9, gl-mirror/rcar-android-kernel-4.9) GCC 5.2.1 from Yocto 2.16
+64b151b (grafted) Initial empty repository
+project:
+0390252 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add missing -androidkernel-{nm,size} symlinks.
+4bbd73c (grafted) Create -androidkernel toolchain symlinks.
+project:
+1273431 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add NOTICE and MODULE_LICENSE files.
+63b209f (grafted) Add missing 32-bit sysroot symlinks.
+project:
+73ca991 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add NOTICE and MODULE_LICENSE files.
+f61a459 (grafted) Merge "Add glibc2.15-based host toolchain."
+project:
+c795eed (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Resubmit prebuilt binaries without debug messages
+65cfe20 (grafted) Fix for missing binutils win64 build-id section
+project:
+72608d9 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add missing -androidkernel-{nm,size} symlinks.
+4b73952 (grafted) Create -androidkernel toolchain symlinks.
+project:
+54c4ed4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add missing -androidkernel-{nm,size} symlinks.
+d06df25 (grafted) Create -androidkernel toolchain symlinks.
+project:
+5544db4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+3903d61 (grafted) merge in nyc-release history after reset to nyc-dev
+c62e49a (grafted) Update gdb to 7.11.
+project:
+becaceb (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+a0e0f13 (grafted) merge in nyc-release history after reset to nyc-dev
+5102a42 (grafted) Update gdb to 7.11.
+project:
+c62661f (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update prebuilts to ab/2774618
+669e861 (grafted) am 09eb3b15: Update prebuilts to go 1.5.1
+project:
+1f6c8f6 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update prebuilts to ab/2774618
+f8fa698 (grafted) am 6ff23253: Update prebuilts to go 1.5.1
+project:
+2c3fd9e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+12bd9b9 (grafted) add newest gradle plugin
+cfbff37 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+d32685d (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add libedit prebuilts for linux-x86.
+43a75cd (grafted) Initial empty repository
+project:
+2fb9bdd (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+51c582c (grafted) Add R33, 24.0.0 to maven repo
+20903bb (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+06154f3 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+c5fb27e (grafted) Merge "Update TF prebuilt" into nyc-dev
+28e2f8c (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+3e033d2 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Hack together a NDK android-24 platform
+e99ac48 (grafted) Merge "Fix symlinking script to set up x86/mips properly."
+project:
+5f5aa81 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update prebuilts to ab/2774618
+6e7e0f4 (grafted) Adding binaries for master-ceb558c7f9e8
+project:
+7475602 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update prebuilts to ab/2774618
+750704d (grafted) Adding binaries for master-ceb558c7f9e8
+project:
+0c5958b (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Add LICENSE"
+7b3cc86 (grafted) Add LICENSE
+30a9c04 (grafted) am 4432f0ff: (-s ours) am 0b1ee9ec: Ignore .pyc files.
+project:
+74e4f93 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add sepolgen for audit2allow
+6f93750 (grafted) Merge "setools: fix sesearch, add sediff"
+project:
+9d187a8 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Pull in recent API changes.
+a257655 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+24f50af (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+92e32fc (grafted) Update 2.2-beta1 Gradle plugin prebuilts (build #38)
+f185c5f (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+317031c (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Bash completion: Fix ls options and also support "shell cat"" am: 9d7a46cfa2
+9d7a46c (grafted) Merge "Bash completion: Fix ls options and also support "shell cat""
+3dafbbb (grafted) am e8826f62: am f5fb0250: Merge "Complete subcommands for dumpsys, am and pm."
+project:
+0833717 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+d138700 (grafted) Add Subaru and Nissan car kits to auto pair blacklist
+40a73d8 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+c36d8eb (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update CA certificates
+4892254 (grafted) Update CA certificates
+project:
+091f291 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+6b32d8c (grafted) apmanager_test: Compile only on \'eng\' builds. am: 66cf1b18c0
+3f5d2c8 (grafted) merge in nyc-release history after reset to master
+project:
+c67e521 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+bf76367 (grafted) Merge "DHCPMessage: change the return type of InitRequest()"
+ae960de (grafted) merge in nyc-release history after reset to master
+project:
+269d710 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) shill_test: Compile only on \'eng\' builds. am: 2d6213a95f
+2d6213a (grafted) shill_test: Compile only on 'eng' builds.
+cb08c7e (grafted) shill: Add APIs missing from MockSockets am: 38a530fdf1
+project:
+8d7c414 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) usbhs: Fixing USB Chapter 9 compatibility issues
+c1489c9 (grafted) WA: Change group of /proc/cmdline to graphics
+project:
+aa3f820 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+a486a4b (grafted) Simpleperf: fix flaky tests.
+9971a9d (grafted) mksquashfsimage.sh: Make disable-4k-align a paramter
+project:
+cf719c0 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+430500d (grafted) merge in nyc-release history after reset to master
+835d2c2 (grafted) Refactor IpTables class to remove duplication.
+project:
+e3fab37 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Fix Gatekeeper unit test"
+b3f9a07 (grafted) Merge "Fix default constructor"
+936d5ba (grafted) Fix Gatekeeper unit test
+project:
+e3eb79e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+c8905b6 (grafted) Handle 64-bit attestation values on 32-bit platforms.
+dd0b3ed (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+0cc1982 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+8a22c41 (grafted) Merge "Camera: document expected timestamp source" into nyc-dev
+0297976 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+70d55ad (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Unit tests: Compile only on \'eng\' builds. am: ace602ff16
+ace602f (grafted) Unit tests: Compile only on 'eng' builds.
+fa8fdf5 (grafted) nativepower: Update libchrome APIs to r369476 am: b59838fa1f
+project:
+b336095 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Set both legacy and new UID routing attributes.
+8f7b0f9 (grafted) Revert "netd: Deleted in place declaration FRA_UID_START/END."
+project:
+c8e2b03 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Initial empty repository
+project:
+04c5e5a (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+1140ef6 (grafted) Move keystore to foreground cpuset.
+05f23b1 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+6d735b6 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) nfc: allow access to drmserver_service
+85d2ecd (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+3f39249 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Always build absolute paths the same way
+f65179b (grafted) Include the failed directory name if _mkdir fails.
+project:
+8e9be04 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Update binder interfaces for AIDL change in byte[] type
+d82f0e4 (grafted) trunks: Use 'LOCAL_MODULE_TAGS: eng' for tests.
+project:
+b0ed0ab (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+77261c1 (grafted) merge in nyc-release history after reset to nyc-dev
+2e1de4f (grafted) Mark block device as read-only before mounting.
+project:
+29055ee (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+a363036 (grafted) Two phases to set the password for disk encryption
+5a2cf28 (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+4d47bad (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+d53e7a5 (grafted) weave_test: Compile only on \'eng\' builds. am: 4e4f70bbde
+ce36273 (grafted) merge in nyc-release history after reset to master
+project:
+205bca4 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Add a binder based server implementation am: d6197ec257
+d6197ec (grafted) Add a binder based server implementation
+528d698 (grafted) webservd: Update libchrome APIs to r369476 am: a08a2720d8
+project:
+edd2dff (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to master
+c327c9c (grafted) Backport trunk patch wrt wrong stub generated for aarch64 large DSOs.
+01eefd1 (grafted) merge in nyc-release history after reset to master
+project:
+3880776 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Fix project setup." into idea133  Auto-merge: e893163
+28fa134 (grafted) Merge "Switch to new distribution plugin." into idea133  Auto-merge: 83be8b6
+e893163 (grafted) Merge "Fix project setup." into idea133
+project:
+9c5df24 (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+05c9a36 (grafted) Add Gradle 2.14-bin to prebuilts
+2689bbc (grafted) merge in nyc-release history after reset to nyc-dev
+project:
+1e0719e (HEAD, m/r-car-7-K4.9, gl-mirror/r-car-7) merge in nyc-release history after reset to nyc-dev
+1b6e873 (grafted) Merge changes from topic 'qc-diag-logger-controller' into nyc-dev
+652de81 (grafted) merge in nyc-release history after reset to nyc-dev

@@ -22,9 +22,12 @@ if [[ $ADB_DEVICES != *$ADB_SERIAL* ]]; then
     if [ $result != 0 ]; then
       echo "ERROR. Adb still don't see device"
       echo "Perhaps device is not bootable after flash new build"
-      return $ERROR_NOT_BOOTABLE
+      send_mail $ERROR_NOT_BOOTABLE
+      exit $ERROR_NOT_BOOTABLE
     fi
 	fi
 fi
 echo "device $ADB_SERIAL found"
+echo "Check bootcomplete"
+export BOOT_COMPLETE=`adb -s $ADB_SERIAL shell getprop | grep bootcomplete`
 }

@@ -24,6 +24,7 @@ do
         exit $ERROR_ADB
 	fi
 	sleep 10;
+	echo "bootcomplete=`$ADB_CMD -s $ADB_SERIAL shell getprop | grep bootcomplete`"
 done;
 echo ""
 echo "************ Finish google_adb_reboot.sh ********$DATE*******"
