@@ -1,0 +1,207 @@
+#!/bin/bash -e
+verify_cmd ()
+{
+	$@
+	result=$?
+	cmd=$@
+	if [ $result != 0 ]; then
+		echo "ERROR. Last command [$cmd] finished with result [$result]"
+		exit $result
+	else
+		echo "SUCCESS. Last command [$cmd] finished with result [$result]"
+	fi
+}
+verify_file ()
+{
+	file=$@
+	if [ ! -f "$file" ]; then
+		echo "ERROR. File [$file] not found"
+		exit 13
+	else
+		echo "SUCCESS. File [$file] found"
+	fi
+}
+soft_verify_file ()
+{
+	file=$@
+	if [ ! -f "$file" ]; then
+		echo "ERROR. File [$file] not found"
+		return 1
+	else
+		echo "SUCCESS. File [$file] found"
+	fi
+}
+
+verify_bins ()
+{
+	soft_verify_file ${bootparam}
+	soft_verify_file ${bl2}
+	soft_verify_file ${cert}
+	soft_verify_file ${bl31}
+	soft_verify_file ${tee}
+	soft_verify_file ${uboot}
+	soft_verify_file ${pack_ipl}
+}
+
+bl_section ()
+{
+###########################################
+#Bootloader section
+if [[ $NO_BL = true ]] ; then
+	echo "**************** --nobl argument detected"
+	echo "**************** skipping flash bootloader section"
+	return
+fi
+
+if [ ! -e "${bootloaderimg}" ] ; then
+    echo "bootloader.img not found"
+    echo "Try to build bootloader.img"
+    echo "Checking requierd files exist..."
+    HAS_BINS=verify_bins
+    if [[ $HAS_BINS != 0 ]]; then
+        echo
+        echo "**************** NO bins for bootloader found."
+        echo "**************** It's ok, skipping flash bootloader section"
+        echo
+        return
+    else
+        echo "Run packipl"
+        verify_cmd $packipl all ./
+    fi
+fi
+
+echo "Flash bootloader"
+verify_cmd ${FASTBOOT} flash bootloader ${bootloaderimg}
+verify_cmd ${FASTBOOT} oem flash all
+echo "Will sleep 60 sec for bootloaders update...."
+sleep 30
+echo "30 seconds left"
+sleep 30
+verify_cmd ${FASTBOOT} oem format
+verify_cmd ${FASTBOOT} reboot-bootloader
+return
+
+#End Bootloader section
+#################################################
+}
+
+if [[ "$@" = *"-h"* ]] ; then
+	echo "Usage: %fastboot.sh [--nobl]"
+	echo "options:"
+	echo "	--nobl Don't flash bootloader"
+	exit 1;
+fi
+if [[ "$@" = *"--nobl"* ]] ; then
+	export NO_BL=true
+else
+	export NO_BL=false
+fi
+
+if [ -n "$ANDROID_BUILD_TOP" ] ; then
+	echo "ANDROID_BUILD_TOP is set. Using images from output dir"
+	export FASTBOOT=${FASTBOOT-"${ANDROID_HOST_OUT}/bin/fastboot"}
+	export PRODUCT_OUT=${PRODUCT_OUT-"${ANDROID_PRODUCT_OUT}"}
+else
+	echo "ANDROID_BUILD_TOP is not set. Using images from current dir"
+	# Pre-packaged DB
+	export PRODUCT_OUT="."
+	export  FASTBOOT="$PRODUCT_OUT/fastboot"
+fi
+# =============================================================================
+# pre-run
+# =============================================================================
+# Verify fastboot program is available
+# Verify user permission to run fastboot
+# Verify fastboot detects a device, otherwise exit
+
+
+if [ -f ${FASTBOOT} ]; then
+	fastboot_status=`${FASTBOOT} devices 2>&1`
+	if [ `echo $fastboot_status | grep -wc "no permissions"` -gt 0 ]; then
+		cat <<-EOF >&2
+		-------------------------------------------
+		Fastboot requires administrator permissions
+		Please run the script as root or create a
+		fastboot udev rule, e.g:
+		 % cat /etc/udev/rules.d/99_android.rules
+			SUBSYSTEM=="usb",
+			SYSFS{idVendor}=="0451"
+			OWNER="<username>"
+			GROUP="adm"
+		-------------------------------------------
+		EOF
+		exit 1
+	elif [ "X$fastboot_status" = "X" ]; then
+		echo "No device detected. Please ensure that" \
+			 "fastboot is running on the target device"
+								exit -1;
+	else
+		device=`echo $fastboot_status | awk '{print$1}'`
+		echo -e "\nFastboot - device detected: $device\n"
+	fi
+else
+	echo "Error: fastboot is not available at ${FASTBOOT}"
+	exit -1;
+fi
+
+# poll the board to find out its configuration
+product=`${FASTBOOT} getvar product 2>&1 | grep product | awk '{print$2}'`
+
+# Create the filename
+bootimg="${PRODUCT_OUT}/boot.img"
+systemimg="${PRODUCT_OUT}/system.img"
+vendorimg="${PRODUCT_OUT}/vendor.img"
+cacheimg="${PRODUCT_OUT}/cache.img"
+recoveryimg="${PRODUCT_OUT}/recovery.img"
+userdataimg="${PRODUCT_OUT}/userdata.img"
+bootloaderimg="${PRODUCT_OUT}/bootloader.img"
+bootparam="${PRODUCT_OUT}/bootparam_sa0.bin"
+bl2="${PRODUCT_OUT}/bl2.bin"
+cert="${PRODUCT_OUT}/cert_header_sa6.bin"
+bl31="${PRODUCT_OUT}/bl31.bin"
+tee="${PRODUCT_OUT}/tee.bin"
+uboot="${PRODUCT_OUT}/u-boot.bin"
+packipl="${PRODUCT_OUT}/pack_ipl"
+# Verify that all the files required for the fastboot flash
+# process are available
+echo "product=$product"
+echo "fastboot=$FASTBOOT"
+echo "device=$device"
+verify_file ${bootimg}
+verify_file ${systemimg}
+verify_file ${recoveryimg}
+verify_file ${userdataimg}
+if [ -f ${cacheimg} ]; then
+	echo "SUCCESS. File [${cacheimg}] found"
+else
+	echo "cache.img not found in [$PRODUCT_OUT]"
+	echo "Creating cache.img as empty ext4 img...."
+	EXT4FS=`which make_ext4fs`
+	if [ -z ${EXT4FS} ]; then
+		echo "ERROR. make_ext4fs not found. Need to add executable to PATH"
+	else
+		verify_cmd ${EXT4FS} -s -l 512M -a cache ${cacheimg}
+	fi
+fi
+# =============================================================================
+# end pre-run
+# =============================================================================
+####################bootloader section start
+bl_section
+####################bootloader section end
+
+# Starting recovery
+echo "Flash recovery"
+verify_cmd ${FASTBOOT} flash recovery	${recoveryimg}
+
+echo "Flash Android partitions"
+verify_cmd ${FASTBOOT} flash boot ${bootimg}
+verify_cmd ${FASTBOOT} flash system	${systemimg}
+verify_cmd ${FASTBOOT} flash vendor	${vendorimg}
+verify_cmd ${FASTBOOT} flash userdata	${userdataimg}
+verify_cmd ${FASTBOOT} flash cache ${cacheimg}
+verify_cmd ${FASTBOOT} erase metadata
+#reboot now
+verify_cmd ${FASTBOOT} reboot
+echo "SUCCESS. Script finished successfully"
+exit 0

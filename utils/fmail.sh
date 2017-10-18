@@ -42,6 +42,17 @@ mail_exit ()
 send_mail ()
 {
   RESULT=$@
+  if [[ ${RESULT} == 0 ]]; then
+    RESULT_STRING="SUCCESS"
+  else
+    RESULT_STRING="FAIL"
+  fi
+  if [[ -n $BOOT_COMPLETE ]]; then
+    VERIFY_BOOTABLE="SUCCESS"
+  else
+    VERIFY_BOOTABLE="FAIL"
+  fi
+
   if [ ${jj_send_notification} = 'true' ]; then
     cd ${WORKSPACE}
     cat <<EOF > msmtp.ti
@@ -63,11 +74,11 @@ Subject: [${jj_proj}] ${jj_name} - ${HW_PLATFORM} ${BUILD_VARIANT} build #${BUIL
 
 Dear All,
 
-Autotest build #${BUILD_NUMBER} finished with result $RESULT.
-
+Autotest build #${BUILD_NUMBER} finished with result $RESULT_STRING.
+Verify bootcomplete result: $VERIFY_BOOTABLE
 Logs and output can be found at:
 
-$HTTP_SERVER/logs/$ADB_SERIAL/$LDIRNAME
+$HTTP_SERVER/$ADB_SERIAL/$LDIRNAME
 
 " | tee ${WORKSPACE}/notification_message
 
@@ -78,5 +89,4 @@ $HTTP_SERVER/logs/$ADB_SERIAL/$LDIRNAME
 
     cat ${WORKSPACE}/notification_message | msmtp -C ${WORKSPACE}/msmtp.cfg -t
   fi
-  . $SCRIPTS_DIR/lock/delete-lock-file.sh
 }

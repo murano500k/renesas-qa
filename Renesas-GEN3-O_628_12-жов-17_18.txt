@@ -1,0 +1,56 @@
+
+
+	[SYS_KERNEL_CHECK_0001]	"cat /proc/version"
+error: protocol fault (couldn't read status): Success
+
+_________________________________
+
+
+
+	[SYS_ROOTFS_CHECK_0001]	"ls -al /system/lib64/modules"
+error: device '(null)' not found
+
+_________________________________
+
+
+
+	[SYS_GFX_CHECK_0001]	"cat /sys/kernel/debug/pvr/version"
+error: device '(null)' not found
+
+_________________________________
+
+
+
+	[SYS_SMP_CHECK_0001]	"cat /proc/cpuinfo"
+error: device '(null)' not found
+
+_________________________________
+
+
+
+	[SYS_0007]	"cat /proc/meminfo"
+error: device '(null)' not found
+
+_________________________________
+
+
+
+	[SYS_0001]	"lsmod"
+error: device '(null)' not found
+
+_________________________________
+
+
+
+	[SYS_UBOOT_0002]	"printenv"
+error: device '(null)' not found
+
+_________________________________
+
+
+
+	[SYS_SEL_0001]	"getenforce"
+error: device '(null)' not found
+
+_________________________________
+

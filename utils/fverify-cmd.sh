@@ -2,33 +2,42 @@
 
 verify_cmd ()
 {
-  $@
-	result=$?
   cmd=$@
-
-	if [ $result != 0 ]; then
-		echo "ERROR. Last command [$cmd] finished with result [$result]"
-		return $ERROR_FLASH
-	else
-		echo "SUCCESS. Last command [$cmd] finished with result [$result]"
-	fi
+  echo "run [$cmd]"
+  timeout $DEFAULT_TIMEOUT $@
+  result=$?
+  if [[ $result != 0 ]]; then
+	echo "ERROR. Result [$result]"
+    send_mail $result
+    exit $result
+  else
+	echo "SUCCESS. Result [$result]"
+  fi
 }
+
+
+
 
 verify_file ()
 {
   file=$@
-	if [ ! -f "$file" ]; then
-		echo "ERROR. File [$file] not found"
-		return $ERROR_FLASH
-	else
-		echo "SUCCESS. File [$file] found"
-	fi
+  if [ ! -e "${file}" ] ; then
+    echo "ERROR. file $file NOT found"
+    send_mail $ERROR_FLASH
+    exit $ERROR_FLASH
+  else
+    echo "SUCCESS. file $file found"
+  fi
 }
+
+
+
 verify_string ()
 {
 	string=$@
 	if [ -z $string ]; then
-		echo "ERROR. Verify string failed"
-		return $ERROR_FLASH
+	echo "ERROR. Verify string failed"
+	send_mail $ERROR_FLASH
+    exit $ERROR_FLASH
 	fi
 }

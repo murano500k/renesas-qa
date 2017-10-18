@@ -1,44 +1,67 @@
 #!/bin/bash -x
 
-usage ()
+bl_section ()
 {
-	echo "Usage: %fastboot.sh ";
-	echo "options:";
-	echo "--pwd     Force usage of fastboot and images from pwd"
-	return
+###########################################
+#Bootloader section
+if [[ true ]]; then
+  return
+fi
+if [ ! -e "${bootloaderimg}" ] ; then
+    echo "bootloader.img not found"
+    echo "Try to build bootloader.img"
+    echo "Checking required files exist..."
+    verify_bins
+    if [[ $? != 0 ]]; then
+        echo
+        echo "**************** NO bins for bootloader found."
+        echo "**************** It's ok, skipping flash bootloader section"
+        echo
+        return
+    else
+        echo "Run packipl"
+        verify_cmd $packipl all ./
+    fi
+fi
+echo "Flash bootloader"
+verify_cmd $FASTBOOT_PATH -s $FASTBOOT_SERIAL flash bootloader ${bootloaderimg}
+verify_cmd $FASTBOOT_PATH -s $FASTBOOT_SERIAL oem flash all
+echo "Waiting 30 sec for bootloaders update ..."
+sleep 30
+verify_cmd $FASTBOOT_PATH -s $FASTBOOT_SERIAL oem format
+verify_cmd $FASTBOOT_PATH -s $FASTBOOT_SERIAL reboot-bootloader
+return
 }
+verify_bins ()
+{
+	if [ ! -f "$bootparam" ]; then
+		return 1
+	fi
+	if [ ! -f "$bl2" ]; then
+		return 1
+	fi
+	if [ ! -f "$cert" ]; then
+		return 1
+	fi
+	if [ ! -f "$bl31" ]; then
+		return 1
+	fi
+	if [ ! -f "$tee" ]; then
+		return 1
+	fi
+	if [ ! -f "$uboot" ]; then
+		return 1
+	fi
+	if [ ! -f "$pack_ipl" ]; then
+		return 1
+	fi
+}
+#End Bootloader section
+#################################################
 ##############################################################################################################################################################
 
 
 
-# poll the board to find out its configuration
-#product=`${FASTBOOT} getvar product 2>&1 | grep product | awk '{print$2}'`
-# Create the filename
-
-
-# Verify that all the files required for the fastboot flash
-# process are available
-
-
-# if [ ! -e "${bootloaderimg}" ] ; then
-# 	echo "bootloader.img not found"
-# 	echo "Try to build bootloader.img"
-# 	echo "Checking requierd files exist..."
-#
-# 	#Need to build bootloader
-# 	#Checking requierd files exist
-# 	verify_file ${bootparam}
-# 	verify_file ${bl2}
-# 	verify_file ${cert}
-# 	verify_file ${bl31}
-# 	verify_file ${tee}
-# 	verify_file ${uboot}
-#   verify_cmd $packipl all ./
-# fi
-
-if [ "$1" = "--help" -o "$1" = "-h" ] ; then
-	usage
-fi
 
 if [ -z "$FASTBOOT_PATH" ]; then
   echo "FASTBOOT_PATH not set"
@@ -48,64 +71,42 @@ fi
 export PRODUCT_OUT="."
 
 bootimg="${PRODUCT_OUT}/boot.img"
-systemimg="${PRODUCT_OUT}/system.img"
 vendorimg="${PRODUCT_OUT}/vendor.img"
-cacheimg="${PRODUCT_OUT}/cache.img"
-recoveryimg="${PRODUCT_OUT}/recovery.img"
+systemimg="${PRODUCT_OUT}/system.img"
 userdataimg="${PRODUCT_OUT}/userdata.img"
 bootloaderimg="${PRODUCT_OUT}/bootloader.img"
+bootparam="${PRODUCT_OUT}/bootparam_sa0.bin"
+bl2="${PRODUCT_OUT}/bl2.bin"
+cert="${PRODUCT_OUT}/cert_header_sa6.bin"
+bl31="${PRODUCT_OUT}/bl31.bin"
+tee="${PRODUCT_OUT}/tee.bin"
+uboot="${PRODUCT_OUT}/u-boot.bin"
+packipl="${PRODUCT_OUT}/pack_ipl"
 
 verify_file ${bootimg}
 verify_file ${systemimg}
-verify_file ${recoveryimg}
+verify_file ${vendorimg}
 verify_file ${userdataimg}
-if [ -f ${cacheimg} ]; then
-	echo "SUCCESS. File [${cacheimg}] found"
-else
-	echo "cache.img not found in [$PRODUCT_OUT]"
-	echo "Creating cache.img as empty ext4 img...."
-	EXT4FS=`which make_ext4fs`
-	if [ -z ${EXT4FS} ]; then
-		echo "ERROR. make_ext4fs not found. Need to add executable to PATH"
-	else
-		verify_cmd ${EXT4FS} -s -l 512M -a cache ${cacheimg}
-	fi
-fi
-
 
 ###########################################################################################################
 
 echo "start actions using fastboot_command = [$FASTBOOT_PATH]"
 
-echo "Flash recovery"
-verify_cmd $FASTBOOT_PATH -s $FASTBOOT_SERIAL flash recovery ${recoveryimg}
-
-echo "Check if flash bootloader is needed"
-
-if [ -e "${bootloaderimg}" ] ; then
-
-  echo "Flash bootloader"
-
-	$FASTBOOT_PATH -s $FASTBOOT_SERIAL flash bootloader ${bootloaderimg}
-	$FASTBOOT_PATH -s $FASTBOOT_SERIAL oem flash all
-	echo "Will sleep 60 sec for bootloaders update...."
-	sleep 60
-	$FASTBOOT_PATH -s $FASTBOOT_SERIAL oem format
-	$FASTBOOT_PATH -s $FASTBOOT_SERIAL reboot-bootloader
-else
-  echo "No bootloader image found. It's ok"
-fi
-
-echo "Flash Android partitions"
-
+echo "Check device"
+is_fastboot
+sleep 5
 verify_cmd $FASTBOOT_PATH -s $FASTBOOT_SERIAL flash boot ${bootimg}
+bl_section
+echo "Flash Android partitions"
 verify_cmd $FASTBOOT_PATH -s $FASTBOOT_SERIAL flash system	${systemimg}
 verify_cmd $FASTBOOT_PATH -s $FASTBOOT_SERIAL flash vendor	${vendorimg}
 verify_cmd $FASTBOOT_PATH -s $FASTBOOT_SERIAL flash userdata	${userdataimg}
-verify_cmd $FASTBOOT_PATH -s $FASTBOOT_SERIAL flash cache ${cacheimg}
-
 verify_cmd $FASTBOOT_PATH -s $FASTBOOT_SERIAL erase metadata
-
+verify_cmd $FASTBOOT_PATH -s $FASTBOOT_SERIAL erase misc
+#reboot now
 verify_cmd $FASTBOOT_PATH -s $FASTBOOT_SERIAL reboot
 echo "SUCCESS. Script finished successfully"
+
+
+
 ##########################################################################################################

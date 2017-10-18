@@ -1,6 +1,7 @@
-export BUILD_NUMBER=519
-export BUILD_URL="http://build.globallogic.com.ua/job/Renesas-GEN3-NCar/$BUILD_NUMBER/"
-export HW_PLATFORM="salvator_car_m3"
+export BUILD_NUMBER=628
+export BUILD_URL="http://build.globallogic.com.ua/view/Renesas/job/Renesas-GEN3-O/$BUILD_NUMBER/"
+export HW_PLATFORM="salvator"
+export TARGET_BOARD_PLATFORM="r8a7796"
 export BUILD_VARIANT="userdebug"
 export TRIGGER_LAB_AUTOMATION=true
 export DEV=true

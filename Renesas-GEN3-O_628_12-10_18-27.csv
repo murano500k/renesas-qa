@@ -1,0 +1,16 @@
+
+SYS_KERNEL_CHECK_0001,./check_params.sh: line 5: {print "\""$0"\""}: command not found
+
+SYS_ROOTFS_CHECK_0001,./check_params.sh: line 5: {print "\""$0"\""}: command not found
+
+SYS_GFX_CHECK_0001,./check_params.sh: line 5: {print "\""$0"\""}: command not found
+
+SYS_SMP_CHECK_0001,./check_params.sh: line 5: {print "\""$0"\""}: command not found
+
+SYS_0007,./check_params.sh: line 5: {print "\""$0"\""}: command not found
+
+SYS_0001,./check_params.sh: line 5: {print "\""$0"\""}: command not found
+
+SYS_UBOOT_0002,./check_params.sh: line 5: {print "\""$0"\""}: command not found
+
+SYS_SEL_0001,./check_params.sh: line 5: {print "\""$0"\""}: command not found

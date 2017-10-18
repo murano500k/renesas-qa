@@ -1,0 +1,122 @@
+
+bionic
+b8028d5 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove structure keyctl_dh_params from keyctl.h file
+4075c50 Update kernel headers to kernel 4.9.8
+a8a5849 (gl-mirror/r-car-7-4.9) Updated Kernel headers up to 4.6
+
+bootable/recovery
+f827fdd recovery.cpp: Fixed crash when /cache partition is not formatted.
+907fc65 Adding system partition formatting
+6cdf654 recovery: USB transport replaced with Ethernet for ADB sideload.
+d2c77ec recovery: Added ability to do update for 'user' builds of recovery tool.
+d0f21f8 HACK: Use DRM rendering with software color conversion
+
+build
+
+external/kernel-headers
+67136cd (HEAD -> r-car-7, gl-mirror/r-car-7) Updated Kernel headers up to 4.6
+
+external/libdrm
+9fd22a7 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Bugfix: Changing crash in latest kernel
+
+external/wpa_supplicant_8
+4ffcabf (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) wext: Added ability to get wlan interface MAC address.
+ffdc3f9 Extended ctrl iface commands format.
+
+frameworks/av
+9101915 seccomp-policy: Rules for 64bit mediacodec
+6559ab0 MediaServer/MediaCodec: Switched to 64bit mode
+bff7ba2 mediacodec-seccomp: Allowed syscalls for working with vspmif lib
+
+frameworks/base
+454509b (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Zygote: Add CAP_WAKE_ALARM to system_server to properly support timerfd alarms
+dc500ae Enable LocalTransport for backup
+70eaa65 Create wallpaper surface after bitmap loaded
+cbff3fd AudioPackage5.mk: Unused sounds removed
+
+frameworks/native
+ae72038 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Removed definition of OMX_ANDROID_COMPILE_AS_32BIT_ON_64BIT_PLATFORMS
+
+frameworks/opt/net/ethernet
+e8294b3 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) ethernet: Added ability to save static IP address permanently.
+c17e6fb ethernet: Added ability to set static IP address.
+
+hardware/libhardware
+72cfa08 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Add using PAN display
+ce74b21 Fixes for software rendering
+
+hardware/libhardware_legacy
+683fb5e (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) wifi: Improvement for commit f4110f4
+ab4816a wifi: Added append of primary interface in to event responses.
+4b8d2c6 Android.mk: Added control interface DIR and PREFIX into C flags.
+
+packages/apps/Bluetooth
+ffe3986 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Revert "Merge "Correctly specify AuthenticationService name" into r-car-7"
+0fc565a Correctly specify AuthenticationService name
+ddc157d Fixes for HFP & AVRCP
+bd2b657 Support Rewind and FF transport controls
+8a0b462  AVRCP CT: Add support to send stop command
+f178c80 Implement set addressed player functionality.
+3dd11d0 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)
+a8bde8a Implement non-blocking pagination for a long song list.
+f7beee2 PBAP over l2cap
+554f133 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)
+df3304a Fix setPairingConfirmation permissions issue (1/2)
+3ccc668 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)
+0453e51 Remove hashcode() override for Connection
+2f509a9 Handle the case of disconnecting -> active for PTS
+3e6ce75 Cleanup state while transitioning to disconnected.
+5312f3c Unset the priorities for car profiles on unpair.
+505da5e AVRCP 1.6 CT implementation
+b5daad8 HFP should timeout in Java services if Native never replied
+3d66fe4 Import translations. DO NOT MERGE
+b820652 Import translations. DO NOT MERGE
+74a9415 Import translations. DO NOT MERGE
+dbd254d Import translations. DO NOT MERGE
+599c56d Implement autoconnect for PAN.
+9b04e43 Fix AVRCP crash, position and state tracking
+2be5946 Refactor playback position tracking
+fcc8289 Let audio HAL know when BT is turned off
+a0aa296 HF should wait for AG to change conference
+94e2ae2 Conference calling via HFP
+aa09a41 Improve connection handling logic in ConnService
+184038a Redesign HFP Client call handling
+ee3ef8f Remove calls when device gets disconnected
+3338faa Normalize the number before inserting into list of calls in connectionservice
+c599395 Owner Card
+7c8c543 AVRCP Statemachine
+893033c Tackle changing phone numbers by relying on IDs wherever possible.
+f0c2a50 PBAP Handle IllegalArgumentException
+0343803 PBAP Handle IllegalArgumentException
+b7f9231 HfpClientConnectionService does not synchronize state
+fc99803 Remove contacts at shutdown.
+649af3a Define a label for A2DP Media Browser service
+eb7e301 PBAP check device on disconnect
+f98c306 Bluetooth Connect Other Profiles
+1fbfb6c PbapClientStateMachine legacyCode removal.
+be36e1c PBAP vcard parser
+e76c499 Connect PbapClient Profile
+6f87904 PBAP Download Contacts in state machine
+08f0724 PBAPClient State Machine
+faa30be A2DP MediaSession active state management and NPE
+52297ba Race in hfp call termination when local termination faster than HFP update.
+996bedb A2dpSink sends CONNECTED instead of DISCONNECTED when connection timeout
+00a113f Replace NOT_SUPPORTED string constants with empty strings.
+f8b181e Handle all kinds of focuses and make fault tolerant to phone calls.
+519bb21 Set session to active for A2dpMediaBrowserService.
+
+packages/apps/Camera2
+6654d49 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Camera2: Fix ambiguity of the resource ic_capture_video
+
+packages/apps/Music
+7b2f129 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Removed album art background from TrackBrowserActivity
+da36f09 Fixed crash of app due security exception.
+
+system/core
+8d7c414 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) usbhs: Fixing USB Chapter 9 compatibility issues
+c1489c9 WA: Change group of /proc/cmdline to graphics
+30c837b libcutils: Remove duplicated define PR_SET_TIMERSLACK_PID
+4ece531 debuggerd: Add SEVG_PKUERR according to newer kernels
+
+system/netd
+b336095 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Set both legacy and new UID routing attributes.

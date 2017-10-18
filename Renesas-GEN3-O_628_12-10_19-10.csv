@@ -1,0 +1,16 @@
+
+SYS_KERNEL_CHECK_0001,/system/bin/sh: Linux version 4.4.0-87-generic (buildd@lcy01-31) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017: not found
+
+SYS_ROOTFS_CHECK_0001,/system/bin/sh: : can't execute: Is a directory
+
+SYS_GFX_CHECK_0001,/system/bin/sh: : can't execute: Is a directory
+
+SYS_SMP_CHECK_0001,error: bad service name length (3482)
+
+SYS_0007,error: bad service name length (1258)
+
+SYS_0001,error: bad service name length (4262)
+
+SYS_UBOOT_0002,error: bad service name length (1943)
+
+SYS_SEL_0001,/system/bin/sh: : can't execute: Is a directory

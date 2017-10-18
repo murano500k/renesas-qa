@@ -20,16 +20,16 @@ fi
 
 echo BUILD_URL=$BUILD_URL
 echo BUILD_DIR=$BUILD_DIR
-echo NCAR_BUILD_NAME=$NCAR_BUILD_NAME
+echo BUILD_NAME=$BUILD_NAME
 
 #delete temp files
 rm -rf $BUILD_DIR
 #create dir to download
 mkdir -p $BUILD_DIR
 echo "downloading build"
-wget -q --http-user $JENKINS_USER  --http-password $JENKINS_TOKEN --auth-no-challenge $BUILD_URL -O $BUILD_DIR/$NCAR_BUILD_NAME
+wget -q --http-user $JENKINS_USER  --http-password $JENKINS_TOKEN --auth-no-challenge $BUILD_URL -O $BUILD_DIR/$BUILD_NAME
 #untar it
 echo download finished
 echo unpacking archive
-tar xf $BUILD_DIR/$NCAR_BUILD_NAME -C $BUILD_DIR
+tar xf $BUILD_DIR/$BUILD_NAME -C $BUILD_DIR
 echo "unpack build archive success"

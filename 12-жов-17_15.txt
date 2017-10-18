@@ -1,0 +1,133 @@
+
+
+	[SYS_KERNEL_CHECK_0001]	"cat /proc/version"
+Linux version 4.9.44+ (kraken@kraken) (gcc version 4.9.x 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Sep 28 14:58:12 EEST 2017
+
+_________________________________
+
+
+
+	[SYS_ROOTFS_CHECK_0001]	"ls -al /system/lib64/modules"
+ls: /system/lib64/modules: No such file or directory
+
+_________________________________
+
+
+
+	[SYS_GFX_CHECK_0001]	"cat /sys/kernel/debug/pvr/version"
+cat: /sys/kernel/debug/pvr/version: Permission denied
+
+_________________________________
+
+
+
+	[SYS_SMP_CHECK_0001]	"cat /proc/cpuinfo"
+processor	: 0
+BogoMIPS	: 16.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 1
+BogoMIPS	: 16.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+
+_________________________________
+
+
+
+	[SYS_0007]	"cat /proc/meminfo"
+MemTotal:        3855372 kB
+MemFree:         1831472 kB
+MemAvailable:    2478424 kB
+Buffers:            9692 kB
+Cached:           758528 kB
+SwapCached:            0 kB
+Active:          1110840 kB
+Inactive:         408748 kB
+Active(anon):     751668 kB
+Inactive(anon):      556 kB
+Active(file):     359172 kB
+Inactive(file):   408192 kB
+Unevictable:         256 kB
+Mlocked:             256 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        681196 kB
+Mapped:           351308 kB
+Shmem:               872 kB
+Slab:              60700 kB
+SReclaimable:      22748 kB
+SUnreclaim:        37952 kB
+KernelStack:       13328 kB
+PageTables:        19328 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1927684 kB
+Committed_AS:   55911208 kB
+VmallocTotal:   135290290112 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+AnonHugePages:    409600 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:         671744 kB
+CmaFree:          319128 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+
+_________________________________
+
+
+
+	[SYS_0001]	"lsmod"
+lsmod: No file /proc/modules: Permission denied
+
+_________________________________
+
+
+
+	[SYS_UBOOT_0002]	"printenv"
+_=/system/bin/printenv
+ANDROID_DATA=/data
+DOWNLOAD_CACHE=/data/cache
+LOGNAME=shell
+HOME=/
+ANDROID_ROOT=/system
+TERM=dumb
+SHELL=/system/bin/sh
+ANDROID_BOOTLOGO=1
+ANDROID_ASSETS=/system/app
+BOOTCLASSPATH=/system/framework/core-oj.jar:/system/framework/core-libart.jar:/system/framework/conscrypt.jar:/system/framework/okhttp.jar:/system/framework/legacy-test.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/apache-xml.jar:/system/framework/org.apache.http.legacy.boot.jar:/system/framework/android.hidl.base-V1.0-java.jar:/system/framework/android.hidl.manager-V1.0-java.jar:/system/framework/android.car.jar
+ASEC_MOUNTPOINT=/mnt/asec
+ANDROID_SOCKET_adbd=8
+EXTERNAL_STORAGE=/sdcard
+ANDROID_STORAGE=/storage
+USER=shell
+PATH=/sbin:/system/sbin:/system/bin:/system/xbin:/vendor/bin:/vendor/xbin
+SYSTEMSERVERCLASSPATH=/system/framework/services.jar:/system/framework/ethernet-service.jar:/system/framework/wifi-service.jar
+
+_________________________________
+
+
+
+	[SYS_SEL_0001]	"getenforce"
+Enforcing
+
+_________________________________
+

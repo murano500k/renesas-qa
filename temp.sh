@@ -1,3 +1,8 @@
 #/bin/bash
-END=10
-for i in $(seq 1 $END); do echo $i; done
+
+BUILD_URL=http://build.globallogic.com.ua/job/Renesas-GEN3-NCar/538/
+TEMP="${BUILD_URL#*job\/}"
+TEMP="${TEMP%\/*}"
+JOB_NAME="${TEMP%\/*}"
+
+echo JOB_NAME=$JOB_NAME

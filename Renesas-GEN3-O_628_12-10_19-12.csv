@@ -1,0 +1,173 @@
+
+SYS_KERNEL_CHECK_0001,Linux version 4.9.44+ (kraken@kraken) (gcc version 4.9.x 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Sep 28 14:58:12 EEST 2017
+
+SYS_ROOTFS_CHECK_0001,total 58996
+drwxr-xr-x 2 root shell     4096 2017-09-28 12:15 .
+drwxr-xr-x 7 root shell     4096 2017-09-28 12:15 ..
+-rw-r--r-- 1 root root    392120 2017-09-28 12:15 btbcm.ko
+-rw-r--r-- 1 root root    409864 2017-09-28 12:15 btintel.ko
+-rw-r--r-- 1 root root    381648 2017-09-28 12:15 btrtl.ko
+-rw-r--r-- 1 root root    589136 2017-09-28 12:15 btusb.ko
+-rw-r--r-- 1 root root    728608 2017-09-28 12:15 composer.ko
+-rw-r--r-- 1 root root    707416 2017-09-28 12:15 ehci-hcd.ko
+-rw-r--r-- 1 root root    304920 2017-09-28 12:15 ehci-platform.ko
+-rw-r--r-- 1 root root    453464 2017-09-28 12:15 extcon-core.ko
+-rw-r--r-- 1 root root    249152 2017-09-28 12:15 extcon-usb-gpio.ko
+-rw-r--r-- 1 root root    537248 2017-09-28 12:15 ftdi_sio.ko
+-rw-r--r-- 1 root root    312368 2017-09-28 12:15 micrel.ko
+-rw-r--r-- 1 root root    301488 2017-09-28 12:15 mmngr.ko
+-rw-r--r-- 1 root root    271344 2017-09-28 12:15 mmngrbuf.ko
+-rw-r--r-- 1 root root      2412 2017-09-28 12:15 modules.dep
+-rw-r--r-- 1 root root    539888 2017-09-28 12:15 ohci-hcd.ko
+-rw-r--r-- 1 root root    285392 2017-09-28 12:15 ohci-platform.ko
+-rw-r--r-- 1 root root   1700072 2017-09-28 12:15 optee.ko
+-rw-r--r-- 1 root root    550488 2017-09-28 12:15 optee_armtz.ko
+-rw-r--r-- 1 root root    274208 2017-09-28 12:15 phy-rcar-gen3-usb2.ko
+-rw-r--r-- 1 root root    331904 2017-09-28 12:15 pl2303.ko
+-rw-r--r-- 1 root root  23765928 2017-09-28 12:15 pvrsrvkm.ko
+-rw-r--r-- 1 root root    330456 2017-09-28 12:15 qos.ko
+-rw-r--r-- 1 root root    499504 2017-09-28 12:15 renesas_usb3.ko
+-rw-r--r-- 1 root root   1722464 2017-09-28 12:15 renesas_usbhs.ko
+-rw-r--r-- 1 root root   1782736 2017-09-28 12:15 rtl8192c-common.ko
+-rw-r--r-- 1 root root   3461344 2017-09-28 12:15 rtl8192cu.ko
+-rw-r--r-- 1 root root    581624 2017-09-28 12:15 rtl_usb.ko
+-rw-r--r-- 1 root root   4067888 2017-09-28 12:15 rtlwifi.ko
+-rw-r--r-- 1 root root   1823440 2017-09-28 12:15 usb-storage.ko
+-rw-r--r-- 1 root root   4359696 2017-09-28 12:15 usbcore.ko
+-rw-r--r-- 1 root root    747456 2017-09-28 12:15 usbhid.ko
+-rw-r--r-- 1 root root    786440 2017-09-28 12:15 usbserial.ko
+-rw-r--r-- 1 root root   1080952 2017-09-28 12:15 uvcs_drv.ko
+-rw-r--r-- 1 root root   2485512 2017-09-28 12:15 vspm.ko
+-rw-r--r-- 1 root root    606584 2017-09-28 12:15 vspm_if.ko
+-rw-r--r-- 1 root root   2014992 2017-09-28 12:15 xhci-hcd.ko
+-rw-r--r-- 1 root root    308816 2017-09-28 12:15 xhci-pci.ko
+-rw-r--r-- 1 root root    487216 2017-09-28 12:15 xhci-plat-hcd.ko
+
+SYS_GFX_CHECK_0001,Driver Version: Rogue_DDK_Android rogueddk 1.9@4813199 (release) r8a7796_android
+
+Device Name: RGX
+Rogue Version: 4.45.2.58 (HW)
+
+SYS_SMP_CHECK_0001,processor	: 0
+BogoMIPS	: 16.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 1
+BogoMIPS	: 16.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+
+SYS_0007,MemTotal:        3855372 kB
+MemFree:         2096368 kB
+MemAvailable:    2527716 kB
+Buffers:            7076 kB
+Cached:           546888 kB
+SwapCached:            0 kB
+Active:           855260 kB
+Inactive:         406832 kB
+Active(anon):     708424 kB
+Inactive(anon):      560 kB
+Active(file):     146836 kB
+Inactive(file):   406272 kB
+Unevictable:         256 kB
+Mlocked:             256 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        638360 kB
+Mapped:           341384 kB
+Shmem:               872 kB
+Slab:              56744 kB
+SReclaimable:      20052 kB
+SUnreclaim:        36692 kB
+KernelStack:       12560 kB
+PageTables:        16716 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1927684 kB
+Committed_AS:   48220192 kB
+VmallocTotal:   135290290112 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+AnonHugePages:    366592 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:         671744 kB
+CmaFree:          319128 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+
+SYS_0001,Module                  Size  Used by
+ftdi_sio               49152  0 
+pl2303                 20480  0 
+usbserial              36864  2 ftdi_sio,pl2303
+micrel                 24576  0 
+rtl8192cu              98304  0 
+rtl8192c_common        69632  1 rtl8192cu
+rtl_usb                28672  1 rtl8192cu
+rtlwifi               106496  3 rtl8192cu,rtl8192c_common,rtl_usb
+btusb                  45056  0 
+btrtl                  16384  1 btusb
+btintel                24576  1 btusb
+btbcm                  20480  1 btusb
+usb_storage            73728  0 
+usbhid                 49152  0 
+xhci_plat_hcd          16384  0 
+xhci_pci               16384  0 
+xhci_hcd              151552  2 xhci_plat_hcd,xhci_pci
+ohci_platform          16384  0 
+ohci_hcd               53248  1 ohci_platform
+ehci_platform          16384  0 
+ehci_hcd               65536  1 ehci_platform
+uvcs_drv               53248  0 
+mmngrbuf               16384  0 
+mmngr                  24576  0 
+vspm_if                45056  0 
+qos                    40960  0 
+renesas_usb3           32768  0 
+renesas_usbhs          65536  0 
+usbcore               274432  16 ftdi_sio,pl2303,usbserial,rtl8192cu,rtl_usb,btusb,usb_storage,usbhid,xhci_plat_hcd,xhci_pci,xhci_hcd,ohci_platform,ohci_hcd,ehci_platform,ehci_hcd,renesas_usbhs
+phy_rcar_gen3_usb2     16384  4 
+extcon_usb_gpio        16384  0 
+extcon_core            28672  4 renesas_usb3,renesas_usbhs,phy_rcar_gen3_usb2,extcon_usb_gpio
+pvrsrvkm              937984  31 
+composer               28672  1 
+vspm                  102400  2 vspm_if,composer
+optee_armtz            32768  1 
+optee                  98304  6 optee_armtz
+
+SYS_UBOOT_0002,_=/system/bin/printenv
+ANDROID_DATA=/data
+DOWNLOAD_CACHE=/data/cache
+LOGNAME=root
+HOME=/
+ANDROID_ROOT=/system
+TERM=dumb
+SHELL=/system/bin/sh
+ANDROID_BOOTLOGO=1
+ANDROID_ASSETS=/system/app
+BOOTCLASSPATH=/system/framework/core-oj.jar:/system/framework/core-libart.jar:/system/framework/conscrypt.jar:/system/framework/okhttp.jar:/system/framework/legacy-test.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/apache-xml.jar:/system/framework/org.apache.http.legacy.boot.jar:/system/framework/android.hidl.base-V1.0-java.jar:/system/framework/android.hidl.manager-V1.0-java.jar:/system/framework/android.car.jar
+ASEC_MOUNTPOINT=/mnt/asec
+ANDROID_SOCKET_adbd=8
+EXTERNAL_STORAGE=/sdcard
+ANDROID_STORAGE=/storage
+USER=root
+PATH=/sbin:/system/sbin:/system/bin:/system/xbin:/vendor/bin:/vendor/xbin
+SYSTEMSERVERCLASSPATH=/system/framework/services.jar:/system/framework/ethernet-service.jar:/system/framework/wifi-service.jar
+
+SYS_SEL_0001,Enforcing

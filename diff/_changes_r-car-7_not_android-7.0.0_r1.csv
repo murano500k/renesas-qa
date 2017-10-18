@@ -1,0 +1,367 @@
+
+bionic
+b8028d5 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Remove structure keyctl_dh_params from keyctl.h file
+4075c50 Update kernel headers to kernel 4.9.8
+a8a5849 (gl-mirror/r-car-7-4.9) Updated Kernel headers up to 4.6
+
+bootable/recovery
+c1be3f6 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Revert "recovery: Added IPL flash from SD-CARD"
+9b79ea2 Revert "Added support of IPL flash from fastboot"
+8f64cd9 Revert "Change selinux label for optee service"
+d92801d Revert "Start tee supplicant as a service on prop"
+efb1566 Revert "recovery: check if tee_supplicant is running"
+f84ef80 Revert "optee: remove tee_loader"
+f827fdd recovery.cpp: Fixed crash when /cache partition is not formatted.
+4f9e69d optee: remove tee_loader
+94c9294 recovery: check if tee_supplicant is running
+a59d812 Start tee supplicant as a service on prop
+e6fe89e Change selinux label for optee service
+33d2b3d Added support of IPL flash from fastboot
+5cb8d14 recovery: Added IPL flash from SD-CARD
+907fc65 Adding system partition formatting
+6cdf654 recovery: USB transport replaced with Ethernet for ADB sideload.
+d2c77ec recovery: Added ability to do update for 'user' builds of recovery tool.
+d0f21f8 HACK: Use DRM rendering with software color conversion
+
+build
+371fb32 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Revert "Added core makefile for Kernel build (arm64)"
+83cd716 Revert "Change KERNEL_MODULES_OUT variable to system/lib64/modules"
+7aa7809 Revert "Build: Create ramdisk before kernel"
+5959fe2 Revert "recovery: Added support of compressed boot."
+48417ad Revert "Added extra dependency for system.img"
+458c896 recovery: Added support of compressed boot.
+6f9f014 Revert "Build RAM-disk as uncompressed '.cpio' file."
+68e8675 Build: Create ramdisk before kernel
+1070d0e Change KERNEL_MODULES_OUT variable to system/lib64/modules
+c28405b Added extra dependency for system.img
+d076a3a Build RAM-disk as uncompressed '.cpio' file.
+68e53f9 Added core makefile for Kernel build (arm64)
+
+external/kernel-headers
+67136cd (HEAD -> r-car-7, gl-mirror/r-car-7) Updated Kernel headers up to 4.6
+
+external/libdrm
+9fd22a7 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Bugfix: Changing crash in latest kernel
+
+external/wpa_supplicant_8
+4ffcabf (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) wext: Added ability to get wlan interface MAC address.
+ffdc3f9 Extended ctrl iface commands format.
+
+frameworks/av
+9da6947 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Merge "Revert "ACodec WA: Do not fail in to error on Renesas H265"" into r-car-7
+369b22e Revert "ACodec WA: Do not fail in to error on Renesas H265"
+40ad89d Revert "ACodec WA: Do not fail in to error on Renesas VP8"
+78ea556 ACodec WA: Do not fail in to error on Renesas VP8
+9101915 seccomp-policy: Rules for 64bit mediacodec
+6559ab0 MediaServer/MediaCodec: Switched to 64bit mode
+2ff7183 Revert "Media services switched to 64 bits."
+7dbdd4f Revert "tests/OMXHarness: Fixed compilation error (log print format types)"
+2105a64 tests/OMXHarness: Fixed compilation error (log print format types)
+804603e Media services switched to 64 bits.
+b4fedd5 ACodec WA: Do not fail in to error on Renesas H265
+bff7ba2 mediacodec-seccomp: Allowed syscalls for working with vspmif lib
+
+frameworks/base
+454509b (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Zygote: Add CAP_WAKE_ALARM to system_server to properly support timerfd alarms
+dc500ae Enable LocalTransport for backup
+70eaa65 Create wallpaper surface after bitmap loaded
+cbff3fd AudioPackage5.mk: Unused sounds removed
+
+frameworks/native
+ae72038 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Removed definition of OMX_ANDROID_COMPILE_AS_32BIT_ON_64BIT_PLATFORMS
+
+frameworks/opt/net/ethernet
+e8294b3 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) ethernet: Added ability to save static IP address permanently.
+c17e6fb ethernet: Added ability to set static IP address.
+
+hardware/libhardware
+72cfa08 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Add using PAN display
+ce74b21 Fixes for software rendering
+
+hardware/libhardware_legacy
+683fb5e (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) wifi: Improvement for commit f4110f4
+ab4816a wifi: Added append of primary interface in to event responses.
+4b8d2c6 Android.mk: Added control interface DIR and PREFIX into C flags.
+
+packages/apps/Bluetooth
+ffe3986 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Revert "Merge "Correctly specify AuthenticationService name" into r-car-7"
+cae8062 Merge "Correctly specify AuthenticationService name" into r-car-7
+0fc565a Correctly specify AuthenticationService name
+5f6657b merge in nyc-car-release history after reset to nyc-car-dev
+ddc157d Fixes for HFP & AVRCP
+dc3096c merge in nyc-car-release history after reset to nyc-car-dev
+bd2b657 Support Rewind and FF transport controls
+8a0b462  AVRCP CT: Add support to send stop command
+b4cb6bd Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)" into lmp-mr1-dev am: 0ccca8ac62 am: 56fc3a7642 am: 5bc4962e53  -s ours am: 8305951cca am: 8eb38035db am: 1bd3e02a8a am: 3998910222  -s ours am: 1981d50808
+bcb2004 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3dd11d0a34 am: 28dc531ac7 am: 460561cb28  -s ours am: 107bf18aa3 am: b8b865d786 am: 5b10905e4f am: ed611c8943  -s ours am: dbf0fcea18
+ab8dea4 Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours" into lmp-dev am: 60b2ea959d  -s ours am: fcc8d6c900 am: 64998914de am: 0d4475fc01  -s ours am: 5c950df332 am: 1dc5800553 am: e45190af67 am: 72c9d444c3  -s ours am: fd4fdc2086
+6e77b81 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours am: 1a3a6accdc  -s ours am: 05a136ed33 am: 285c44140c am: 2f7e244816  -s ours am: 01bb2d1aac am: 5d2069d9dc am: 21a74c67ca am: 3dbe82ee89  -s ours am: 409014735a
+6abb05e [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 554f13336e  -s ours am: 8fe2b32637 am: 0c98432a94 am: 5ff155974f  -s ours am: 0fb4bfd5b5 am: 93d6266c04 am: 3512fd433a am: eebe586729  -s ours am: cb5b3f1045
+1981d50 Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)" into lmp-mr1-dev am: 0ccca8ac62 am: 56fc3a7642 am: 5bc4962e53  -s ours am: 8305951cca am: 8eb38035db am: 1bd3e02a8a am: 3998910222  -s ours
+dbf0fce [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3dd11d0a34 am: 28dc531ac7 am: 460561cb28  -s ours am: 107bf18aa3 am: b8b865d786 am: 5b10905e4f am: ed611c8943  -s ours
+fd4fdc2 Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours" into lmp-dev am: 60b2ea959d  -s ours am: fcc8d6c900 am: 64998914de am: 0d4475fc01  -s ours am: 5c950df332 am: 1dc5800553 am: e45190af67 am: 72c9d444c3  -s ours
+4090147 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours am: 1a3a6accdc  -s ours am: 05a136ed33 am: 285c44140c am: 2f7e244816  -s ours am: 01bb2d1aac am: 5d2069d9dc am: 21a74c67ca am: 3dbe82ee89  -s ours
+cb5b3f1 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 554f13336e  -s ours am: 8fe2b32637 am: 0c98432a94 am: 5ff155974f  -s ours am: 0fb4bfd5b5 am: 93d6266c04 am: 3512fd433a am: eebe586729  -s ours
+3998910 Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)" into lmp-mr1-dev am: 0ccca8ac62 am: 56fc3a7642 am: 5bc4962e53  -s ours am: 8305951cca am: 8eb38035db am: 1bd3e02a8a
+ed611c8 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3dd11d0a34 am: 28dc531ac7 am: 460561cb28  -s ours am: 107bf18aa3 am: b8b865d786 am: 5b10905e4f
+1bd3e02 Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)" into lmp-mr1-dev am: 0ccca8ac62 am: 56fc3a7642 am: 5bc4962e53  -s ours am: 8305951cca am: 8eb38035db
+5b10905 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3dd11d0a34 am: 28dc531ac7 am: 460561cb28  -s ours am: 107bf18aa3 am: b8b865d786
+72c9d44 Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours" into lmp-dev am: 60b2ea959d  -s ours am: fcc8d6c900 am: 64998914de am: 0d4475fc01  -s ours am: 5c950df332 am: 1dc5800553 am: e45190af67
+3dbe82e [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours am: 1a3a6accdc  -s ours am: 05a136ed33 am: 285c44140c am: 2f7e244816  -s ours am: 01bb2d1aac am: 5d2069d9dc am: 21a74c67ca
+eebe586 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 554f13336e  -s ours am: 8fe2b32637 am: 0c98432a94 am: 5ff155974f  -s ours am: 0fb4bfd5b5 am: 93d6266c04 am: 3512fd433a
+8eb3803 Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)" into lmp-mr1-dev am: 0ccca8ac62 am: 56fc3a7642 am: 5bc4962e53  -s ours am: 8305951cca
+b8b865d [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3dd11d0a34 am: 28dc531ac7 am: 460561cb28  -s ours am: 107bf18aa3
+e45190a Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours" into lmp-dev am: 60b2ea959d  -s ours am: fcc8d6c900 am: 64998914de am: 0d4475fc01  -s ours am: 5c950df332 am: 1dc5800553
+21a74c6 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours am: 1a3a6accdc  -s ours am: 05a136ed33 am: 285c44140c am: 2f7e244816  -s ours am: 01bb2d1aac am: 5d2069d9dc
+3512fd4 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 554f13336e  -s ours am: 8fe2b32637 am: 0c98432a94 am: 5ff155974f  -s ours am: 0fb4bfd5b5 am: 93d6266c04
+8305951 Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)" into lmp-mr1-dev am: 0ccca8ac62 am: 56fc3a7642 am: 5bc4962e53  -s ours
+107bf18 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3dd11d0a34 am: 28dc531ac7 am: 460561cb28  -s ours
+1dc5800 Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours" into lmp-dev am: 60b2ea959d  -s ours am: fcc8d6c900 am: 64998914de am: 0d4475fc01  -s ours am: 5c950df332
+5d2069d [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours am: 1a3a6accdc  -s ours am: 05a136ed33 am: 285c44140c am: 2f7e244816  -s ours am: 01bb2d1aac
+b625357 Fix setPairingConfirmation permissions issue (1/2) am: df3304a333 am: f8a47ce8ee am: 3ea7d86110 am: ccca20484c am: 4a20ca7bae
+5bc4962 Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)" into lmp-mr1-dev am: 0ccca8ac62 am: 56fc3a7642
+93d6266 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 554f13336e  -s ours am: 8fe2b32637 am: 0c98432a94 am: 5ff155974f  -s ours am: 0fb4bfd5b5
+460561c [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3dd11d0a34 am: 28dc531ac7
+4a20ca7 Fix setPairingConfirmation permissions issue (1/2) am: df3304a333 am: f8a47ce8ee am: 3ea7d86110 am: ccca20484c
+5c950df Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours" into lmp-dev am: 60b2ea959d  -s ours am: fcc8d6c900 am: 64998914de am: 0d4475fc01  -s ours
+01bb2d1 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours am: 1a3a6accdc  -s ours am: 05a136ed33 am: 285c44140c am: 2f7e244816  -s ours
+56fc3a7 Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)" into lmp-mr1-dev am: 0ccca8ac62
+28dc531 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3dd11d0a34
+0ccca8a Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)" into lmp-mr1-dev
+f178c80 Implement set addressed player functionality.
+0d4475f Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours" into lmp-dev am: 60b2ea959d  -s ours am: fcc8d6c900 am: 64998914de
+2f7e244 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours am: 1a3a6accdc  -s ours am: 05a136ed33 am: 285c44140c
+0fb4bfd [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 554f13336e  -s ours am: 8fe2b32637 am: 0c98432a94 am: 5ff155974f  -s ours
+ccca204 Fix setPairingConfirmation permissions issue (1/2) am: df3304a333 am: f8a47ce8ee am: 3ea7d86110
+6499891 Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours" into lmp-dev am: 60b2ea959d  -s ours am: fcc8d6c900
+285c441 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours am: 1a3a6accdc  -s ours am: 05a136ed33
+5ff1559 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 554f13336e  -s ours am: 8fe2b32637 am: 0c98432a94
+fcc8d6c Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours" into lmp-dev am: 60b2ea959d  -s ours
+05a136e [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours am: 1a3a6accdc  -s ours
+3ea7d86 Fix setPairingConfirmation permissions issue (1/2) am: df3304a333 am: f8a47ce8ee
+0c98432 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 554f13336e  -s ours am: 8fe2b32637
+f8a47ce Fix setPairingConfirmation permissions issue (1/2) am: df3304a333
+8fe2b32 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 554f13336e  -s ours
+60b2ea9 Merge "[DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours" into lmp-dev
+1a3a6ac [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898 am: 77a38cb641  -s ours
+77a38cb [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8 am: 2c3e8b5898
+3dd11d0 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)
+2c3e8b5 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2) am: 3ccc668ff8
+fb4a0e6 merge in nyc-car-release history after reset to nyc-car-dev
+567b5b8 Merge "Implement non-blocking pagination for a long song list." into nyc-car-dev
+4efba38 Merge "PBAP over l2cap" into nyc-car-dev
+3c2081f merge in nyc-car-release history after reset to nyc-car-dev
+a8bde8a Implement non-blocking pagination for a long song list.
+f7beee2 PBAP over l2cap
+554f133 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)
+df3304a Fix setPairingConfirmation permissions issue (1/2)
+3ccc668 [DO NOT MERGE] Fix setPairingConfirmation permissions issue (1/2)
+0453e51 Remove hashcode() override for Connection
+6c6c680 merge in nyc-car-release history after reset to nyc-car-dev
+2f509a9 Handle the case of disconnecting -> active for PTS
+3e6ce75 Cleanup state while transitioning to disconnected.
+f4254db merge in nyc-car-release history after reset to nyc-car-dev
+216f2bb Merge "Unset the priorities for car profiles on unpair." into nyc-car-dev
+5312f3c Unset the priorities for car profiles on unpair.
+688d61b merge in nyc-car-release history after reset to nyc-car-dev
+cf1090d Merge "AVRCP 1.6 CT implementation" into nyc-car-dev
+505da5e AVRCP 1.6 CT implementation
+d598ad7 merge in nyc-car-release history after reset to nyc-car-dev
+c822e83 Merge "HFP should timeout in Java services if Native never replied" into nyc-car-dev
+b5daad8 HFP should timeout in Java services if Native never replied
+42ef960 Import translations. DO NOT MERGE am: dbd254d610  -s ours am: d1b0e4d9f9  -s ours am: 7b0ed70cfa  -s ours am: fafbbfeb52  -s ours am: f6f36780e0  -s ours
+f6f3678 Import translations. DO NOT MERGE am: dbd254d610  -s ours am: d1b0e4d9f9  -s ours am: 7b0ed70cfa  -s ours am: fafbbfeb52  -s ours
+fafbbfe Import translations. DO NOT MERGE am: dbd254d610  -s ours am: d1b0e4d9f9  -s ours am: 7b0ed70cfa  -s ours
+7b0ed70 Import translations. DO NOT MERGE am: dbd254d610  -s ours am: d1b0e4d9f9  -s ours
+c0e281e Import translations. DO NOT MERGE am: b8206529c7  -s ours am: 288ba25e96  -s ours am: fff4c2d598  -s ours am: 221dba796e  -s ours
+3270584 Import translations. DO NOT MERGE am: 74a94150bd  -s ours am: 1769805b90  -s ours
+221dba7 Import translations. DO NOT MERGE am: b8206529c7  -s ours am: 288ba25e96  -s ours am: fff4c2d598  -s ours
+d1b0e4d Import translations. DO NOT MERGE am: dbd254d610  -s ours
+fff4c2d Import translations. DO NOT MERGE am: b8206529c7  -s ours am: 288ba25e96  -s ours
+288ba25 Import translations. DO NOT MERGE am: b8206529c7  -s ours
+1769805 Import translations. DO NOT MERGE am: 74a94150bd  -s ours
+a938378 Import translations. DO NOT MERGE am: 3d66fe4171  -s ours
+3d66fe4 Import translations. DO NOT MERGE
+b820652 Import translations. DO NOT MERGE
+74a9415 Import translations. DO NOT MERGE
+dbd254d Import translations. DO NOT MERGE
+660821e merge in nyc-car-release history after reset to nyc-car-dev
+599c56d Implement autoconnect for PAN.
+19205b5 merge in nyc-car-release history after reset to nyc-car-dev
+e7522d1 Fix AVRCP crash, position and state tracking am: 9b04e432de
+669f1b5 Refactor playback position tracking am: 2be5946285
+9b04e43 Fix AVRCP crash, position and state tracking
+2be5946 Refactor playback position tracking
+b17c54c merge in nyc-car-release history after reset to nyc-car-dev
+b8186d5 merge in nyc-car-release history after reset to nyc-car-dev
+fcc8289 Let audio HAL know when BT is turned off
+a0aa296 HF should wait for AG to change conference
+70afcff merge in nyc-car-release history after reset to nyc-car-dev
+94e2ae2 Conference calling via HFP
+aa09a41 Improve connection handling logic in ConnService
+184038a Redesign HFP Client call handling
+a00af0e merge in nyc-car-release history after reset to nyc-car-dev
+4623f0a Use the live AdapterService in ProfileService. am: d4152d61ac
+ceeea2b Close output stream before getting response am: e026ad5004
+550ba29 Merge \"Prevent energy data overflow\" into nyc-dev am: 303ef0bd13
+5f10748 Fix how file size is calculated if not provided am: 120ba1db4d
+ee3ef8f Remove calls when device gets disconnected
+3338faa Normalize the number before inserting into list of calls in connectionservice
+3ba37e1 merge in nyc-car-release history after reset to nyc-car-dev
+27920eb Merge "Owner Card" into nyc-car-dev
+c599395 Owner Card
+2c0f7ef Import translations. DO NOT MERGE am: 397d9de948  -s ours
+268f3cf merge in nyc-car-release history after reset to nyc-car-dev
+fd0b6d7 Check exception to prevent crash on invalid URIs am: eacf805631
+515ea64 merge in nyc-car-release history after reset to nyc-car-dev
+ee58459 Only allow access to MAP if SMS is not supported am: 4d2c98fcf1
+c3b78ca Add guest mode functionality (3/3) am: e1ca5cccd6 am: 480b762641 am: b01d679002 am: 0b2a403b82  -s ours am: 6d74162bea am: 46790a61d3 am: 5b68598a5f am: 4b1a2258f7 am: 996e934491
+6ff116b Add guest mode functionality (3/3) am: af5b1764da am: 69689c0098  -s ours am: 1d6901fdcf am: 749752db0d am: 24bbc49362
+f86fd89 Merge "AVRCP Statemachine" into nyc-car-dev
+3871942 Removed unnecessary "synchronized" statements am: e741f05c93
+89e40be Broadcast UUIDS on BT state transition to ON am: 6fb4b2407f
+7c8c543 AVRCP Statemachine
+d0192fe Fix LocalRef leakage in get_gatt_db am: c949f68641
+e9227e7 Import translations. DO NOT MERGE am: b3ddda59b6  -s ours
+0ff3979 Change scan downgrade timeout from 5 min to 30 min am: 63d9d9ffbe
+893033c Tackle changing phone numbers by relying on IDs wherever possible.
+8064260 DO NOT MERGE ANYWHERE GATT: Move connection parameters to config.xml am: 26f325ad37  -s ours am: 6bc72a1fbf  -s ours am: 4457205c96  -s ours
+613570e Merge "BluetoothManager: Make requestControllerActivityInfo one call" into nyc-dev am: fc57cab5ba
+68ac801 Add config for enabling HFP Connection Service. am: 70c7604401
+7dec4b0 DO NOT MERGE ANYWHERE Add missing null pointer check inside HeadSetClientService.stop() am: 3fe282a78e  -s ours am: 8080442c99  -s ours am: 432f43c938  -s ours
+f9d3bfa Merge "PBAP Handle IllegalArgumentException" into nyc-car-dev
+f0c2a50 PBAP Handle IllegalArgumentException
+0343803 PBAP Handle IllegalArgumentException
+a27c0fb Add protection against LE scanning abuse am: aef39f16e4
+ec3e5f1 HfpClientConnectionService does not synchronize state am: a8fc504fed
+b7f9231 HfpClientConnectionService does not synchronize state
+f8a2c7e AVRCP: Provide more media attributes am: 0fcd081ccc
+80e0263 Merge "Remove contacts at shutdown." into nyc-car-dev
+fc99803 Remove contacts at shutdown.
+0d00cab Merge "PBAP check device on disconnect" into nyc-car-dev
+649af3a Define a label for A2DP Media Browser service
+eb7e301 PBAP check device on disconnect
+7a39eb2 Fix divergent equals and hashCode behavior am: 27b250928c
+802df54 Fix work profile app not being able to create bond am: 11976279d5
+0bc246b Make Bluetooth encryption aware am: cf48e13e3b
+43f0166 Merge "Bluetooth Connect Other Profiles" into nyc-car-dev
+d045e16 Merge "PbapClientStateMachine legacyCode removal." into nyc-car-dev
+f98c306 Bluetooth Connect Other Profiles
+1fbfb6c PbapClientStateMachine legacyCode removal.
+be36e1c PBAP vcard parser
+a681668 Merge changes from topic 'pbap_statemachine_redesign' into nyc-car-dev
+e76c499 Connect PbapClient Profile
+6f87904 PBAP Download Contacts in state machine
+c984e06 Merge "Log permission check failure as warning" into nyc-dev am: 7a94490
+f77e89d Absolute volume: Black list device if remote can\'t change volume am: 2583f09
+08f0724 PBAPClient State Machine
+63f9398 Merge "A2DP MediaSession active state management and NPE" into nyc-car-dev
+40aa4a3 Merge "Properly label app as unregistered and add NPE protection" into nyc-dev am: e062a53
+2bae42c Synchronize access to ServiceDeclaration fields. am: f8ecbbb
+faa30be A2DP MediaSession active state management and NPE
+618631d AVRCP: Use MediaController am: 2fc493d0ea
+f7ea148 "DO NOT MERGE" Add write SMS protection am: 60e306ba5c
+52297ba Race in hfp call termination when local termination faster than HFP update.
+79dbaf6 Add guest mode functionality (1/5) am: 3558402aae
+422bd0b "DO NOT MERGE" Add write SMS protection am: fd7a794  -s ours am: daa8d67 am: 5eee2cd am: 48115bb  -s ours am: e2dca1a am: 63bcffd am: c522820 am: 8a05cda  -s ours am: ee763f7
+c93b3e3 "DO NOT MERGE" Add write SMS protection am: 64745b1 am: 9accc36 am: 6c32c81 am: b90c267  -s ours am: fed0765
+bcb0177 AVRCP: Don\'t assume 0:00 on metadata change am: e2c4671
+ba93f14 Merge "Replace NOT_SUPPORTED string constants with empty strings." into nyc-car-dev
+3191ee2 Merge "A2dpSink sends CONNECTED instead of DISCONNECTED when connection timeout" into nyc-car-dev
+284b37e Merge "Implement new async response method for controller activity info" into nyc-dev am: 049173d
+996bedb A2dpSink sends CONNECTED instead of DISCONNECTED when connection timeout
+00a113f Replace NOT_SUPPORTED string constants with empty strings.
+56d19cd Handle all kinds of focuses and make fault tolerant to phone calls. am: bacd337  -s ours
+dfebf93 Merge "Import translations. DO NOT MERGE" into nyc-dev am: 003f0b6  -s ours
+10f9841 Merge "Rename btif audio_focus_state -> set_audio_focus_state." am: 93b6179 am: c481822 am: ef9aa9f am: 16d0d57  -s ours
+f8b181e Handle all kinds of focuses and make fault tolerant to phone calls.
+0b80e52 Add a missing null-pointer check in HeadsetService.stop() am: 1b09c8c
+519bb21 Set session to active for A2dpMediaBrowserService.
+c4096d4 Fix PEERS_MAC_ADDRESS permission for Ble Scanning. am: e041e1b
+2c64c63 Import translations. DO NOT MERGE am: b402d0b  -s ours
+c653982 Bluetooth streaming should wait for AVRCP to start. am: f3db7dc
+6d50ce2 Enable logging for AVRCP Metadata changes am: 65e7943
+1d7f863 Merge "Import translations. DO NOT MERGE" into nyc-dev am: 8fc1976  -s ours
+2d9b99b Fix name collected for scan initiator am: f6f7432
+01875df Make PBAP PCE (Client) role auto-connectable. am: 3c75851
+e8a9ed8 Change A2dpSinkService package from a2dp -> a2dpsink. am: eb47111
+6e63e8f Move MediaBrowserService to Bluetooth Process am: 9287038
+d5c1e93 Add GATT server scan stats and extra protection am: c473ba2
+7a82946 Autoconnect Car Profiles am: 79b693f
+252f7cf Remove DayNight theme am: cb934fa
+2a932c3 Merge "PBAP client priority settings." into nyc-dev am: af98f39
+53e9cb0 Add a missing null check inside A2dpService.resetAvrcpBlacklist() am: f924b02
+46cfac4 Revert "Add guest mode functionality (1/5)" am: fa08821
+75347d2 Add guest mode functionality (1/5) am: 6e2c4a1
+df28479 GATT JNI - get_gatt_db_cb leaking local refs am: 3178527
+24ea677 Merge changes from topic \'pts-test-fix-sync-20160335-1\' into nyc-dev am: 4afd6b9
+65c2c87 Fix NPE when performing BLE scans. am: 2a6d08a
+7003553 Merge "Add Android.mk so that underneath targets can be updated." into nyc-dev am: 8d09b9d
+459a254 Add scan results to scan stats am: e90db93
+7e97e6c Fix register for notification logic am: 55296d1
+6038bb1 Merge "PBAP abort operations when disconnected" into nyc-dev am: d7bdccf
+0ed42d7 Use handles to identify GATT attributes (3/4) am: 32dc7a6
+6d6cb51 Change how services are passed up to the stack am: 02a821a
+2b0b59b Remove unused callbacks am: 8c33841
+642a1a3 Get whole GATT db, instead of one by one element. am: aa935f9
+662ebca Forward in iPhone leads to play state being presisted as STOP. am: 26469ff
+4e2df2d Make sure wakelock is held before releaseing it am: e94f8eb
+10456a1 Import translations. DO NOT MERGE am: 07b9677  -s ours
+b38cc54 Do not delete/re-create wakelock on acquisition/release am: 00a465e
+f6f959c Disable Account Authenticator am: 4254383
+0e192f8 Implement PBAP PCE client role service. am: b874a1d1cf
+ffe22d5 Merge "HFP is exposed via Telecom ConnectionService." into nyc-dev am: 8b9e874162
+a37de09 Print bluetooth state as a string am: 41093afc1f
+519b132 Add enabled time to dump output am: b03b1ce32f
+c821c39 Move ScanStats to its own file am: 7a068c2a08
+af81897 AutoConnect A2DP and HFP for Car Kitt roles. am: f848f42a0e
+aaadba6 Audio Focus for A2DP. am: 94a38610a1
+e846339 Merge "Fix a bug where batch scan wasn\'t stopped correctly." into nyc-dev am: a2821fd1fe
+973d0e1 Merge "Add more statistics to scan logs" into nyc-dev am: 817d034d94
+8e60e57 DO NOT MERGE ANYWHERE Implement new API for retrieving supported Bluetooth profiles. am: 90b78410c2  -s ours am: 2c0f222c4e  -s ours am: f9dfe9c3b5  -s ours
+a8d8999 Merge "Protect ScanStats from race conditions" into nyc-dev am: 6b5d4270bd
+2076e9b Fix warnings in packages/apps/Bluetooth am: 21f921a43a
+e8c2f5d Fix race in reportActivityInfo causing NPE am: 7bf0b76ff1
+666e068 Import translations. DO NOT MERGE am: 62fe689d6a  -s ours
+57dfb17 Fix logic for repeated record scan calls am: ef437b17ba
+16d1059 Mark background and opportunistic scans in scan statistics am: f0202e094a
+4b9e85a Fix the argument processing when dumping Bluetooth state am: 92a815aaf0
+6f0b4f2 Add a missing null pointer check for AdapterService am: 52a0ff2d6e
+4e6c87d Add timestamps to last LE scan log am: 5c07523b0b
+5a64c1a Clean up gatt dump output am: bcc88d63a2
+e04fe56 Merge "DO NOT MERGE Read Bluetooth interop database entries from settings (2/2)" into mnc-dr-dev am: e836319052 am: 9e6146ee2f am: aa485fdd77  -s ours am: 8abaf5d245
+b6b9f2b Import translations. DO NOT MERGE am: 9eb644ae77  -s ours
+75ad818 Fix warnings in packages/apps/Bluetooth am: d4a64dd76a
+cf15ab7 DO NOT MERGE Enhance AVRCP Absolute Volume control implementation am: 1a1169dcb2  -s ours am: 68d4713d8a am: 65284fb3d9  -s ours am: af3e08743b
+bdcd56a Import translations. DO NOT MERGE am: c804d2d37b  -s ours
+548cb21 Use IpManager when feeling Pan-tastic am: fe0f221cf5
+10ad93f Read Bluetooth interop database entries from settings (2/2) am: db32e0ef46
+77e06ac Output the Protobuf result in Base64 string am: e3d0e6f817
+1759889 Add Java Protobuf dump and ScanEvent Protobuf am: 3122e5171e
+fcdc404 Improve BT OPP throughput am: cc810f757b
+7615928 HFP: Do not return NULL when the HDP interface is unavailable am: ceec82759f
+b8fbbc7 Fix NPE crash while removeBatch am: 0787917a68
+f171b4d dumpNative has garbage in args am: e1ad2a10ea
+6a7975d Fix typo in Bluetooth MAP access string am: 870c879dcc
+c2722b0 Null terminate MAP instance information am: b5dde8c7ec
+90aaf04 Merge "Fix memory leak in Bluetooth AVRCP JNI" into mnc-dr-dev am: e225df4abf am: eeb99e6b70 am: 6554484313 am: 63ddc2c07a
+a216133 [DO NOT MERGE ANYWHERE] Null terminate MAP instance information am: 082275e311  -s ours am: db872b8302  -s ours am: 9e1a656643  -s ours am: 68ff30e7ca  -s ours
+
+packages/apps/Camera2
+6654d49 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Camera2: Fix ambiguity of the resource ic_capture_video
+
+packages/apps/Music
+7b2f129 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Removed album art background from TrackBrowserActivity
+da36f09 Fixed crash of app due security exception.
+
+system/core
+8d7c414 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) usbhs: Fixing USB Chapter 9 compatibility issues
+c1489c9 WA: Change group of /proc/cmdline to graphics
+b29abb5 Merge "debuggerd: Add SEVG_PKUERR according to newer kernels" into r-car-7
+30c837b libcutils: Remove duplicated define PR_SET_TIMERSLACK_PID
+4ece531 debuggerd: Add SEVG_PKUERR according to newer kernels
+
+system/netd
+b336095 (HEAD -> r-car-7, m/r-car-7-K4.9, gl-mirror/r-car-7) Set both legacy and new UID routing attributes.
+8f7b0f9 Revert "netd: Deleted in place declaration FRA_UID_START/END."
+a73e2d8 (gl-mirror/r-car-7-4.9) netd: Deleted in place declaration FRA_UID_START/END.
